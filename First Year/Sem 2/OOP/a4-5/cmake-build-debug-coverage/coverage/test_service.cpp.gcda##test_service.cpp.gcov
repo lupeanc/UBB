@@ -1,0 +1,1890 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/Tests/test_service.cpp
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Tests\test_service.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Tests\test_service.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "../DynamicArray.h"
+        -:    2:#include "test_service.h"
+        -:    3:#include "../Repository/Repository.h"
+        -:    4:#include "../Service/Service.h"
+        -:    5:#include <assert.h>
+        -:    6:
+function _ZN11testService16testGetAdminRepoEv called 1 returned 100% blocks executed 55%
+        1:    7:void testService::testGetAdminRepo(){
+        1:    8:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:    8-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:    8-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:    8-block  2
+call    6 never executed
+        1:    9:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:    9-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:    9-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:    9-block  2
+call    6 never executed
+        1:   10:  Repository* adminRepo = new Repository(adminDA);
+        1:   10-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   10-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   10-block  2
+call    6 never executed
+        1:   11:  Repository* userRepo = new Repository(userDA);
+        1:   11-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   11-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   11-block  2
+call    6 never executed
+        1:   12:  Service* service = new Service(adminRepo, userRepo);
+        1:   12-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   12-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   12-block  2
+call    6 never executed
+        -:   13:
+       1*:   14:  assert(service->getAdminRepo() == adminDA);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   14-block  1
+call    3 never executed
+        1:   14-block  2
+        1:   15:  delete service;
+        1:   15-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   15-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   16:}
+        1:   16-block  0
+        -:   17:
+function _ZN11testService15testGetUserRepoEv called 1 returned 100% blocks executed 55%
+        1:   18:void testService::testGetUserRepo(){
+        1:   19:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   19-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   19-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   19-block  2
+call    6 never executed
+        1:   20:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   20-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   20-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   20-block  2
+call    6 never executed
+        1:   21:  Repository* adminRepo = new Repository(adminDA);
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   21-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   21-block  2
+call    6 never executed
+        1:   22:  Repository* userRepo = new Repository(userDA);
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   22-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   22-block  2
+call    6 never executed
+        1:   23:  Service* service = new Service(adminRepo, userRepo);
+        1:   23-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   23-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   23-block  2
+call    6 never executed
+        -:   24:
+       1*:   25:  assert(service->getUserRepo() == userDA);
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   25-block  1
+call    3 never executed
+        1:   25-block  2
+        1:   26:  delete service;
+        1:   26-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   26-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   27:}
+        1:   27-block  0
+        -:   28:
+function _ZN11testService19testAddServiceAdminEv called 1 returned 100% blocks executed 50%
+        1:   29:void testService::testAddServiceAdmin(){
+        1:   30:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   30-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   30-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   30-block  2
+call    6 never executed
+        1:   31:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   31-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   31-block  2
+call    6 never executed
+        1:   32:  Repository* adminRepo = new Repository(adminDA);
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   32-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   32-block  2
+call    6 never executed
+        1:   33:  Repository* userRepo = new Repository(userDA);
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   33-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   33-block  2
+call    6 never executed
+        1:   34:  Service* service = new Service(adminRepo, userRepo);
+        1:   34-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   34-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   34-block  2
+call    6 never executed
+       6*:   35:  assert(service->addServiceAdmin("title", "desc", Date(1, 2, 2025), 1, 1, "link") == 0);
+        1:   35-block  0
+        1:   35-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   35-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   35-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   35-block  4
+        1:   35-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   35-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   35-block  7
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:   35-block  8
+call   17 never executed
+        1:   35-block  9
+        1:   35-block 10
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0
+        1:   35-block 11
+call   20 returned 1
+        1:   35-block 12
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:   35-block 13
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0
+        1:   35-block 14
+call   25 returned 1
+        1:   35-block 15
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0
+        1:   35-block 16
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0
+        1:   35-block 17
+call   30 returned 1
+        1:   35-block 18
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0
+    $$$$$:   35-block 19
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    $$$$$:   35-block 20
+call   35 never executed
+    $$$$$:   35-block 21
+    $$$$$:   35-block 22
+branch 36 never executed (fallthrough)
+branch 37 never executed
+    $$$$$:   35-block 23
+    $$$$$:   35-block 24
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    $$$$$:   35-block 25
+call   40 never executed
+    $$$$$:   35-block 26
+    $$$$$:   35-block 27
+branch 41 never executed (fallthrough)
+branch 42 never executed
+    $$$$$:   35-block 28
+    $$$$$:   35-block 29
+    $$$$$:   35-block 30
+branch 43 never executed (fallthrough)
+branch 44 never executed
+    $$$$$:   35-block 31
+call   45 never executed
+    $$$$$:   35-block 32
+    $$$$$:   35-block 33
+branch 46 never executed (fallthrough)
+branch 47 never executed
+        1:   36:  delete service;
+        1:   36-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   36-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   37:}
+        1:   37-block  0
+        -:   38:
+function _ZN11testService22testDeleteServiceAdminEv called 1 returned 100% blocks executed 50%
+        1:   39:void testService::testDeleteServiceAdmin(){
+        1:   40:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   40-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   40-block  2
+call    6 never executed
+        1:   41:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   41-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   41-block  2
+call    6 never executed
+        1:   42:  Repository* adminRepo = new Repository(adminDA);
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   42-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   42-block  2
+call    6 never executed
+        1:   43:  Repository* userRepo = new Repository(userDA);
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   43-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   43-block  2
+call    6 never executed
+        1:   44:  Service* service = new Service(adminRepo, userRepo);
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   44-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   44-block  2
+call    6 never executed
+        6:   45:  service->addServiceAdmin("title", "desc", Date(1, 2, 2025), 1, 1, "link");
+        1:   45-block  0
+        1:   45-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   45-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   45-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   45-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   45-block  6
+call   15 returned 1
+        1:   45-block  7
+call   16 returned 1
+        1:   45-block  8
+call   17 returned 1
+    $$$$$:   45-block  9
+call   18 never executed
+    $$$$$:   45-block 10
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+call   19 never executed
+    $$$$$:   45-block 13
+    $$$$$:   45-block 14
+    $$$$$:   45-block 15
+    $$$$$:   45-block 16
+call   20 never executed
+    $$$$$:   45-block 17
+    $$$$$:   45-block 18
+call   21 never executed
+       2*:   46:  assert(!service->deleteServiceAdmin("title"));
+        1:   46-block  0
+        1:   46-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   46-block  4
+call    8 never executed
+        1:   46-block  5
+        1:   46-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   46-block  7
+call   11 returned 1
+        1:   46-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   46-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   46-block 10
+call   16 never executed
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   46-block 13
+call   19 never executed
+       2*:   47:  assert(service->deleteServiceAdmin("doesntexist"));
+        1:   47-block  0
+        1:   47-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   47-block  4
+call    8 never executed
+        1:   47-block  5
+        1:   47-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   47-block  7
+call   11 returned 1
+        1:   47-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   47-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   47-block 10
+call   16 never executed
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+        1:   48:  delete service;
+        1:   48-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   48-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   49:}
+        1:   49-block  0
+        -:   50:
+function _ZN11testService26testUpdateEventStringAdminEv called 1 returned 100% blocks executed 50%
+        1:   51:void testService::testUpdateEventStringAdmin(){
+        1:   52:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   52-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   52-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   52-block  2
+call    6 never executed
+        1:   53:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   53-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   53-block  2
+call    6 never executed
+        1:   54:  Repository* adminRepo = new Repository(adminDA);
+        1:   54-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   54-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   54-block  2
+call    6 never executed
+        1:   55:  Repository* userRepo = new Repository(userDA);
+        1:   55-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   55-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   55-block  2
+call    6 never executed
+        1:   56:  Service* service = new Service(adminRepo, userRepo);
+        1:   56-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   56-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   56-block  2
+call    6 never executed
+        6:   57:  service->addServiceAdmin("title", "desc", Date(1, 2, 2025), 1, 1, "link");
+        1:   57-block  0
+        1:   57-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   57-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   57-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   57-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   57-block  6
+call   15 returned 1
+        1:   57-block  7
+call   16 returned 1
+        1:   57-block  8
+call   17 returned 1
+    $$$$$:   57-block  9
+call   18 never executed
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+call   19 never executed
+    $$$$$:   57-block 13
+    $$$$$:   57-block 14
+    $$$$$:   57-block 15
+    $$$$$:   57-block 16
+call   20 never executed
+    $$$$$:   57-block 17
+    $$$$$:   57-block 18
+call   21 never executed
+       4*:   58:  assert(!service->updateEventStringAdmin("title", "new", 1));
+        1:   58-block  0
+        1:   58-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58-block  2
+        1:   58-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   58-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   58-block  6
+call   11 never executed
+        1:   58-block  7
+        1:   58-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   58-block  9
+call   14 returned 1
+        1:   58-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   58-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   58-block 12
+call   19 returned 1
+        1:   58-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   58-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   58-block 15
+call   24 never executed
+    $$$$$:   58-block 16
+    $$$$$:   58-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   58-block 18
+    $$$$$:   58-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   58-block 20
+call   29 never executed
+    $$$$$:   58-block 21
+    $$$$$:   58-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   58-block 23
+call   32 never executed
+       4*:   59:  assert(!service->updateEventStringAdmin("new", "new_desc", 2));
+        1:   59-block  0
+        1:   59-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59-block  2
+        1:   59-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   59-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   59-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   59-block  6
+call   11 never executed
+        1:   59-block  7
+        1:   59-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   59-block  9
+call   14 returned 1
+        1:   59-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   59-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   59-block 12
+call   19 returned 1
+        1:   59-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   59-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   59-block 15
+call   24 never executed
+    $$$$$:   59-block 16
+    $$$$$:   59-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   59-block 18
+    $$$$$:   59-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   59-block 20
+call   29 never executed
+    $$$$$:   59-block 21
+    $$$$$:   59-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   59-block 23
+call   32 never executed
+       4*:   60:  assert(!service->updateEventStringAdmin("new", "new_link", 6));
+        1:   60-block  0
+        1:   60-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60-block  2
+        1:   60-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   60-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   60-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   60-block  6
+call   11 never executed
+        1:   60-block  7
+        1:   60-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   60-block  9
+call   14 returned 1
+        1:   60-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   60-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   60-block 12
+call   19 returned 1
+        1:   60-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   60-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   60-block 15
+call   24 never executed
+    $$$$$:   60-block 16
+    $$$$$:   60-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   60-block 18
+    $$$$$:   60-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   60-block 20
+call   29 never executed
+    $$$$$:   60-block 21
+    $$$$$:   60-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   60-block 23
+call   32 never executed
+       4*:   61:  assert(service->updateEventStringAdmin("doesntexist", "new_desc", 1));
+        1:   61-block  0
+        1:   61-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  2
+        1:   61-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   61-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   61-block  6
+call   11 never executed
+        1:   61-block  7
+        1:   61-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   61-block  9
+call   14 returned 1
+        1:   61-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   61-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   61-block 12
+call   19 returned 1
+        1:   61-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   61-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   61-block 15
+call   24 never executed
+    $$$$$:   61-block 16
+    $$$$$:   61-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   61-block 18
+    $$$$$:   61-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   61-block 20
+call   29 never executed
+    $$$$$:   61-block 21
+    $$$$$:   61-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+        1:   62:  delete service;
+        1:   62-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   62-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   63:}
+        1:   63-block  0
+        -:   64:
+function _ZN11testService23testUpdateEventIntAdminEv called 1 returned 100% blocks executed 51%
+        1:   65:void testService::testUpdateEventIntAdmin(){
+        1:   66:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   66-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   66-block  2
+call    6 never executed
+        1:   67:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   67-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   67-block  2
+call    6 never executed
+        1:   68:  Repository* adminRepo = new Repository(adminDA);
+        1:   68-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   68-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   68-block  2
+call    6 never executed
+        1:   69:  Repository* userRepo = new Repository(userDA);
+        1:   69-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   69-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   69-block  2
+call    6 never executed
+        1:   70:  Service* service = new Service(adminRepo, userRepo);
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   70-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   70-block  2
+call    6 never executed
+        6:   71:  service->addServiceAdmin("title", "desc", Date(1, 2, 2025), 1, 1, "link");
+        1:   71-block  0
+        1:   71-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   71-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   71-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   71-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   71-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   71-block  6
+call   15 returned 1
+        1:   71-block  7
+call   16 returned 1
+        1:   71-block  8
+call   17 returned 1
+    $$$$$:   71-block  9
+call   18 never executed
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+call   19 never executed
+    $$$$$:   71-block 13
+    $$$$$:   71-block 14
+    $$$$$:   71-block 15
+    $$$$$:   71-block 16
+call   20 never executed
+    $$$$$:   71-block 17
+    $$$$$:   71-block 18
+call   21 never executed
+       2*:   72:  assert(!service->updateEventIntAdmin("title", 10, 4));
+        1:   72-block  0
+        1:   72-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   72-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   72-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   72-block  4
+call    8 never executed
+        1:   72-block  5
+        1:   72-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   72-block  7
+call   11 returned 1
+        1:   72-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   72-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   72-block 10
+call   16 never executed
+    $$$$$:   72-block 11
+    $$$$$:   72-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   72-block 13
+call   19 never executed
+       2*:   73:  assert(!service->updateEventIntAdmin("title", 11, 5));
+        1:   73-block  0
+        1:   73-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   73-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   73-block  4
+call    8 never executed
+        1:   73-block  5
+        1:   73-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   73-block  7
+call   11 returned 1
+        1:   73-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   73-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   73-block 10
+call   16 never executed
+    $$$$$:   73-block 11
+    $$$$$:   73-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   73-block 13
+call   19 never executed
+       2*:   74:  assert(service->updateEventIntAdmin("doesntexist", -12, 1));
+        1:   74-block  0
+        1:   74-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   74-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   74-block  4
+call    8 never executed
+        1:   74-block  5
+        1:   74-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   74-block  7
+call   11 returned 1
+        1:   74-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   74-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   74-block 10
+call   16 never executed
+    $$$$$:   74-block 11
+    $$$$$:   74-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+        1:   75:  delete service;
+        1:   75-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   75-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   76:}
+        1:   76-block  0
+        -:   77:
+function _ZN11testService24testUpdateEventDateAdminEv called 1 returned 100% blocks executed 49%
+        1:   78:void testService::testUpdateEventDateAdmin(){
+        1:   79:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   79-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   79-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   79-block  2
+call    6 never executed
+        1:   80:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   80-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   80-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   80-block  2
+call    6 never executed
+        1:   81:  Repository* adminRepo = new Repository(adminDA);
+        1:   81-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   81-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   81-block  2
+call    6 never executed
+        1:   82:  Repository* userRepo = new Repository(userDA);
+        1:   82-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   82-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   82-block  2
+call    6 never executed
+        1:   83:  Service* service = new Service(adminRepo, userRepo);
+        1:   83-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   83-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   83-block  2
+call    6 never executed
+        6:   84:  service->addServiceAdmin("title", "desc", Date(1, 2, 2025), 1, 1, "link");
+        1:   84-block  0
+        1:   84-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   84-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   84-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   84-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   84-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   84-block  6
+call   15 returned 1
+        1:   84-block  7
+call   16 returned 1
+        1:   84-block  8
+call   17 returned 1
+    $$$$$:   84-block  9
+call   18 never executed
+    $$$$$:   84-block 10
+    $$$$$:   84-block 11
+    $$$$$:   84-block 12
+call   19 never executed
+    $$$$$:   84-block 13
+    $$$$$:   84-block 14
+    $$$$$:   84-block 15
+    $$$$$:   84-block 16
+call   20 never executed
+    $$$$$:   84-block 17
+    $$$$$:   84-block 18
+call   21 never executed
+       2*:   85:  assert(!service->updateEventDateAdmin("title", 12, 11, 2024));
+        1:   85-block  0
+        1:   85-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   85-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   85-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   85-block  4
+call    8 never executed
+        1:   85-block  5
+        1:   85-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   85-block  7
+call   11 returned 1
+        1:   85-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   85-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   85-block 10
+call   16 never executed
+    $$$$$:   85-block 11
+    $$$$$:   85-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   85-block 13
+call   19 never executed
+       2*:   86:  assert(service->updateEventDateAdmin("doesntexist", 1, 2, 2024));
+        1:   86-block  0
+        1:   86-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   86-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   86-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   86-block  4
+call    8 never executed
+        1:   86-block  5
+        1:   86-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   86-block  7
+call   11 returned 1
+        1:   86-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   86-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   86-block 10
+call   16 never executed
+    $$$$$:   86-block 11
+    $$$$$:   86-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+        1:   87:}
+        1:   87-block  0
+        -:   88://todo
+function _ZN11testService18testAddServiceUserEv called 1 returned 100% blocks executed 48%
+        1:   89:void testService::testAddServiceUser(){
+        1:   90:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   90-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   90-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   90-block  2
+call    6 never executed
+        1:   91:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   91-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   91-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   91-block  2
+call    6 never executed
+        1:   92:  Repository* adminRepo = new Repository(adminDA);
+        1:   92-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   92-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   92-block  2
+call    6 never executed
+        1:   93:  Repository* userRepo = new Repository(userDA);
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   93-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   93-block  2
+call    6 never executed
+        1:   94:  Service* service = new Service(adminRepo, userRepo);
+        1:   94-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   94-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:   94-block  2
+call    6 never executed
+       6*:   95:  assert(service->addServiceUser(Event("title", "desc", Date(1, 2, 2025), 1, 1, "link")));
+        1:   95-block  0
+        1:   95-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   95-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   95-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   95-block  4
+        1:   95-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   95-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   95-block  7
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   95-block  8
+branch 18 taken 0 (fallthrough)
+branch 19 taken 1
+    %%%%%:   95-block  9
+call   20 never executed
+        1:   95-block 10
+        1:   95-block 11
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:   95-block 12
+call   23 returned 1
+        1:   95-block 13
+branch 24 taken 1 (fallthrough)
+branch 25 taken 0
+        1:   95-block 14
+call   26 returned 1
+        1:   95-block 15
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0
+        1:   95-block 16
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0
+        1:   95-block 17
+call   31 returned 1
+        1:   95-block 18
+branch 32 taken 1 (fallthrough)
+branch 33 taken 0
+        1:   95-block 19
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0
+        1:   95-block 20
+call   36 returned 1
+        1:   95-block 21
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0
+    $$$$$:   95-block 22
+branch 39 never executed (fallthrough)
+branch 40 never executed
+    $$$$$:   95-block 23
+call   41 never executed
+    $$$$$:   95-block 24
+    $$$$$:   95-block 25
+branch 42 never executed (fallthrough)
+branch 43 never executed
+    $$$$$:   95-block 26
+call   44 never executed
+    $$$$$:   95-block 27
+    $$$$$:   95-block 28
+branch 45 never executed (fallthrough)
+branch 46 never executed
+    $$$$$:   95-block 29
+    $$$$$:   95-block 30
+branch 47 never executed (fallthrough)
+branch 48 never executed
+    $$$$$:   95-block 31
+call   49 never executed
+    $$$$$:   95-block 32
+    $$$$$:   95-block 33
+branch 50 never executed (fallthrough)
+branch 51 never executed
+    $$$$$:   95-block 34
+    $$$$$:   95-block 35
+    $$$$$:   95-block 36
+branch 52 never executed (fallthrough)
+branch 53 never executed
+    $$$$$:   95-block 37
+call   54 never executed
+    $$$$$:   95-block 38
+    $$$$$:   95-block 39
+branch 55 never executed (fallthrough)
+branch 56 never executed
+        -:   96:  // assert(service->addServiceUser(Event("title", "desc", Date(1, 2, 2025), 1, 1, "link")));
+        1:   97:}
+        1:   97-block  0
+        -:   98:
+function _ZN11testService21testDeleteServiceUserEv called 1 returned 100% blocks executed 48%
+        1:   99:void testService::testDeleteServiceUser() {
+        1:  100:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:  100-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  100-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  100-block  2
+call    6 never executed
+        1:  101:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:  101-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  101-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  101-block  2
+call    6 never executed
+        1:  102:  Repository* adminRepo = new Repository(adminDA);
+        1:  102-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  102-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  102-block  2
+call    6 never executed
+        1:  103:  Repository* userRepo = new Repository(userDA);
+        1:  103-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  103-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  103-block  2
+call    6 never executed
+        1:  104:  Service* service = new Service(adminRepo, userRepo);
+        1:  104-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  104-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  104-block  2
+call    6 never executed
+        6:  105:  service->addServiceUser(Event("title", "desc", Date(1, 2, 2025), 1, 1, "link"));
+        1:  105-block  0
+        1:  105-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  105-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  105-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  105-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  105-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  105-block  6
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  105-block  7
+call   18 returned 1
+call   19 returned 1
+        1:  105-block  8
+call   20 returned 1
+        1:  105-block  9
+call   21 returned 1
+    $$$$$:  105-block 10
+call   22 never executed
+    $$$$$:  105-block 11
+call   23 never executed
+    $$$$$:  105-block 12
+    $$$$$:  105-block 13
+    $$$$$:  105-block 14
+call   24 never executed
+    $$$$$:  105-block 15
+    $$$$$:  105-block 16
+    $$$$$:  105-block 17
+    $$$$$:  105-block 18
+call   25 never executed
+    $$$$$:  105-block 19
+    $$$$$:  105-block 20
+    $$$$$:  105-block 21
+call   26 never executed
+       6*:  106:  assert(service->deleteServiceAUser(Event("title", "desc", Date(1, 2, 2025), 1, 1, "link")));
+        1:  106-block  0
+        1:  106-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  106-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  106-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  106-block  4
+        1:  106-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  106-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  106-block  7
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  106-block  8
+branch 18 taken 0 (fallthrough)
+branch 19 taken 1
+    %%%%%:  106-block  9
+call   20 never executed
+        1:  106-block 10
+        1:  106-block 11
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:  106-block 12
+call   23 returned 1
+        1:  106-block 13
+branch 24 taken 1 (fallthrough)
+branch 25 taken 0
+        1:  106-block 14
+call   26 returned 1
+        1:  106-block 15
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0
+        1:  106-block 16
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0
+        1:  106-block 17
+call   31 returned 1
+        1:  106-block 18
+branch 32 taken 1 (fallthrough)
+branch 33 taken 0
+        1:  106-block 19
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0
+        1:  106-block 20
+call   36 returned 1
+        1:  106-block 21
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0
+    $$$$$:  106-block 22
+branch 39 never executed (fallthrough)
+branch 40 never executed
+    $$$$$:  106-block 23
+call   41 never executed
+    $$$$$:  106-block 24
+    $$$$$:  106-block 25
+branch 42 never executed (fallthrough)
+branch 43 never executed
+    $$$$$:  106-block 26
+call   44 never executed
+    $$$$$:  106-block 27
+    $$$$$:  106-block 28
+branch 45 never executed (fallthrough)
+branch 46 never executed
+    $$$$$:  106-block 29
+    $$$$$:  106-block 30
+branch 47 never executed (fallthrough)
+branch 48 never executed
+    $$$$$:  106-block 31
+call   49 never executed
+    $$$$$:  106-block 32
+    $$$$$:  106-block 33
+branch 50 never executed (fallthrough)
+branch 51 never executed
+    $$$$$:  106-block 34
+    $$$$$:  106-block 35
+    $$$$$:  106-block 36
+branch 52 never executed (fallthrough)
+branch 53 never executed
+    $$$$$:  106-block 37
+call   54 never executed
+    $$$$$:  106-block 38
+    $$$$$:  106-block 39
+branch 55 never executed (fallthrough)
+branch 56 never executed
+    $$$$$:  106-block 40
+call   57 never executed
+       6*:  107:  assert(service->deleteServiceAUser(Event("name", "desc", Date(1, 2, 2025), 1, 1, "link"))==1);
+        1:  107-block  0
+        1:  107-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  107-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  107-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  107-block  4
+        1:  107-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  107-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  107-block  7
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  107-block  8
+branch 18 taken 0 (fallthrough)
+branch 19 taken 1
+    %%%%%:  107-block  9
+call   20 never executed
+        1:  107-block 10
+        1:  107-block 11
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:  107-block 12
+call   23 returned 1
+        1:  107-block 13
+branch 24 taken 1 (fallthrough)
+branch 25 taken 0
+        1:  107-block 14
+call   26 returned 1
+        1:  107-block 15
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0
+        1:  107-block 16
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0
+        1:  107-block 17
+call   31 returned 1
+        1:  107-block 18
+branch 32 taken 1 (fallthrough)
+branch 33 taken 0
+        1:  107-block 19
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0
+        1:  107-block 20
+call   36 returned 1
+        1:  107-block 21
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0
+    $$$$$:  107-block 22
+branch 39 never executed (fallthrough)
+branch 40 never executed
+    $$$$$:  107-block 23
+call   41 never executed
+    $$$$$:  107-block 24
+    $$$$$:  107-block 25
+branch 42 never executed (fallthrough)
+branch 43 never executed
+    $$$$$:  107-block 26
+call   44 never executed
+    $$$$$:  107-block 27
+    $$$$$:  107-block 28
+branch 45 never executed (fallthrough)
+branch 46 never executed
+    $$$$$:  107-block 29
+    $$$$$:  107-block 30
+branch 47 never executed (fallthrough)
+branch 48 never executed
+    $$$$$:  107-block 31
+call   49 never executed
+    $$$$$:  107-block 32
+    $$$$$:  107-block 33
+branch 50 never executed (fallthrough)
+branch 51 never executed
+    $$$$$:  107-block 34
+    $$$$$:  107-block 35
+    $$$$$:  107-block 36
+branch 52 never executed (fallthrough)
+branch 53 never executed
+    $$$$$:  107-block 37
+call   54 never executed
+    $$$$$:  107-block 38
+    $$$$$:  107-block 39
+branch 55 never executed (fallthrough)
+branch 56 never executed
+        1:  108:}
+        1:  108-block  0
+        -:  109:
+function _ZN11testService15testGetSizeUserEv called 1 returned 100% blocks executed 48%
+        1:  110:void testService::testGetSizeUser() {
+        1:  111:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:  111-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  111-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  111-block  2
+call    6 never executed
+        1:  112:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:  112-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  112-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  112-block  2
+call    6 never executed
+        1:  113:  Repository* adminRepo = new Repository(adminDA);
+        1:  113-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  113-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  113-block  2
+call    6 never executed
+        1:  114:  Repository* userRepo = new Repository(userDA);
+        1:  114-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  114-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  114-block  2
+call    6 never executed
+        1:  115:  Service* service = new Service(adminRepo, userRepo);
+        1:  115-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  115-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  115-block  2
+call    6 never executed
+        6:  116:  service->addServiceUser(Event("title", "desc", Date(1, 2, 2025), 1, 1, "link"));
+        1:  116-block  0
+        1:  116-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  116-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  116-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  116-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  116-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  116-block  6
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  116-block  7
+call   18 returned 1
+call   19 returned 1
+        1:  116-block  8
+call   20 returned 1
+        1:  116-block  9
+call   21 returned 1
+    $$$$$:  116-block 10
+call   22 never executed
+    $$$$$:  116-block 11
+call   23 never executed
+    $$$$$:  116-block 12
+    $$$$$:  116-block 13
+    $$$$$:  116-block 14
+call   24 never executed
+    $$$$$:  116-block 15
+    $$$$$:  116-block 16
+    $$$$$:  116-block 17
+    $$$$$:  116-block 18
+call   25 never executed
+    $$$$$:  116-block 19
+    $$$$$:  116-block 20
+       1*:  117:  assert(service->getSizeUser() == 1);
+        1:  117-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  117-block  1
+call    3 never executed
+        1:  117-block  2
+        1:  118:}
+        1:  118-block  0
+        -:  119:
+function _ZN11testService16testGetSizeAdminEv called 1 returned 100% blocks executed 52%
+        1:  120:void testService::testGetSizeAdmin(){
+        1:  121:  DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:  121-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  121-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  121-block  2
+call    6 never executed
+        1:  122:  DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:  122-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  122-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  122-block  2
+call    6 never executed
+        1:  123:  Repository* adminRepo = new Repository(adminDA);
+        1:  123-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  123-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  123-block  2
+call    6 never executed
+        1:  124:  adminRepo->initRepo();
+        1:  124-block  0
+call    0 returned 1
+        1:  125:  Repository* userRepo = new Repository(userDA);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  125-block  0
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  125-block  1
+call    6 never executed
+        1:  126:  Service* service = new Service(adminRepo, userRepo);
+        1:  126-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  126-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    $$$$$:  126-block  2
+call    6 never executed
+       1*:  127:  assert(service->getSizeAdmin() == 5);
+        1:  127-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  127-block  1
+call    3 never executed
+        1:  127-block  2
+        1:  128:}
+        1:  128-block  0
+function _ZN11testService14testAllServiceEv called 1 returned 100% blocks executed 100%
+        1:  129:void testService::testAllService(){
+        1:  130:  testGetAdminRepo();
+        1:  130-block  0
+call    0 returned 1
+        1:  131:  testGetUserRepo();
+call    0 returned 1
+        1:  132:  testAddServiceAdmin();
+call    0 returned 1
+        1:  133:  testDeleteServiceAdmin();
+call    0 returned 1
+        1:  134:  testUpdateEventStringAdmin();
+call    0 returned 1
+        1:  135:  testUpdateEventIntAdmin();
+call    0 returned 1
+        1:  136:  testUpdateEventDateAdmin();
+call    0 returned 1
+        1:  137:  testGetSizeAdmin();
+call    0 returned 1
+        -:  138:
+        1:  139:  testAddServiceUser();
+call    0 returned 1
+        1:  140:  testDeleteServiceUser();
+call    0 returned 1
+        1:  141:  testGetSizeUser();
+call    0 returned 1
+        -:  142:
+        1:  143:}

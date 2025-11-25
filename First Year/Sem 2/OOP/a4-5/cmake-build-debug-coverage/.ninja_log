@@ -1,0 +1,16 @@
+# ninja log v6
+38	237	7660809103522152	CMakeFiles/assignment_4_5.dir/Tests/test_dyn_arr.cpp.obj	9daaf5c13c3a0b83
+33	1292	7660883724783832	CMakeFiles/assignment_4_5.dir/Domain/Date.cpp.obj	f3be24db46788569
+21	793	7668030639545099	CMakeFiles/assignment_4_5.dir/Tests/test_service.cpp.obj	f0c2c4af5b9f803d
+68	1634	7660883725131020	CMakeFiles/assignment_4_5.dir/Tests/test_repo.cpp.obj	ba6a8016978b596a
+10	569	7667928475533966	CMakeFiles/assignment_4_5.dir/Service/Service.cpp.obj	b7067bcf9e18ecac
+59	1631	7660883725039262	CMakeFiles/assignment_4_5.dir/Tests/test_domain.cpp.obj	a1a90612370678b6
+83	1367	7660883725282846	CMakeFiles/assignment_4_5.dir/Tests/test_validation.cpp.obj	6a3b42a1f4aeee39
+45	1697	7660883724907344	CMakeFiles/assignment_4_5.dir/Repository/Repository.cpp.obj	af6b43c3a3ad8b61
+40	1473	7660883724854882	CMakeFiles/assignment_4_5.dir/Domain/Event.cpp.obj	c3318fc67491106c
+28	1787	7668049982303237	CMakeFiles/assignment_4_5.dir/Console/Console.cpp.obj	bb6af46f191484b7
+1293	2195	7660883737374969	CMakeFiles/assignment_4_5.dir/Validator/Validator.cpp.obj	d20c41a793d1f0e
+15	1826	7668038320542780	CMakeFiles/assignment_4_5.dir/main.cpp.obj	312bd09cd4a8c055
+1787	1934	7668049999896773	assignment_4_5.exe	9710bd26af5c57db
+73	3688	7681344667911586	CMakeFiles/assignment_4_5.dir/main.cpp.obj	312bd09cd4a8c055
+3689	4417	7681344704069631	assignment_4_5.exe	9710bd26af5c57db

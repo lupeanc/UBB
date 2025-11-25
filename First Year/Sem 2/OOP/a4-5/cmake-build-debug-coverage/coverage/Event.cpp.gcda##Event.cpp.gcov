@@ -1,0 +1,129 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/Domain/Event.cpp
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Domain\Event.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Domain\Event.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Event.h"
+        -:    2:
+function _ZN5EventC2Ev called 3500 returned 100% blocks executed 67%
+     3500:    3:Event::Event(){}
+     3500:    3-block  0
+call    0 returned 3500
+call    1 returned 3500
+call    2 returned 3500
+branch  3 taken 3500 (fallthrough)
+branch  4 taken 0 (throw)
+     3500:    3-block  1
+call    5 returned 3500
+    $$$$$:    3-block  2
+call    6 never executed
+    $$$$$:    3-block  3
+call    7 never executed
+        -:    4:// Date* if shit hits the fan
+function _ZN5EventC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_4DateiiS5_ called 70 returned 100% blocks executed 64%
+       70:    5:Event::Event(string title, string description, Date date, int time, int attendance, string link){
+       70:    5-block  0
+call    0 returned 70
+call    1 returned 70
+call    2 returned 70
+branch  3 taken 70 (fallthrough)
+branch  4 taken 0 (throw)
+       70:    5-block  1
+call    5 returned 70
+       70:    6:  this->title = title;
+call    0 returned 70
+branch  1 taken 70 (fallthrough)
+branch  2 taken 0 (throw)
+       70:    7:  this->description = description;
+       70:    7-block  0
+call    0 returned 70
+branch  1 taken 70 (fallthrough)
+branch  2 taken 0 (throw)
+       70:    8:  this->date = date;
+       70:    9:  this->time = time;
+       70:   10:  this->attendance = attendance;
+       70:   11:  this->link =  link;
+       70:   11-block  0
+call    0 returned 70
+branch  1 taken 70 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   12:
+       70:   13:}
+       70:   13-block  0
+    $$$$$:   13-block  1
+call    0 never executed
+    $$$$$:   13-block  2
+call    1 never executed
+    $$$$$:   13-block  3
+call    2 never executed
+        -:   14:
+function _ZN5Event8getTitleB5cxx11Ev called 100 returned 100% blocks executed 100%
+      100:   15:string Event::getTitle(){
+      100:   16:  return this->title;
+      100:   16-block  0
+call    0 returned 100
+        -:   17:}
+function _ZN5Event14getDescriptionB5cxx11Ev called 15 returned 100% blocks executed 100%
+       15:   18:string Event::getDescription(){
+       15:   19:  return this->description;
+       15:   19-block  0
+call    0 returned 15
+        -:   20:}
+function _ZN5Event7getDateEv called 16 returned 100% blocks executed 100%
+       16:   21:Date Event::getDate(){
+       16:   22:  return this->date;
+       16:   22-block  0
+        -:   23:}
+function _ZN5Event13getDateStringB5cxx11Ev called 1 returned 100% blocks executed 100%
+        1:   24:string Event::getDateString() {
+        1:   25:  return this->date.toString();
+        1:   25-block  0
+call    0 returned 1
+        -:   26:}
+        -:   27:
+function _ZN5Event7getTimeEv called 16 returned 100% blocks executed 100%
+       16:   28:int Event::getTime(){
+       16:   29:  return this->time;
+       16:   29-block  0
+        -:   30:}
+function _ZN5Event13getAttendanceEv called 20 returned 100% blocks executed 100%
+       20:   31:int Event::getAttendance(){
+       20:   32:  return this->attendance;
+       20:   32-block  0
+        -:   33:}
+        -:   34:
+function _ZN5Event7getLinkB5cxx11Ev called 15 returned 100% blocks executed 100%
+       15:   35:string Event::getLink() {
+       15:   36:  return this->link;
+       15:   36-block  0
+call    0 returned 15
+        -:   37:}
+        -:   38:
+function _ZN5Event8setTitleENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   39:void Event::setTitle(string newTitle){
+        1:   40:  this->title = newTitle;
+        1:   40-block  0
+call    0 returned 1
+        1:   41:}
+function _ZN5Event14setDescriptionENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   42:void Event::setDescription(string newDescription){
+        1:   43:  this->description = newDescription;
+        1:   43-block  0
+call    0 returned 1
+        1:   44:}
+        -:   45:
+function _ZN5Event7setTimeEi called 1 returned 100% blocks executed 100%
+        1:   46:void Event::setTime(int newTime){
+        1:   47:  this->time = newTime;
+        1:   48:}
+function _ZN5Event13setAttendanceEi called 1 returned 100% blocks executed 100%
+        1:   49:void Event::setAttendance(int newAttendance){
+        1:   50:  this->attendance = newAttendance;
+        1:   51:}
+function _ZN5Event7setLinkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   52:void Event::setLink(string newLink) {
+        1:   53:  this->link = newLink;
+        1:   53-block  0
+call    0 returned 1
+        1:   54:}
+        -:   55:
+        -:   56:

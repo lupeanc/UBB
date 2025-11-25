@@ -1,0 +1,1049 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/Tests/test_domain.cpp
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Tests\test_domain.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Tests\test_domain.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "test_domain.h"
+        -:    2:#include <assert.h>
+        -:    3:#include <iostream>
+        -:    4:
+function _ZN10testDomain10testGetDayEv called 1 returned 100% blocks executed 86%
+        1:    5:void testDomain::testGetDay(){
+        1:    6:  Date date(1, 2, 2025);
+        1:    6-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:    7:  assert(date.getDay() == 1);
+        1:    7-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    7-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:    7-block  2
+call    5 never executed
+        1:    7-block  3
+        1:    8:}
+        1:    8-block  0
+        -:    9:
+function _ZN10testDomain12testGetMonthEv called 1 returned 100% blocks executed 86%
+        1:   10:void testDomain::testGetMonth(){
+        1:   11:  Date date(1, 2, 2025);
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   12:  assert(date.getMonth() == 2);
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   12-block  2
+call    5 never executed
+        1:   12-block  3
+        1:   13:}
+        1:   13-block  0
+        -:   14:
+function _ZN10testDomain11testGetYearEv called 1 returned 100% blocks executed 86%
+        1:   15:void testDomain::testGetYear(){
+        1:   16:  Date date(1, 2, 2025);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   17:  assert(date.getYear() == 2025);
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   17-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   17-block  2
+call    5 never executed
+        1:   17-block  3
+        1:   18:}
+        1:   18-block  0
+        -:   19:
+function _ZN10testDomain16testToStringDateEv called 1 returned 100% blocks executed 100%
+        1:   20:void testDomain::testToStringDate() {
+        1:   21:  Date date(1, 2, 2025);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:  string dateString = date.toString();
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   23:  // assert(date.toString() == "1.2.2025");
+        1:   24:}
+        1:   24-block  0
+call    0 returned 1
+        -:   25:
+        -:   26:
+function _ZN10testDomain12testGetTitleEv called 1 returned 100% blocks executed 51%
+        1:   27:void testDomain::testGetTitle(){
+        1:   28:  Date date(1, 2, 2025);
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   29:  Event event("title", "desc", date, 12, 100, "link");
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   29-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   29-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  4
+call   12 returned 1
+        1:   29-block  5
+call   13 returned 1
+        1:   29-block  6
+call   14 returned 1
+    $$$$$:   29-block  7
+call   15 never executed
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+call   16 never executed
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+call   17 never executed
+    $$$$$:   29-block 14
+    $$$$$:   29-block 15
+       1*:   30:  assert(event.getTitle() == "title");
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   30-block  3
+call    8 never executed
+        1:   30-block  4
+        1:   30-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   30-block  6
+call   11 returned 1
+    $$$$$:   30-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   30-block  8
+call   14 never executed
+    $$$$$:   30-block  9
+        1:   31:}
+        1:   31-block  0
+call    0 returned 1
+    $$$$$:   31-block  1
+call    1 never executed
+        -:   32:
+function _ZN10testDomain18testGetDescriptionEv called 1 returned 100% blocks executed 51%
+        1:   33:void testDomain::testGetDescription(){
+        1:   34:  Date date(1, 2, 2025);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   35:  Event event("title", "desc", date, 12, 100, "link");
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   35-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   35-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   35-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   35-block  4
+call   12 returned 1
+        1:   35-block  5
+call   13 returned 1
+        1:   35-block  6
+call   14 returned 1
+    $$$$$:   35-block  7
+call   15 never executed
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+    $$$$$:   35-block 10
+call   16 never executed
+    $$$$$:   35-block 11
+    $$$$$:   35-block 12
+    $$$$$:   35-block 13
+call   17 never executed
+    $$$$$:   35-block 14
+    $$$$$:   35-block 15
+       1*:   36:  assert(event.getDescription() == "desc");
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   36-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   36-block  3
+call    8 never executed
+        1:   36-block  4
+        1:   36-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   36-block  6
+call   11 returned 1
+    $$$$$:   36-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   36-block  8
+call   14 never executed
+    $$$$$:   36-block  9
+        1:   37:}
+        1:   37-block  0
+call    0 returned 1
+    $$$$$:   37-block  1
+call    1 never executed
+        -:   38:
+function _ZN10testDomain11testGetDateEv called 1 returned 100% blocks executed 55%
+        1:   39:void testDomain::testGetDate(){
+        1:   40:  Date date(1, 2, 2025);
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   41:  Event event("title", "desc", date, 12, 100, "link");
+        1:   41-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   41-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   41-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   41-block  4
+call   12 returned 1
+        1:   41-block  5
+call   13 returned 1
+        1:   41-block  6
+call   14 returned 1
+    $$$$$:   41-block  7
+call   15 never executed
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+call   16 never executed
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+    $$$$$:   41-block 13
+call   17 never executed
+    $$$$$:   41-block 14
+    $$$$$:   41-block 15
+       1*:   42:  assert(event.getDate().getDay() == 1);
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   42-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   42-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   42-block  3
+call    8 never executed
+        1:   42-block  4
+    $$$$$:   42-block  5
+       1*:   43:  assert(event.getDate().getMonth() == 2);
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   43-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   43-block  3
+call    8 never executed
+        1:   43-block  4
+    $$$$$:   43-block  5
+       1*:   44:  assert(event.getDate().getYear() == 2025);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   44-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   44-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   44-block  3
+call    8 never executed
+        1:   44-block  4
+    $$$$$:   44-block  5
+        1:   45:  }
+        1:   45-block  0
+call    0 returned 1
+    $$$$$:   45-block  1
+call    1 never executed
+        -:   46:
+function _ZN10testDomain11testGetTimeEv called 1 returned 100% blocks executed 52%
+        1:   47:void testDomain::testGetTime(){
+        1:   48:  Date date(1, 2, 2025);
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   49:  Event event("title", "desc", date, 12, 100, "link");
+        1:   49-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   49-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   49-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   49-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   49-block  4
+call   12 returned 1
+        1:   49-block  5
+call   13 returned 1
+        1:   49-block  6
+call   14 returned 1
+    $$$$$:   49-block  7
+call   15 never executed
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+call   16 never executed
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+call   17 never executed
+    $$$$$:   49-block 14
+    $$$$$:   49-block 15
+       1*:   50:  assert(event.getTime() == 12);
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   50-block  2
+call    5 never executed
+        1:   50-block  3
+        1:   51:}
+        1:   51-block  0
+call    0 returned 1
+    $$$$$:   51-block  1
+call    1 never executed
+        -:   52:
+function _ZN10testDomain17testGetAttendanceEv called 1 returned 100% blocks executed 52%
+        1:   53:void testDomain::testGetAttendance(){
+        1:   54:  Date date(1, 2, 2025);
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   55:  Event event("title", "desc", date, 12, 100, "link");
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   55-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   55-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   55-block  4
+call   12 returned 1
+        1:   55-block  5
+call   13 returned 1
+        1:   55-block  6
+call   14 returned 1
+    $$$$$:   55-block  7
+call   15 never executed
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+    $$$$$:   55-block 10
+call   16 never executed
+    $$$$$:   55-block 11
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+call   17 never executed
+    $$$$$:   55-block 14
+    $$$$$:   55-block 15
+       1*:   56:  assert(event.getAttendance() == 100);
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   56-block  2
+call    5 never executed
+        1:   56-block  3
+        1:   57:}
+        1:   57-block  0
+call    0 returned 1
+    $$$$$:   57-block  1
+call    1 never executed
+        -:   58:
+function _ZN10testDomain11testGetLinkEv called 1 returned 100% blocks executed 51%
+        1:   59:void testDomain::testGetLink(){
+        1:   60:  Date date(1, 2, 2025);
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   61:  Event event("title", "desc", date, 12, 100, "link");
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   61-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   61-block  4
+call   12 returned 1
+        1:   61-block  5
+call   13 returned 1
+        1:   61-block  6
+call   14 returned 1
+    $$$$$:   61-block  7
+call   15 never executed
+    $$$$$:   61-block  8
+    $$$$$:   61-block  9
+    $$$$$:   61-block 10
+call   16 never executed
+    $$$$$:   61-block 11
+    $$$$$:   61-block 12
+    $$$$$:   61-block 13
+call   17 never executed
+    $$$$$:   61-block 14
+    $$$$$:   61-block 15
+       1*:   62:  assert(event.getLink() == "link");
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   62-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   62-block  3
+call    8 never executed
+        1:   62-block  4
+        1:   62-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   62-block  6
+call   11 returned 1
+    $$$$$:   62-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   62-block  8
+call   14 never executed
+    $$$$$:   62-block  9
+        1:   63:}
+        1:   63-block  0
+call    0 returned 1
+    $$$$$:   63-block  1
+call    1 never executed
+        -:   64:
+function _ZN10testDomain10testSetDayEv called 1 returned 100% blocks executed 88%
+        1:   65:void testDomain::testSetDay(){
+        1:   66:  Date date(1, 2, 2025);
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   67:  date.setDay(10);
+        1:   67-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   68:  assert(date.getDay() == 10);
+        1:   68-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   68-block  2
+call    5 never executed
+        1:   68-block  3
+        1:   69:}
+        1:   69-block  0
+        -:   70:
+function _ZN10testDomain12testSetMonthEv called 1 returned 100% blocks executed 88%
+        1:   71:void testDomain::testSetMonth(){
+        1:   72:  Date date(1, 2, 2025);
+        1:   72-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73:  date.setMonth(12);
+        1:   73-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   74:  assert(date.getMonth() == 12);
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   74-block  2
+call    5 never executed
+        1:   74-block  3
+        1:   75:}
+        1:   75-block  0
+        -:   76:
+function _ZN10testDomain11testSetYearEv called 1 returned 100% blocks executed 88%
+        1:   77:void testDomain::testSetYear(){
+        1:   78:  Date date(1, 2, 2025);
+        1:   78-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   79:  date.setYear(2024);
+        1:   79-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   80:  assert(date.getYear() == 2024);
+        1:   80-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   80-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   80-block  2
+call    5 never executed
+        1:   80-block  3
+        1:   81:}
+        1:   81-block  0
+        -:   82:
+function _ZN10testDomain12testSetTitleEv called 1 returned 100% blocks executed 51%
+        1:   83:void testDomain::testSetTitle(){
+        1:   84:  Date date(1, 2, 2025);
+        1:   84-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   85:  Event event("title", "desc", date, 12, 100, "link");
+        1:   85-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   85-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   85-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   85-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   85-block  4
+call   12 returned 1
+        1:   85-block  5
+call   13 returned 1
+        1:   85-block  6
+call   14 returned 1
+        1:   85-block  7
+    $$$$$:   85-block  8
+call   15 never executed
+    $$$$$:   85-block  9
+    $$$$$:   85-block 10
+    $$$$$:   85-block 11
+call   16 never executed
+    $$$$$:   85-block 12
+    $$$$$:   85-block 13
+    $$$$$:   85-block 14
+call   17 never executed
+    $$$$$:   85-block 15
+    $$$$$:   85-block 16
+        1:   86:  event.setTitle("new");
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   86-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   86-block  2
+call    6 returned 1
+    $$$$$:   86-block  3
+call    7 never executed
+    $$$$$:   86-block  4
+    $$$$$:   86-block  5
+       1*:   87:  assert(event.getTitle() == "new");
+        1:   87-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   87-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   87-block  3
+call    8 never executed
+        1:   87-block  4
+        1:   87-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   87-block  6
+call   11 returned 1
+    $$$$$:   87-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   87-block  8
+call   14 never executed
+    $$$$$:   87-block  9
+        1:   88:}
+        1:   88-block  0
+call    0 returned 1
+    $$$$$:   88-block  1
+call    1 never executed
+        -:   89:
+function _ZN10testDomain18testSetDescriptionEv called 1 returned 100% blocks executed 51%
+        1:   90:void testDomain::testSetDescription(){
+        1:   91:  Date date(1, 2, 2025);
+        1:   91-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   92:  Event event("title", "desc", date, 12, 100, "link");
+        1:   92-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   92-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   92-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   92-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   92-block  4
+call   12 returned 1
+        1:   92-block  5
+call   13 returned 1
+        1:   92-block  6
+call   14 returned 1
+        1:   92-block  7
+    $$$$$:   92-block  8
+call   15 never executed
+    $$$$$:   92-block  9
+    $$$$$:   92-block 10
+    $$$$$:   92-block 11
+call   16 never executed
+    $$$$$:   92-block 12
+    $$$$$:   92-block 13
+    $$$$$:   92-block 14
+call   17 never executed
+    $$$$$:   92-block 15
+    $$$$$:   92-block 16
+        1:   93:  event.setDescription("new");
+        1:   93-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   93-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   93-block  2
+call    6 returned 1
+    $$$$$:   93-block  3
+call    7 never executed
+    $$$$$:   93-block  4
+    $$$$$:   93-block  5
+       1*:   94:  assert(event.getDescription() == "new");
+        1:   94-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   94-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   94-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   94-block  3
+call    8 never executed
+        1:   94-block  4
+        1:   94-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   94-block  6
+call   11 returned 1
+    $$$$$:   94-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   94-block  8
+call   14 never executed
+    $$$$$:   94-block  9
+        1:   95:}
+        1:   95-block  0
+call    0 returned 1
+    $$$$$:   95-block  1
+call    1 never executed
+function _ZN10testDomain11testSetTimeEv called 1 returned 100% blocks executed 53%
+        1:   96:void testDomain::testSetTime(){
+        1:   97:  Date date(1, 2, 2025);
+        1:   97-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   98:  Event event("title", "desc", date, 12, 100, "link");
+        1:   98-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   98-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   98-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   98-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   98-block  4
+call   12 returned 1
+        1:   98-block  5
+call   13 returned 1
+        1:   98-block  6
+call   14 returned 1
+    $$$$$:   98-block  7
+call   15 never executed
+    $$$$$:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+call   16 never executed
+    $$$$$:   98-block 11
+    $$$$$:   98-block 12
+    $$$$$:   98-block 13
+call   17 never executed
+    $$$$$:   98-block 14
+    $$$$$:   98-block 15
+        1:   99:  event.setTime(20);
+        1:   99-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  100:  assert(event.getTime() == 20);
+        1:  100-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  100-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  100-block  2
+call    5 never executed
+        1:  100-block  3
+        1:  101:}
+        1:  101-block  0
+call    0 returned 1
+    $$$$$:  101-block  1
+call    1 never executed
+function _ZN10testDomain17testSetAttendanceEv called 1 returned 100% blocks executed 54%
+        1:  102:void testDomain::testSetAttendance(){
+        1:  103:  Date date(1, 2, 2025);
+        1:  103-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:  104:  Event event("title", "desc", date, 12, 100, "link");
+        1:  104-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  104-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  104-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  104-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  104-block  4
+call   12 returned 1
+        1:  104-block  5
+call   13 returned 1
+        1:  104-block  6
+call   14 returned 1
+    $$$$$:  104-block  7
+call   15 never executed
+    $$$$$:  104-block  8
+    $$$$$:  104-block  9
+    $$$$$:  104-block 10
+call   16 never executed
+    $$$$$:  104-block 11
+    $$$$$:  104-block 12
+    $$$$$:  104-block 13
+call   17 never executed
+    $$$$$:  104-block 14
+    $$$$$:  104-block 15
+        1:  105:  event.setAttendance(20);
+        1:  105-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  106:  event.getDateString();
+        1:  106-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  106-block  1
+call    3 returned 1
+    $$$$$:  106-block  2
+       1*:  107:  assert(event.getAttendance() == 20);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  107-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  107-block  1
+call    5 never executed
+        1:  107-block  2
+        1:  108:}
+        1:  108-block  0
+call    0 returned 1
+    $$$$$:  108-block  1
+call    1 never executed
+        -:  109:
+function _ZN10testDomain11testSetLinkEv called 1 returned 100% blocks executed 51%
+        1:  110:void testDomain::testSetLink(){
+        1:  111:  Date date(1, 2, 2025);
+        1:  111-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  112:  Event event("title", "desc", date, 12, 100, "link");
+        1:  112-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  112-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  112-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  112-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  112-block  4
+call   12 returned 1
+        1:  112-block  5
+call   13 returned 1
+        1:  112-block  6
+call   14 returned 1
+        1:  112-block  7
+    $$$$$:  112-block  8
+call   15 never executed
+    $$$$$:  112-block  9
+    $$$$$:  112-block 10
+    $$$$$:  112-block 11
+call   16 never executed
+    $$$$$:  112-block 12
+    $$$$$:  112-block 13
+    $$$$$:  112-block 14
+call   17 never executed
+    $$$$$:  112-block 15
+    $$$$$:  112-block 16
+        1:  113:  event.setLink("new");
+        1:  113-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  113-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  113-block  2
+call    6 returned 1
+    $$$$$:  113-block  3
+call    7 never executed
+    $$$$$:  113-block  4
+    $$$$$:  113-block  5
+       1*:  114:  assert(event.getLink() == "new");
+        1:  114-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  114-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  114-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:  114-block  3
+call    8 never executed
+        1:  114-block  4
+        1:  114-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  114-block  6
+call   11 returned 1
+    $$$$$:  114-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  114-block  8
+call   14 never executed
+    $$$$$:  114-block  9
+        1:  115:}
+        1:  115-block  0
+call    0 returned 1
+    $$$$$:  115-block  1
+call    1 never executed
+        -:  116:
+function _ZN10testDomain13testAllDomainEv called 1 returned 100% blocks executed 100%
+        1:  117:void testDomain::testAllDomain(){
+        1:  118:  testGetDay();
+        1:  118-block  0
+call    0 returned 1
+        1:  119:  testGetMonth();
+call    0 returned 1
+        1:  120:  testGetYear();
+call    0 returned 1
+        1:  121:  testToStringDate();
+call    0 returned 1
+        -:  122:
+        1:  123:  testGetTitle();
+call    0 returned 1
+        1:  124:  testGetDescription();
+call    0 returned 1
+        1:  125:  testGetDate();
+call    0 returned 1
+        1:  126:  testGetTime();
+call    0 returned 1
+        1:  127:  testGetAttendance();
+call    0 returned 1
+        1:  128:  testGetLink();
+call    0 returned 1
+        -:  129:
+        1:  130:  testSetDay();
+call    0 returned 1
+        1:  131:  testSetMonth();
+call    0 returned 1
+        1:  132:  testSetYear();
+call    0 returned 1
+        -:  133:
+        1:  134:  testSetTitle();
+call    0 returned 1
+        1:  135:  testSetDescription();
+call    0 returned 1
+        1:  136:  testSetTime();
+call    0 returned 1
+        1:  137:  testSetAttendance();
+call    0 returned 1
+        1:  138:  testSetLink();
+call    0 returned 1
+        1:  139:}
