@@ -1,0 +1,3 @@
+F:/c projects uni/OOP PracticeT2/cmake-build-debug/CMakeFiles/OOP_PracticeT2.dir
+F:/c projects uni/OOP PracticeT2/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOP PracticeT2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

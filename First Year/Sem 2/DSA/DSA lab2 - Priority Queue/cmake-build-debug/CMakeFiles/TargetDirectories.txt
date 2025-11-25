@@ -1,0 +1,3 @@
+F:/c projects uni/DSA lab 2 - Priority Queue/cmake-build-debug/CMakeFiles/DSA_lab_2___Priority_Queue.dir
+F:/c projects uni/DSA lab 2 - Priority Queue/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/DSA lab 2 - Priority Queue/cmake-build-debug/CMakeFiles/rebuild_cache.dir

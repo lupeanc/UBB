@@ -1,0 +1,5 @@
+F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/CMakeFiles/OOPExamPracticeEventPlanner.dir
+F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/CMakeFiles/OOPExamPracticeEventPlanner_autogen_timestamp_deps.dir
+F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/CMakeFiles/OOPExamPracticeEventPlanner_autogen.dir

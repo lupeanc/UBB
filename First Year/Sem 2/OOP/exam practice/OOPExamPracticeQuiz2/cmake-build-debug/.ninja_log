@@ -1,0 +1,14 @@
+# ninja log v6
+34	149	7716106749677093	OOPExamPracticeQuiz2_autogen/timestamp	23bdb49ab6ddcbc5
+34	149	7716106749677093	F:/c projects uni/OOPExamPracticeQuiz2/cmake-build-debug/OOPExamPracticeQuiz2_autogen/mocs_compilation.cpp	23bdb49ab6ddcbc5
+34	149	7716106749677093	OOPExamPracticeQuiz2_autogen/mocs_compilation.cpp	23bdb49ab6ddcbc5
+25	736	7716235079191782	build.ninja	7bc58872f7ce0565
+164	1021	7716080497917984	CMakeFiles/OOPExamPracticeQuiz2.dir/Domain/Participant.cpp.obj	bdb675bcfceb6700
+34	149	7716106749677093	F:/c projects uni/OOPExamPracticeQuiz2/cmake-build-debug/OOPExamPracticeQuiz2_autogen/timestamp	23bdb49ab6ddcbc5
+276	521	7716075710092549	CMakeFiles/OOPExamPracticeQuiz2.dir/OOPExamPracticeQuiz2_autogen/mocs_compilation.cpp.obj	862c34c856c7af45
+144	4012	7716101822871882	CMakeFiles/OOPExamPracticeQuiz2.dir/main.cpp.obj	99a2fd46a840b5c2
+167	1163	7716080497957983	CMakeFiles/OOPExamPracticeQuiz2.dir/Domain/Question.cpp.obj	5927a1a118d5dfaa
+123	1134	7716103643137710	CMakeFiles/OOPExamPracticeQuiz2.dir/Repository/Repository.cpp.obj	bed7505e3fc0d04
+143	3961	7716102387686678	CMakeFiles/OOPExamPracticeQuiz2.dir/GUI/GUIParticipant.cpp.obj	7502ee7ea8cfbdcc
+150	4653	7716106750826925	CMakeFiles/OOPExamPracticeQuiz2.dir/GUI/GUI.cpp.obj	d851030dbcfc013d
+4654	5338	7716106795870289	OOPExamPracticeQuiz2.exe	3e428ccef8930b48

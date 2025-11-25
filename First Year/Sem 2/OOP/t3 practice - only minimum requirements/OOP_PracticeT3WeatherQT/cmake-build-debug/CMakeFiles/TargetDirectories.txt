@@ -1,0 +1,5 @@
+F:/c projects uni/OOP_PracticeT3WeatherQT/cmake-build-debug/CMakeFiles/OOP_PracticeT3WeatherQT.dir
+F:/c projects uni/OOP_PracticeT3WeatherQT/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOP_PracticeT3WeatherQT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOP_PracticeT3WeatherQT/cmake-build-debug/CMakeFiles/OOP_PracticeT3WeatherQT_autogen_timestamp_deps.dir
+F:/c projects uni/OOP_PracticeT3WeatherQT/cmake-build-debug/CMakeFiles/OOP_PracticeT3WeatherQT_autogen.dir

@@ -1,0 +1,56 @@
+# ninja log v6
+30	136	7715447797208311	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+30	136	7715447797208311	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+123	4810	7715442269656530	CMakeFiles/OOPExamPracticeDeliverNow.dir/main.cpp.obj	cf9f0ecb629b16ae
+30	136	7715447797208311	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+323	432	7715338348150768	CMakeFiles/OOPExamPracticeDeliverNow.dir/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp.obj	4a91fac0a192ff20
+30	136	7715447797208311	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+26	828	7715451086065618	build.ninja	b424f5013a54adaa
+195	939	7715339092331438	CMakeFiles/OOPExamPracticeDeliverNow.dir/Domain/Zone.cpp.obj	582b5dc476460969
+129	861	7715428999563069	CMakeFiles/OOPExamPracticeDeliverNow.dir/Domain/Package.cpp.obj	f8a79dde7e55f6a3
+174	1128	7715341307626790	CMakeFiles/OOPExamPracticeDeliverNow.dir/Domain/Courier.cpp.obj	9d00432254dbecad
+137	1125	7715447798278320	CMakeFiles/OOPExamPracticeDeliverNow.dir/Repository/Repository.cpp.obj	edc32fa4876d4f37
+127	4674	7715442269696523	CMakeFiles/OOPExamPracticeDeliverNow.dir/GUI/GUI.cpp.obj	394763e065024951
+1125	1736	7715447808157562	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+131	4909	7715442269746549	CMakeFiles/OOPExamPracticeDeliverNow.dir/GUI/GUICompany.cpp.obj	b49a69c3d4e93246
+14	134	7715452258155427	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+14	134	7715452258155427	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+14	134	7715452258155427	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+14	134	7715452258155427	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+135	4353	7715452259365450	CMakeFiles/OOPExamPracticeDeliverNow.dir/GUI/GUICompany.cpp.obj	b49a69c3d4e93246
+4354	5050	7715452301556432	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+35	153	7715453861790008	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+35	153	7715453861790008	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+35	153	7715453861790008	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+35	153	7715453861790008	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+154	4422	7715453862974209	CMakeFiles/OOPExamPracticeDeliverNow.dir/GUI/GUICompany.cpp.obj	b49a69c3d4e93246
+4422	5124	7715453905653521	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+30	1412	7715457204256376	CMakeFiles/OOPExamPracticeDeliverNow.dir/Repository/Repository.cpp.obj	edc32fa4876d4f37
+14	4771	7715457204096407	CMakeFiles/OOPExamPracticeDeliverNow.dir/main.cpp.obj	cf9f0ecb629b16ae
+20	4777	7715457204156389	CMakeFiles/OOPExamPracticeDeliverNow.dir/GUI/GUI.cpp.obj	394763e065024951
+25	4961	7715457204206371	CMakeFiles/OOPExamPracticeDeliverNow.dir/GUI/GUICompany.cpp.obj	b49a69c3d4e93246
+4961	5627	7715457253562885	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+13	149	7715458619096219	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+13	149	7715458619096219	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+13	149	7715458619096219	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+13	149	7715458619096219	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+150	1257	7715458620468769	CMakeFiles/OOPExamPracticeDeliverNow.dir/Repository/Repository.cpp.obj	edc32fa4876d4f37
+1257	1934	7715458631539626	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+19	154	7715462939860061	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+19	154	7715462939860061	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+19	154	7715462939860061	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+19	154	7715462939860061	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+155	4903	7715462941220029	CMakeFiles/OOPExamPracticeDeliverNow.dir/main.cpp.obj	cf9f0ecb629b16ae
+4903	5598	7715462988702051	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+15	165	7715463582019380	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+15	165	7715463582019380	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+15	165	7715463582019380	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+15	165	7715463582019380	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+166	4609	7715463583529197	CMakeFiles/OOPExamPracticeDeliverNow.dir/main.cpp.obj	cf9f0ecb629b16ae
+4609	5308	7715463627959380	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4
+37	152	7715464015653643	OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+37	152	7715464015653643	OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+37	152	7715464015653643	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/timestamp	169bb6da60fb862d
+37	152	7715464015653643	F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug/OOPExamPracticeDeliverNow_autogen/mocs_compilation.cpp	169bb6da60fb862d
+152	4225	7715464016817112	CMakeFiles/OOPExamPracticeDeliverNow.dir/main.cpp.obj	cf9f0ecb629b16ae
+4225	4893	7715464057539458	OOPExamPracticeDeliverNow.exe	5a61d4a093e15de4

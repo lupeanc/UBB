@@ -1,0 +1,13 @@
+# ninja log v6
+27	800	7717654648424498	build.ninja	a876d19316a4eb7
+141	837	7717040968703287	CMakeFiles/OOPExamPracticeEventPlanner.dir/Domain/Person.cpp.obj	fc851b25c659ad26
+29	125	7717060833473486	OOPExamPracticeEventPlanner_autogen/timestamp	8871350f3da0933c
+29	125	7717060833473486	F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/OOPExamPracticeEventPlanner_autogen/timestamp	8871350f3da0933c
+29	125	7717060833473486	OOPExamPracticeEventPlanner_autogen/mocs_compilation.cpp	8871350f3da0933c
+29	125	7717060833473486	F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug/OOPExamPracticeEventPlanner_autogen/mocs_compilation.cpp	8871350f3da0933c
+130	844	7717048200393050	CMakeFiles/OOPExamPracticeEventPlanner.dir/Domain/Event.cpp.obj	fe7c3be1d6facc8a
+211	294	7717040518201101	CMakeFiles/OOPExamPracticeEventPlanner.dir/OOPExamPracticeEventPlanner_autogen/mocs_compilation.cpp.obj	9f9d323f74559ddf
+121	1000	7717052845111418	CMakeFiles/OOPExamPracticeEventPlanner.dir/Repository/Repository.cpp.obj	af69aa4d8a6f8bfe
+123	3931	7717057120095151	CMakeFiles/OOPExamPracticeEventPlanner.dir/main.cpp.obj	849a69a2bbe830d1
+126	3594	7717060834440754	CMakeFiles/OOPExamPracticeEventPlanner.dir/GUI/GUI.cpp.obj	f0d5f65536dce7cf
+3595	4097	7717060869129176	OOPExamPracticeEventPlanner.exe	f098fc836879107f

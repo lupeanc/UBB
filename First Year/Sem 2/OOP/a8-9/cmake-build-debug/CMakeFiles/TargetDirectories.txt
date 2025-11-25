@@ -1,0 +1,5 @@
+F:/c projects uni/assignment8-9/cmake-build-debug/CMakeFiles/assignment8_9.dir
+F:/c projects uni/assignment8-9/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/assignment8-9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/assignment8-9/cmake-build-debug/CMakeFiles/assignment8_9_autogen_timestamp_deps.dir
+F:/c projects uni/assignment8-9/cmake-build-debug/CMakeFiles/assignment8_9_autogen.dir

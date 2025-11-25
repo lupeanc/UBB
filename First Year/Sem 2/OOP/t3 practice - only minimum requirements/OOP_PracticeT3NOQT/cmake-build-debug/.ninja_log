@@ -1,0 +1,6 @@
+# ninja log v6
+2	290	7701564259024079	build.ninja	70c32963e892878d
+35	599	7701564260215591	CMakeFiles/OOP_PracticeT3Weather.dir/Domain/Weather.cpp.obj	71bc4aa2c17addae
+32	635	7701564260185597	CMakeFiles/OOP_PracticeT3Weather.dir/main.cpp.obj	6f68ee12c721512b
+39	704	7701564260255590	CMakeFiles/OOP_PracticeT3Weather.dir/Repository/Repository.cpp.obj	df9589698e5c1fe4
+704	861	7701564266905586	OOP_PracticeT3Weather.exe	9a78c9608a640b9e

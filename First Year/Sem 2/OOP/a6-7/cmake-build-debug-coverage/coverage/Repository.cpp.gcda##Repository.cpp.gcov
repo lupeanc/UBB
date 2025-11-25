@@ -1,0 +1,902 @@
+        -:    0:Source:F:/c projects uni/assignment_6_7/Repository/Repository.cpp
+        -:    0:Graph:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Repository\Repository.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Repository\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Repository.h"
+        -:    2:#include "Repository.h"
+        -:    3:#include <string>
+        -:    4:using namespace std;
+        -:    5:
+function _ZN10RepositoryC2Ev called 36 returned 100% blocks executed 100%
+       36:    6:Repository::Repository() {}
+       36:    6-block  0
+call    0 returned 36
+        -:    7:
+        -:    8:
+function _ZN10Repository7getSizeEv called 5 returned 100% blocks executed 100%
+        5:    9:int Repository::getSize() {
+        5:   10:    return this->elements.size();
+        5:   10-block  0
+call    0 returned 5
+        -:   11:}
+        -:   12:
+function _ZN10Repository9getDynArrEv called 2 returned 100% blocks executed 100%
+        2:   13:const vector<Event>& Repository::getDynArr() {
+        2:   14:    return this->elements;
+        2:   14-block  0
+        -:   15:}
+        -:   16:
+function _ZN10Repository8initRepoEv called 10 returned 100% blocks executed 48%
+       10:   17:void Repository::initRepo() {
+       60:   18:    addRepo("HumanBody", "Biology", Date(1, 2, 2025), 12, 100, "https://en.wikipedia.org/wiki/Organ_%28biology%29");
+       10:   18-block  0
+       10:   18-block  1
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   18-block  2
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:   18-block  3
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
+branch  8 taken 0 (throw)
+       10:   18-block  4
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
+branch 11 taken 0 (throw)
+       10:   18-block  5
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
+branch 14 taken 0 (throw)
+       10:   18-block  6
+call   15 returned 10
+       10:   18-block  7
+call   16 returned 10
+       10:   18-block  8
+call   17 returned 10
+    $$$$$:   18-block  9
+call   18 never executed
+    $$$$$:   18-block 10
+    $$$$$:   18-block 11
+    $$$$$:   18-block 12
+call   19 never executed
+    $$$$$:   18-block 13
+    $$$$$:   18-block 14
+    $$$$$:   18-block 15
+    $$$$$:   18-block 16
+call   20 never executed
+    $$$$$:   18-block 17
+    $$$$$:   18-block 18
+call   21 never executed
+       60:   19:    addRepo("IT:Websites", "Informatics", Date(23, 12, 2025), 16, 200, "https://www.wix.com/website/design");
+       10:   19-block  0
+       10:   19-block  1
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   19-block  2
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:   19-block  3
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
+branch  8 taken 0 (throw)
+       10:   19-block  4
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
+branch 11 taken 0 (throw)
+       10:   19-block  5
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
+branch 14 taken 0 (throw)
+       10:   19-block  6
+call   15 returned 10
+       10:   19-block  7
+call   16 returned 10
+       10:   19-block  8
+call   17 returned 10
+    $$$$$:   19-block  9
+call   18 never executed
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+call   19 never executed
+    $$$$$:   19-block 13
+    $$$$$:   19-block 14
+    $$$$$:   19-block 15
+    $$$$$:   19-block 16
+call   20 never executed
+    $$$$$:   19-block 17
+    $$$$$:   19-block 18
+call   21 never executed
+       60:   20:    addRepo("RealNumbers", "Mathematics", Date(30, 4, 2025), 10, 70, "www.cuemath.com/numbers/real-numbers/#:~:text=What%20are%20Real%20Numbers%20in,so%20on%20are%20real%20numbers.");
+       10:   20-block  0
+       10:   20-block  1
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   20-block  2
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:   20-block  3
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
+branch  8 taken 0 (throw)
+       10:   20-block  4
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
+branch 11 taken 0 (throw)
+       10:   20-block  5
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
+branch 14 taken 0 (throw)
+       10:   20-block  6
+call   15 returned 10
+       10:   20-block  7
+call   16 returned 10
+       10:   20-block  8
+call   17 returned 10
+    $$$$$:   20-block  9
+call   18 never executed
+    $$$$$:   20-block 10
+    $$$$$:   20-block 11
+    $$$$$:   20-block 12
+call   19 never executed
+    $$$$$:   20-block 13
+    $$$$$:   20-block 14
+    $$$$$:   20-block 15
+    $$$$$:   20-block 16
+call   20 never executed
+    $$$$$:   20-block 17
+    $$$$$:   20-block 18
+call   21 never executed
+       60:   21:    addRepo("DrawingFundamentals", "Arts", Date(18, 4, 2025), 20, 130, "https://juliabausenhardt.com/how-to-draw-anything-learn-sketching-for-beginners/");
+       10:   21-block  0
+       10:   21-block  1
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   21-block  2
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:   21-block  3
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
+branch  8 taken 0 (throw)
+       10:   21-block  4
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
+branch 11 taken 0 (throw)
+       10:   21-block  5
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
+branch 14 taken 0 (throw)
+       10:   21-block  6
+call   15 returned 10
+       10:   21-block  7
+call   16 returned 10
+       10:   21-block  8
+call   17 returned 10
+    $$$$$:   21-block  9
+call   18 never executed
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+    $$$$$:   21-block 12
+call   19 never executed
+    $$$$$:   21-block 13
+    $$$$$:   21-block 14
+    $$$$$:   21-block 15
+    $$$$$:   21-block 16
+call   20 never executed
+    $$$$$:   21-block 17
+    $$$$$:   21-block 18
+call   21 never executed
+       60:   22:    addRepo("PsychologicalNeeds", "Psychology", Date(21, 4, 2025), 13, 80, "https://www.ljmu.ac.uk/microsites/promoting-healthy-weight-in-pre-school-children/modules/communicating-with-parents/universal-psychological-needs#:~:text=According%20to%20SDT%20there%20are,hunger%2C%20thirst%2C%20sleep).");
+       10:   22-block  0
+       10:   22-block  1
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   22-block  2
+call    3 returned 10
+branch  4 taken 10 (fallthrough)
+branch  5 taken 0 (throw)
+       10:   22-block  3
+call    6 returned 10
+branch  7 taken 10 (fallthrough)
+branch  8 taken 0 (throw)
+       10:   22-block  4
+call    9 returned 10
+branch 10 taken 10 (fallthrough)
+branch 11 taken 0 (throw)
+       10:   22-block  5
+call   12 returned 10
+branch 13 taken 10 (fallthrough)
+branch 14 taken 0 (throw)
+       10:   22-block  6
+call   15 returned 10
+       10:   22-block  7
+call   16 returned 10
+       10:   22-block  8
+call   17 returned 10
+    $$$$$:   22-block  9
+call   18 never executed
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+    $$$$$:   22-block 12
+call   19 never executed
+    $$$$$:   22-block 13
+    $$$$$:   22-block 14
+    $$$$$:   22-block 15
+    $$$$$:   22-block 16
+call   20 never executed
+    $$$$$:   22-block 17
+       10:   23:}
+       10:   23-block  0
+        -:   24:
+function _ZN10Repository7addRepoENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_4DateiiS5_ called 38 returned 100% blocks executed 55%
+       38:   25:int Repository::addRepo(string title, string description, Date date, int time, int attandance, string link) {
+        -:   26:    int pos;
+       38:   27:    pos = checkExistance(title);
+       38:   27-block  0
+call    0 returned 38
+branch  1 taken 38 (fallthrough)
+branch  2 taken 0 (throw)
+       38:   27-block  1
+call    3 returned 38
+branch  4 taken 38 (fallthrough)
+branch  5 taken 0 (throw)
+       38:   27-block  2
+call    6 returned 38
+    $$$$$:   27-block  3
+call    7 never executed
+    $$$$$:   27-block  4
+call    8 never executed
+       38:   28:    if(pos == -1) {
+branch  0 taken 37 (fallthrough)
+branch  1 taken 1
+       37:   29:        Event e(title, description, date, time, attandance, link);
+       37:   29-block  0
+call    0 returned 37
+branch  1 taken 37 (fallthrough)
+branch  2 taken 0 (throw)
+       37:   29-block  1
+call    3 returned 37
+branch  4 taken 37 (fallthrough)
+branch  5 taken 0 (throw)
+       37:   29-block  2
+call    6 returned 37
+branch  7 taken 37 (fallthrough)
+branch  8 taken 0 (throw)
+       37:   29-block  3
+call    9 returned 37
+branch 10 taken 37 (fallthrough)
+branch 11 taken 0 (throw)
+       37:   29-block  4
+call   12 returned 37
+call   13 returned 37
+call   14 returned 37
+    $$$$$:   29-block  5
+call   15 never executed
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+call   16 never executed
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+call   17 never executed
+    $$$$$:   29-block 10
+       37:   30:        this->elements.push_back(e);
+call    0 returned 37
+branch  1 taken 37 (fallthrough)
+branch  2 taken 0 (throw)
+       37:   31:        return 0;
+       37:   32:    }
+       37:   32-block  0
+call    0 returned 37
+    $$$$$:   32-block  1
+call    1 never executed
+        1:   33:    return 1;
+        1:   33-block  0
+        -:   34:}
+        -:   35:
+function _ZN10Repository14checkExistanceENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 78 returned 100% blocks executed 100%
+       78:   36:int Repository::checkExistance(string title) {
+      136:   37:    for (int i = 0; i < this->elements.size(); i++) {
+       78:   37-block  0
+       58:   37-block  1
+      136:   37-block  2
+call    0 returned 136
+branch  1 taken 75
+branch  2 taken 61 (fallthrough)
+       75:   38:        if ((this->elements)[i].getTitle() == title) {
+       75:   38-block  0
+call    0 returned 75
+call    1 returned 75
+branch  2 taken 75 (fallthrough)
+branch  3 taken 0 (throw)
+       75:   38-block  1
+call    4 returned 75
+call    5 returned 75
+branch  6 taken 17 (fallthrough)
+branch  7 taken 58
+       17:   39:            return i;
+       17:   39-block  0
+        -:   40:        }
+        -:   41:    }
+       61:   42:    return -1;
+       61:   42-block  0
+        -:   43:}
+        -:   44:
+function _ZN10Repository11deleteEventENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 7 returned 100% blocks executed 71%
+        7:   45:int Repository::deleteEvent(string title) {
+        7:   46:    int pos = checkExistance(title);
+        7:   46-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   46-block  1
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        7:   46-block  2
+call    6 returned 7
+    $$$$$:   46-block  3
+call    7 never executed
+    $$$$$:   46-block  4
+call    8 never executed
+        7:   47:    if(pos != -1) {
+branch  0 taken 3 (fallthrough)
+branch  1 taken 4
+        3:   48:        this->elements.erase(this->elements.begin() + pos);
+        3:   48-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   48-block  1
+    $$$$$:   48-block  2
+        3:   49:        return 0;
+        3:   49-block  0
+        -:   50:    }
+        -:   51:    else
+        4:   52:        return 1;
+        4:   52-block  0
+        -:   53:}
+        -:   54:
+function _ZN10Repository17updateEventStringENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_i called 11 returned 100% blocks executed 61%
+       11:   55:int Repository::updateEventString(string title, string newText, int command) {
+       11:   56:    int position = checkExistance(title);
+       11:   56-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0 (throw)
+       11:   56-block  1
+call    3 returned 11
+branch  4 taken 11 (fallthrough)
+branch  5 taken 0 (throw)
+       11:   56-block  2
+call    6 returned 11
+    $$$$$:   56-block  3
+call    7 never executed
+    $$$$$:   56-block  4
+call    8 never executed
+       11:   57:    if(position != -1) {
+branch  0 taken 6 (fallthrough)
+branch  1 taken 5
+        6:   58:        if (command == 1) {
+        6:   58-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 4
+        2:   59:            string description = elements[position].getDescription();
+        2:   59-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   60:            Date date = elements[position].getDate();
+        2:   60-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   61:            int time = elements[position].getTime();
+        2:   61-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   62:            int attandance = elements[position].getAttendance();
+        2:   62-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   63:            string link = elements[position].getLink();
+        2:   63-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   64:            Event e(newText, description, date, time, attandance,link);
+        2:   64-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   64-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   64-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   64-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   64-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:   64-block  5
+call   15 never executed
+    $$$$$:   64-block  6
+    $$$$$:   64-block  7
+call   16 never executed
+    $$$$$:   64-block  8
+    $$$$$:   64-block  9
+call   17 never executed
+    $$$$$:   64-block 10
+        2:   65:            this->elements[position] = e;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   66:            return 0;
+        2:   67:        }
+        2:   67-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+    $$$$$:   67-block  1
+call    3 never executed
+    $$$$$:   67-block  2
+call    4 never executed
+    $$$$$:   67-block  3
+call    5 never executed
+        4:   68:        if (command == 2) {
+        4:   68-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 2
+        2:   69:            Date date = elements[position].getDate();
+        2:   69-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   70:            int time = elements[position].getTime();
+        2:   70-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   71:            int attandance = elements[position].getAttendance();
+        2:   71-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   72:            string link = elements[position].getLink();
+        2:   72-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   73:            Event e(title, newText, date, time, attandance, link);
+        2:   73-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   73-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   73-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   73-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   73-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:   73-block  5
+call   15 never executed
+    $$$$$:   73-block  6
+    $$$$$:   73-block  7
+call   16 never executed
+    $$$$$:   73-block  8
+    $$$$$:   73-block  9
+call   17 never executed
+    $$$$$:   73-block 10
+        2:   74:            this->elements[position] = e;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   75:            return 0;
+        2:   76:        }
+        2:   76-block  0
+call    0 returned 2
+call    1 returned 2
+    $$$$$:   76-block  1
+call    2 never executed
+    $$$$$:   76-block  2
+call    3 never executed
+        -:   77:
+        2:   78:        if (command == 6) {
+        2:   78-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   79:            string description = elements[position].getDescription();
+        2:   79-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   80:            Date date = elements[position].getDate();
+        2:   80-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   81:            int time = elements[position].getTime();
+        2:   81-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   82:            int attandance = elements[position].getAttendance();
+        2:   82-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   83:            Event e(title, description, date, time, attandance,newText);
+        2:   83-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   83-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   83-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   83-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   83-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:   83-block  5
+call   15 never executed
+    $$$$$:   83-block  6
+    $$$$$:   83-block  7
+call   16 never executed
+    $$$$$:   83-block  8
+    $$$$$:   83-block  9
+call   17 never executed
+    $$$$$:   83-block 10
+        2:   84:            this->elements[position] = e;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   85:            return 0;
+        2:   86:        }
+        2:   86-block  0
+call    0 returned 2
+call    1 returned 2
+    $$$$$:   86-block  1
+call    2 never executed
+    $$$$$:   86-block  2
+call    3 never executed
+        -:   87:
+        -:   88:    }
+        5:   89:    return 1;
+        5:   89-block  0
+        -:   90:}
+        -:   91:
+function _ZN10Repository14updateEventIntENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii called 13 returned 100% blocks executed 60%
+       13:   92:int Repository::updateEventInt(string title, int newInt, int command) {
+       13:   93:    int pos = checkExistance(title);
+       13:   93-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   93-block  1
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0 (throw)
+       13:   93-block  2
+call    6 returned 13
+    $$$$$:   93-block  3
+call    7 never executed
+    $$$$$:   93-block  4
+call    8 never executed
+       13:   94:    if(pos != -1) {
+branch  0 taken 4 (fallthrough)
+branch  1 taken 9
+        4:   95:        if (command == 4) {
+        4:   95-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 2
+        2:   96:            string description = elements[pos].getDescription();
+        2:   96-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   97:            Date date = elements[pos].getDate();
+        2:   97-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   98:            int attandance = elements[pos].getAttendance();
+        2:   98-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   99:            string link = elements[pos].getLink();
+        2:   99-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  100:            Event e(title, description, date, newInt, attandance, link);
+        2:  100-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  100-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  100-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:  100-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:  100-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:  100-block  5
+call   15 never executed
+    $$$$$:  100-block  6
+    $$$$$:  100-block  7
+call   16 never executed
+    $$$$$:  100-block  8
+    $$$$$:  100-block  9
+call   17 never executed
+    $$$$$:  100-block 10
+        2:  101:            elements[pos] = e;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  102:            return 0;
+        2:  103:        }
+        2:  103-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+    $$$$$:  103-block  1
+call    3 never executed
+    $$$$$:  103-block  2
+call    4 never executed
+    $$$$$:  103-block  3
+call    5 never executed
+        2:  104:        if (command == 5) {
+        2:  104-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:  105:            string description = elements[pos].getDescription();
+        2:  105-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  106:            Date date = elements[pos].getDate();
+        2:  106-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  107:            int time = elements[pos].getTime();
+        2:  107-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  108:            string link = elements[pos].getLink();
+        2:  108-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  109:            Event e(title, description, date, time, newInt, link);
+        2:  109-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  109-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  109-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:  109-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:  109-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:  109-block  5
+call   15 never executed
+    $$$$$:  109-block  6
+    $$$$$:  109-block  7
+call   16 never executed
+    $$$$$:  109-block  8
+    $$$$$:  109-block  9
+call   17 never executed
+    $$$$$:  109-block 10
+        2:  110:            elements[pos] = e;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  111:            return 0;
+        2:  112:        }
+        2:  112-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+    $$$$$:  112-block  1
+call    3 never executed
+    $$$$$:  112-block  2
+call    4 never executed
+    $$$$$:  112-block  3
+call    5 never executed
+        -:  113:    }
+        9:  114:    return 1;
+        9:  114-block  0
+        -:  115:}
+        -:  116:
+function _ZN10Repository15updateEventDateENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiii called 5 returned 100% blocks executed 62%
+        5:  117:int Repository::updateEventDate(string title, int day, int month, int year) {
+        5:  118:    int pos = checkExistance(title);
+        5:  118-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+        5:  118-block  1
+call    3 returned 5
+branch  4 taken 5 (fallthrough)
+branch  5 taken 0 (throw)
+        5:  118-block  2
+call    6 returned 5
+    $$$$$:  118-block  3
+call    7 never executed
+    $$$$$:  118-block  4
+call    8 never executed
+        5:  119:    if(pos != -1) {
+branch  0 taken 2 (fallthrough)
+branch  1 taken 3
+        2:  120:        Date date(day, month, year);
+        2:  120-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  121:        string description = elements[pos].getDescription();
+        2:  121-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  122:        int time = elements[pos].getTime();
+        2:  122-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  123:        int attendance = elements[pos].getAttendance();
+        2:  123-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  124:        string link = elements[pos].getLink();
+        2:  124-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  125:        Event e(title, description, date, time, attendance, link);
+        2:  125-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  125-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  125-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:  125-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:  125-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:  125-block  5
+call   15 never executed
+    $$$$$:  125-block  6
+    $$$$$:  125-block  7
+call   16 never executed
+    $$$$$:  125-block  8
+    $$$$$:  125-block  9
+call   17 never executed
+    $$$$$:  125-block 10
+        2:  126:        elements[pos] = e;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  127:        return 0;
+        2:  128:    }
+        2:  128-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+    $$$$$:  128-block  1
+call    3 never executed
+    $$$$$:  128-block  2
+call    4 never executed
+    $$$$$:  128-block  3
+call    5 never executed
+        3:  129:    return 1;
+        3:  129-block  0
+        -:  130:}
+        -:  131:
+        -:  132://Repository::~Repository() {
+        -:  133://    delete this->events;
+        -:  134://}

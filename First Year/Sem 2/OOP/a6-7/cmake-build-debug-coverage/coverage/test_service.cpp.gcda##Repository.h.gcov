@@ -1,0 +1,80 @@
+        -:    0:Source:F:/c projects uni/assignment_6_7/Repository/Repository.h
+        -:    0:Graph:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Tests\test_service.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Tests\test_service.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#ifndef REPOSITORY_H
+        -:    3:#define REPOSITORY_H
+        -:    4:#pragma once
+        -:    5:#include "../DynamicArray.h"
+        -:    6:#include "../Domain/Event.h"
+        -:    7:#include <vector>
+        -:    8:
+        -:    9:class Repository {
+        -:   10:
+        -:   11:    //TODO STL
+        -:   12:    protected:
+        -:   13:        vector<Event> elements;
+        -:   14:public:
+        -:   15:
+        -:   16:    //Constructor
+        -:   17:    Repository();
+        -:   18:
+        -:   19:    virtual const vector<Event>& getDynArr();
+        -:   20:
+        -:   21:    //Returns the size of the repository
+        -:   22:    virtual int getSize();
+        -:   23:
+        -:   24:    //Declares a few inputs and adds them to the repo
+        -:   25:    void initRepo();
+        -:   26:
+        -:   27:    //adds elements to repo
+        -:   28:    //params:
+        -:   29:    //title - the title of the event (one word)
+        -:   30:    //description - the description of the event (one word)
+        -:   31:    //date - the date of the event
+        -:   32:    //time - the time of the event (between 0-24)
+        -:   33:    //attendance - nb of people attending
+        -:   34:    //link -  a link to the event
+        -:   35:    virtual int addRepo(string title, string description, Date date, int time, int attendance, string link);
+        -:   36:
+        -:   37:    //checks if a certain event has already been registered, if yes, it doesnt add it again
+        -:   38:    //unique id: title
+        -:   39:    virtual int checkExistance(string title);
+        -:   40:    //deletes an event based on the title
+        -:   41:    virtual int deleteEvent(string title);
+        -:   42:    //updates the string parts of the event struct (title, desc, link)
+        -:   43:    // title - the title of the event we want to change
+        -:   44:    //newText - the text we replace it with
+        -:   45:    //command - what to replace
+        -:   46:    virtual int updateEventString(string title, string newText, int command);
+        -:   47:    //updates the int parts of the event struct (time, attendance)
+        -:   48:    // title - the title of the event we want to change
+        -:   49:    //newInt - the int we replace it with
+        -:   50:    //command - what to replace
+        -:   51:    virtual int updateEventInt(string title, int newInt, int command);
+        -:   52:    //updates the Date part of the event struct
+        -:   53:    // title - the title of the event we want to change
+        -:   54:    // day - new day
+        -:   55:    // month - new month
+        -:   56:    // year - new year
+        -:   57:    virtual int updateEventDate(string title, int day, int month, int year);
+        -:   58:
+        -:   59:    //make repo iterable
+        -:   60:    Event& operator [] (int index) {
+        -:   61:        //for dyn arr
+        -:   62:        // return (*this->events)[index];
+        -:   63:
+        -:   64:        //TODO STL VECTOR
+        -:   65:        return this->elements[index];
+        -:   66:    }
+        -:   67:    //destructor
+function _ZN10RepositoryD1Ev called 0 returned 0% blocks executed 0%
+    #####:   68:    virtual ~Repository() = default;
+    %%%%%:   68-block  0
+call    0 never executed
+        -:   69:    // ~Repository();
+        -:   70:};
+        -:   71:
+        -:   72:
+        -:   73:#endif //REPOSITORY_H

@@ -1,0 +1,5 @@
+F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/CMakeFiles/OOP_PracticeT3Character.dir
+F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/CMakeFiles/OOP_PracticeT3Character_autogen_timestamp_deps.dir
+F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/CMakeFiles/OOP_PracticeT3Character_autogen.dir

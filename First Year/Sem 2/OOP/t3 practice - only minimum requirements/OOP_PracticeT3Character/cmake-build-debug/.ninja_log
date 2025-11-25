@@ -1,0 +1,12 @@
+# ninja log v6
+39	220	7703113198155201	F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/OOP_PracticeT3Character_autogen/mocs_compilation.cpp	794dacb7bcef984a
+39	220	7703113198155201	OOP_PracticeT3Character_autogen/timestamp	794dacb7bcef984a
+221	1084	7703113199984488	CMakeFiles/OOP_PracticeT3Character.dir/Domain/Pizza.cpp.obj	a34c7e093aa86c5c
+419	6714	7703111958899438	CMakeFiles/OOP_PracticeT3Character.dir/main.cpp.obj	dd96fc93e5bd993d
+39	220	7703113198155201	F:/c projects uni/OOP_PracticeT3Character/cmake-build-debug/OOP_PracticeT3Character_autogen/timestamp	794dacb7bcef984a
+39	220	7703113198155201	OOP_PracticeT3Character_autogen/mocs_compilation.cpp	794dacb7bcef984a
+414	503	7703111958849477	CMakeFiles/OOP_PracticeT3Character.dir/OOP_PracticeT3Character_autogen/mocs_compilation.cpp.obj	8f8bec3fb5bbb56
+104	1408	7703119309432370	build.ninja	b14dc709870944f3
+651	2012	7703112493236438	CMakeFiles/OOP_PracticeT3Character.dir/Repository/Repository.cpp.obj	914e3ecb0a834443
+643	5562	7703112493151601	CMakeFiles/OOP_PracticeT3Character.dir/GUI/GUI.cpp.obj	cc14029e1f201a
+1084	1736	7703113208612995	OOP_PracticeT3Character.exe	7a8240da23707c4

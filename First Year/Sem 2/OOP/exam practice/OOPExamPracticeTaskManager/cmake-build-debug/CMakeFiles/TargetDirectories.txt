@@ -1,0 +1,5 @@
+F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/CMakeFiles/OOPExamPracticeTaskManager.dir
+F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/CMakeFiles/OOPExamPracticeTaskManager_autogen_timestamp_deps.dir
+F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/CMakeFiles/OOPExamPracticeTaskManager_autogen.dir

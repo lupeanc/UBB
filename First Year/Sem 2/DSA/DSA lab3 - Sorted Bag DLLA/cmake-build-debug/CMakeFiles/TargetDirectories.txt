@@ -1,0 +1,3 @@
+F:/c projects uni/DSA lab3 - Sorted Bag DLLA/cmake-build-debug/CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir
+F:/c projects uni/DSA lab3 - Sorted Bag DLLA/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/DSA lab3 - Sorted Bag DLLA/cmake-build-debug/CMakeFiles/rebuild_cache.dir

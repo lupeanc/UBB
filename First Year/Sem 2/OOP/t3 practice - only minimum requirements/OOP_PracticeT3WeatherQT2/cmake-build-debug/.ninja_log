@@ -1,0 +1,23 @@
+# ninja log v6
+200	5474	7702429507031697	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/main.cpp.obj	7ba01acd66fce944
+54	226	7702429771911749	F:/c projects uni/OOP_PracticeT3WeatherQT2/cmake-build-debug/OOP_PracticeT3WeatherQT2_autogen/mocs_compilation.cpp	93c5bb8f8d8d6f59
+228	1168	7702429773660341	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/Domain/weather.cpp.obj	90e2c3b990d709e9
+54	226	7702429771911749	F:/c projects uni/OOP_PracticeT3WeatherQT2/cmake-build-debug/OOP_PracticeT3WeatherQT2_autogen/timestamp	93c5bb8f8d8d6f59
+54	226	7702429771911749	OOP_PracticeT3WeatherQT2_autogen/timestamp	93c5bb8f8d8d6f59
+88	1217	7702441804403119	build.ninja	6e14ac7be62452dc
+539	1606	7702417206677963	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/Domain/Weather.cpp.obj	a4798f1b500cee7f
+54	226	7702429771911749	OOP_PracticeT3WeatherQT2_autogen/mocs_compilation.cpp	93c5bb8f8d8d6f59
+408	506	7702416794471838	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/OOP_PracticeT3WeatherQT2_autogen/mocs_compilation.cpp.obj	51fdbdb14ae73e40
+209	1377	7702429507135368	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/Repository/Repository.cpp.obj	f9bc994a5a0b0f85
+205	5595	7702429507085336	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/GUI/GUI.cpp.obj	cb3f296797b65eeb
+1168	1793	7702429783057371	OOP_PracticeT3WeatherQT2.exe	799d0e4f5d1c0b26
+41	1139	7702441804403119	build.ninja	6e14ac7be62452dc
+59	231	7702441806264062	OOP_PracticeT3WeatherQT2_autogen/timestamp	93c5bb8f8d8d6f59
+59	231	7702441806264062	OOP_PracticeT3WeatherQT2_autogen/mocs_compilation.cpp	93c5bb8f8d8d6f59
+59	231	7702441806264062	F:/c projects uni/OOP_PracticeT3WeatherQT2/cmake-build-debug/OOP_PracticeT3WeatherQT2_autogen/timestamp	93c5bb8f8d8d6f59
+59	231	7702441806264062	F:/c projects uni/OOP_PracticeT3WeatherQT2/cmake-build-debug/OOP_PracticeT3WeatherQT2_autogen/mocs_compilation.cpp	93c5bb8f8d8d6f59
+237	1464	7702441808048916	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/Domain/Weather.cpp.obj	a4798f1b500cee7f
+247	1660	7702441808150677	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/Repository/Repository.cpp.obj	f9bc994a5a0b0f85
+232	12213	7702441807998523	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/main.cpp.obj	7ba01acd66fce944
+242	12427	7702441808099573	CMakeFiles/OOP_PracticeT3WeatherQT2.dir/GUI/GUI.cpp.obj	cb3f296797b65eeb
+12427	13351	7702441929952079	OOP_PracticeT3WeatherQT2.exe	b36197b444aa77a2

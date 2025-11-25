@@ -1,0 +1,5 @@
+F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/CMakeFiles/OOPExamPracticeDriveConnect.dir
+F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/CMakeFiles/OOPExamPracticeDriveConnect_autogen_timestamp_deps.dir
+F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/CMakeFiles/OOPExamPracticeDriveConnect_autogen.dir

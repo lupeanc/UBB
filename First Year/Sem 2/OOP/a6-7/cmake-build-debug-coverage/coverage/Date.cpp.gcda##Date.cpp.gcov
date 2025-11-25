@@ -1,0 +1,94 @@
+        -:    0:Source:F:/c projects uni/assignment_6_7/Domain/Date.cpp
+        -:    0:Graph:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Domain\Date.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Domain\Date.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Date.h"
+        -:    2:
+function _ZN4DateC2Ev called 121 returned 100% blocks executed 100%
+      121:    3:Date::Date(){}
+function _ZN4DateC2Eiii called 91 returned 100% blocks executed 100%
+       91:    4:Date::Date(int newDay, int newMonth, int newYear){
+       91:    5:  this->day = newDay;
+       91:    6:  this->month = newMonth;
+       91:    7:  this->year = newYear;
+       91:    8:}
+        -:    9:
+function _ZN4Date6getDayEv called 3 returned 100% blocks executed 100%
+        3:   10:const int Date::getDay(){
+        3:   11:  return this->day;
+        3:   11-block  0
+        -:   12:}
+function _ZN4Date8getMonthEv called 3 returned 100% blocks executed 100%
+        3:   13:const int Date::getMonth(){
+        3:   14:  return this->month;
+        3:   14-block  0
+        -:   15:}
+function _ZN4Date7getYearEv called 3 returned 100% blocks executed 100%
+        3:   16:const int Date::getYear(){
+        3:   17:  return this->year;
+        3:   17-block  0
+        -:   18:}
+        -:   19:
+function _ZN4Date6setDayEi called 1 returned 100% blocks executed 100%
+        1:   20:void Date::setDay(int newDay){
+        1:   21:  this->day = newDay;
+        1:   22:}
+function _ZN4Date8setMonthEi called 1 returned 100% blocks executed 100%
+        1:   23:void Date::setMonth(int newMonth){
+        1:   24:  this->month = newMonth;
+        1:   25:}
+function _ZN4Date7setYearEi called 1 returned 100% blocks executed 100%
+        1:   26:void Date::setYear(int newYear){
+        1:   27:  this->year = newYear;
+        1:   28:}
+        -:   29:
+function _ZN4Date8toStringB5cxx11Ev called 2 returned 100% blocks executed 60%
+        2:   30:const string Date::toString() {
+        2:   31:  string dateString;
+        2:   31-block  0
+call    0 returned 2
+        2:   32:  dateString += std::to_string(this->day);
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   32-block  0
+call    4 returned 2
+    $$$$$:   32-block  1
+call    5 never executed
+    $$$$$:   32-block  2
+        2:   33:  dateString += ".";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   34:  dateString += std::to_string(this->month);
+        2:   34-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   34-block  1
+call    4 returned 2
+    $$$$$:   34-block  2
+call    5 never executed
+    $$$$$:   34-block  3
+        2:   35:  dateString += ".";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   36:  dateString += std::to_string(this->year);
+        2:   36-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   36-block  1
+call    4 returned 2
+    $$$$$:   36-block  2
+call    5 never executed
+    $$$$$:   36-block  3
+        2:   37:  return dateString;
+        2:   37-block  0
+    =====:   38:}
+    $$$$$:   38-block  0
+call    0 never executed
