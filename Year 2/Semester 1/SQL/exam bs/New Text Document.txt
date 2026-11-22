@@ -1,0 +1,134 @@
+use Trains
+go
+
+drop table routestations
+drop table train
+drop table traintype
+drop table station
+drop table route
+
+
+create table traintype (
+	id int primary key identity,
+	name varchar(10),
+	descr varchar(100)
+)
+
+create table train(
+	id int primary key identity,
+	tid int references traintype(id),
+	name varchar(10)
+)
+
+create table station(
+	id int primary key identity,
+	name varchar(100)
+)
+
+
+create table route(
+	id int primary key identity,
+	tid int references train(id),
+	name varchar(100),
+	
+)
+
+-- list => tabel de legatura
+create table routestations(
+sid int references station(id),
+	rid int references route(id),
+	a time,
+	d time,
+	primary key(sid, rid)
+)
+
+-- inserting some data
+
+
+insert into traintype values
+('A',null),
+('B',null),
+('C',null);
+
+insert into train(tid,name) values
+(1,'TA'),
+(2,'TB'),
+(3,'TC'),
+(1,'TA2');
+
+insert into station values
+('S1'),
+('S2'),
+('S3');
+
+insert into route values
+(1,'R1'),
+(2,'R2'),
+(3,'R3'),
+(4,'R4'),
+(1,'R5'),
+(1,'R6'),
+(2,'R7');
+
+insert into routestations values
+(1,1,'5:10','5:30'),
+(2,1,'5:10','6:10'),
+(3,1,'6:10','7:10'),
+(2,2,'6:10','6:40'),
+(3,3,'10:20','10:40');
+
+-- 2
+go
+create or alter procedure addupdateroute(@rname varchar(10), @sname varchar(10), @a time, @d time)
+as
+	begin
+		declare @sid int = (select id from station where name = @sname)
+		declare @rid int = (select id from route where name = @rname)
+
+		if not exists (select * from route where name = @rname)
+		begin
+			raiserror('no such route', 16,1)
+			return -1
+		end
+
+		if not exists (select * from station where name = @sname)
+		begin
+			raiserror('no such station', 16,1)
+			return -1
+		end
+
+		if exists (select * from routestations rs where rs.rid = @rid and rs.sid = @sid)
+		begin
+			update routestations
+			set a=@a, d=@d
+			where sid=@sid and rid=@rid
+		end
+
+		if not exists (select * from routestations rs where rs.rid = @rid and rs.sid = @sid)
+		begin
+			insert into routestations(rid,sid,a,d) values (@rid, @sid, @a, @d)
+		end
+	end
+
+go
+exec addupdateroute 'R1001','S1','6:10','6:15'
+select * from routestations
+
+exec addupdateroute 'R1', 'S1', '1:00', '2:00'
+select * from routestations
+
+exec addupdateroute 'R6','S1', '1:00', '2:00'
+select * from routestations
+
+-- 3
+go
+create or alter view showroutes
+as
+	select r.name as name
+	from route r inner join routestations rs on r.id = rs.rid
+	--where rs.rid=r.id
+	group by r.name
+	having count(rs.sid) = (select distinct count(id) from station)
+go
+
+select * from showroutes

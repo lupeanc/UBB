@@ -1,0 +1,13 @@
+# ninja log v6
+5	560	7684138926367487	CMakeFiles/OOP_PracticeT2HospitalDep.dir/main.cpp.obj	2f912c4d5faabb3c
+31	663	7684139233993969	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Department.cpp.obj	cc80b6d5d8db835a
+25	767	7684139233933964	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Console.cpp.obj	6196e67cb772b6fe
+12	298	7684177064235677	build.ninja	efd20c75881e73c3
+17	570	7684140348471228	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Surgery.cpp.obj	e875390e72b7012d
+13	559	7684140348430653	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Natal.cpp.obj	56bc97477c5c47f7
+28	775	7684139233963979	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Controller.cpp.obj	c61b25e70693eecb
+570	703	7684140354003190	OOP_PracticeT2HospitalDep.exe	6a2bc03a60b89cac
+28	607	7684190236468402	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Natal.cpp.obj	56bc97477c5c47f7
+22	622	7684190236408686	CMakeFiles/OOP_PracticeT2HospitalDep.dir/main.cpp.obj	2f912c4d5faabb3c
+26	705	7684190236448402	CMakeFiles/OOP_PracticeT2HospitalDep.dir/Console.cpp.obj	6196e67cb772b6fe
+705	836	7684190243246149	OOP_PracticeT2HospitalDep.exe	6a2bc03a60b89cac

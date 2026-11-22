@@ -1,0 +1,5 @@
+F:/c projects uni/OOPExamPracticePatientManagement/cmake-build-debug/CMakeFiles/OOPExamPracticePatientManagement.dir
+F:/c projects uni/OOPExamPracticePatientManagement/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOPExamPracticePatientManagement/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOPExamPracticePatientManagement/cmake-build-debug/CMakeFiles/OOPExamPracticePatientManagement_autogen_timestamp_deps.dir
+F:/c projects uni/OOPExamPracticePatientManagement/cmake-build-debug/CMakeFiles/OOPExamPracticePatientManagement_autogen.dir

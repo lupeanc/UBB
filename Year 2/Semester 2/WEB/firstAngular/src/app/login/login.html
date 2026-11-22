@@ -1,0 +1,14 @@
+<div class="login">
+    <h3>Log In before continuing!</h3>
+    <br>
+    <div style="width:100%; place-items:center; text-align:center">
+        <form (submit)="$event.preventDefault()">
+            <input id="username" type="text" #username placeholder="username">
+            <input id="password" type="password" #password placeholder="password">
+        </form>
+
+        <button id="loginButton" (click)="login(username, password)">Log in</button>
+    </div>
+
+</div>
+

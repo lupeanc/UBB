@@ -1,0 +1,27 @@
+// IF U WANT TO USE ANYTHING FROM A FETCH,
+// FETHC EVERYTHING IN USEEFFECT!!!
+// OTHERWISE, POOPY TIMING
+
+
+ex:
+fetch(
+      `http://localhost:8000/controller/Controller.php?action=getIngredients`,
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+        setIngredients(result);
+
+        steps.forEach((step) => {
+          step.ingredientList.forEach((i) => {
+            // RESULT INSTEAD OF ingredients!!!
+            result.forEach((ing) => {
+              if (ing.name == i) {
+                cals += ing.caloriesPer100g;
+              }
+            });
+          });
+        });
+
+        setCalories(cals);
+      });

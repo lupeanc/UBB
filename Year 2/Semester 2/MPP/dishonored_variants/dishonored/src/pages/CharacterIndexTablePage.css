@@ -1,0 +1,29 @@
+.main-div-character-index-table-page {
+    margin-top:10px;
+    text-align: center;
+    place-items: center;
+    /* display: block; */
+    /* display: flexbox; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.save-character-index-table-div {
+    width:100%;
+    text-align: right;
+}
+
+.save-character-index-table {
+    /* float:left; */
+    margin: 20px;
+    font-size: 14px;
+    background-color: rgb(27, 27, 32);
+    color:white;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+
+.save-character-index-table:hover {
+    background-color: rgb(34, 36, 53)
+}

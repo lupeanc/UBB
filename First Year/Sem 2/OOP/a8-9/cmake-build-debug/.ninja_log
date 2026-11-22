@@ -1,0 +1,51 @@
+# ninja log v6
+70	4251	7693657676750030	build.ninja	2a253ec0f21865e1
+43	237	7695330079977174	assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+345	1495	7692633884893393	CMakeFiles/assignment8_9.dir/Domain/Date.cpp.obj	a0bb678b50ccedfb
+43	237	7695330079977174	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+43	237	7695330079977174	assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+43	237	7695330079977174	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+317	5964	7695310496309235	CMakeFiles/assignment8_9.dir/AdminGUI/AdminGUI.cpp.obj	b7d8484ff01f3f0c
+2668	8639	7693825145585053	CMakeFiles/assignment8_9.dir/main.cpp.obj	f6a64647fab8a3bd
+2665	8681	7693825145544609	CMakeFiles/assignment8_9.dir/assignment8_9_autogen/mocs_compilation.cpp.obj	1b6dd4fe40b190a2
+358	1657	7692633885013357	CMakeFiles/assignment8_9.dir/Exceptions/Exceptions.cpp.obj	6281937ddeb5850c
+330	1691	7692633884733354	CMakeFiles/assignment8_9.dir/AbstractEventsList/AbstractEventsList.cpp.obj	7d8e253e9dad7dc
+391	3495	7693807380759811	CMakeFiles/assignment8_9.dir/CSVRepository/CSVRepository.cpp.obj	ca5039687d375dcb
+351	1718	7692633884953353	CMakeFiles/assignment8_9.dir/Domain/Event.cpp.obj	debfb9ff0ed0a76f
+265	396	7692634200863141	CMakeFiles/assignment8_9.dir/Tests/test_domain.cpp.obj	c420b4552b3e6f94
+241	5346	7695330081959148	CMakeFiles/assignment8_9.dir/UserGUI/UserGUI.cpp.obj	be7047128c195aa9
+312	418	7692634201343664	CMakeFiles/assignment8_9.dir/Tests/test_repo.cpp.obj	7b38254dcaf427a
+306	427	7692634201283688	CMakeFiles/assignment8_9.dir/Tests/test_dyn_arr.cpp.obj	7852619285cb882e
+396	497	7692634202183664	CMakeFiles/assignment8_9.dir/Tests/test_service.cpp.obj	d8bc09258339ca64
+418	513	7692634202403671	CMakeFiles/assignment8_9.dir/Tests/test_validation.cpp.obj	407fc79605877f77
+253	1436	7692634200743144	CMakeFiles/assignment8_9.dir/Validator/Validator.cpp.obj	ab41aca2efe4a404
+238	5299	7695330081929033	CMakeFiles/assignment8_9.dir/GUI/GUI.cpp.obj	ab885ba5b72917f8
+2682	5268	7693825145715060	CMakeFiles/assignment8_9.dir/Service/Service.cpp.obj	d88699e26dfc07c3
+248	1743	7692634200693182	CMakeFiles/assignment8_9.dir/Repository/Repository.cpp.obj	945c057c58198bd1
+238	1924	7692634200593138	CMakeFiles/assignment8_9.dir/FileRepository/FileRepository.cpp.obj	4b1fcf020633cab4
+321	3884	7693806482963812	CMakeFiles/assignment8_9.dir/HTMLRepository/HTMLRepository.cpp.obj	83248248c7c5bd22
+2675	5423	7693825145645088	CMakeFiles/assignment8_9.dir/Console/Console.cpp.obj	d712346c25392d1d
+5964	7121	7695310552773972	assignment8_9.exe	a7820b6efb3d8fbc
+33	203	7695330287014082	assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+33	203	7695330287014082	assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+33	203	7695330287014082	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+33	203	7695330287014082	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+204	5140	7695330288718154	CMakeFiles/assignment8_9.dir/GUI/GUI.cpp.obj	ab885ba5b72917f8
+30	202	7695330436698367	assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+30	202	7695330436698367	assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+30	202	7695330436698367	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+30	202	7695330436698367	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+203	4849	7695330438427789	CMakeFiles/assignment8_9.dir/UserGUI/UserGUI.cpp.obj	be7047128c195aa9
+4849	6832	7695330484886758	assignment8_9.exe	a7820b6efb3d8fbc
+30	198	7695330820881672	assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+30	198	7695330820881672	assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+30	198	7695330820881672	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+30	198	7695330820881672	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+199	4866	7695330822566926	CMakeFiles/assignment8_9.dir/UserGUI/UserGUI.cpp.obj	be7047128c195aa9
+4866	5425	7695330869248466	assignment8_9.exe	a7820b6efb3d8fbc
+34	202	7695330970672305	assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+34	202	7695330970672305	assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+34	202	7695330970672305	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/timestamp	16ed95a28c1e79ff
+34	202	7695330970672305	F:/c projects uni/assignment8-9/cmake-build-debug/assignment8_9_autogen/mocs_compilation.cpp	16ed95a28c1e79ff
+202	4888	7695330972351721	CMakeFiles/assignment8_9.dir/UserGUI/UserGUI.cpp.obj	be7047128c195aa9
+4888	5436	7695331019214491	assignment8_9.exe	a7820b6efb3d8fbc

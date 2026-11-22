@@ -1,0 +1,98 @@
+(defun g (l)
+    (list (car l) (car l))
+)
+
+(setq q 'g)
+(setq p 'q)
+(funcall (eval p) '(A B C))
+
+; (format t "~s" (funcall (eval p) '(A B C)))
+
+;NU MERE
+
+(defun multiply (l prevNode)
+    (cond
+        ((and (numberp l) (numberp prevNode))
+            (* l prevNode)        
+        )
+        ((and (numberp l) (atom prevNode))
+            (* l l)
+        )
+        ((atom l)
+            l
+        )
+        (t
+            (mapcar #'(lambda (a) (multiply a l)) l)
+        )
+    )
+)
+
+(format t "~s" (multiply '(1(2)(3(4(5)))) 1))
+
+
+f([],-1).
+f([H|T], S):-
+    f(T,S1),
+    (   S1>0 ->  S is S1+H
+    	;   S is S1
+    ).
+
+f2([],-1).
+f1([H|T], S):-
+    f2(T,S1),
+    aux(S1,H,S).
+
+aux(S1,H,S):-
+    S1>0,
+    S is S1+H.
+aux(S1,_,S1).
+
+% ------------------------------
+
+g([],[]).
+g([_|T],S):-!,g(T,S).
+g([H|T],[H|S]):- H mod 2=:=0, g(T,S).
+
+% ---------------------------------
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+perm([],[]).
+perm([H|T], R):-
+    perm(T,R1),
+    insert(H,R1,R).
+
+createList(N,N,[N]).
+createList(I,N,[I|R]):-
+    NewI is I+1,
+    createList(NewI,N,R).
+
+absDif(A,B,R):-
+    A>=B,
+    R is A-B.
+absDif(A,B,R):-
+    B>A,
+    R is B-A.
+
+checkAbsDif([H1,H2]):-
+    absDif(H1,H2,R),
+    R =< 2.
+checkAbsDif([H1,H2|T]):-
+    absDif(H1,H2,D),
+    D=<2,
+    checkAbsDif([H2|T]).
+
+oneSol(L, R):-
+    perm(L,R),
+    checkAbsDif(L).
+
+allSols(N,R):-
+    M is N*2-1,
+    createList(N,M,L),
+    findall(Perms, oneSol(L,Perms), R).
+
+
+
+
+

@@ -1,0 +1,82 @@
+; A. Fie următoarea definiţie de funcţie ȋn LISP
+
+
+(defun F(L)
+  (cond
+    ((atom L) -1)
+    ((> (F (car L)) 0) (+ (car L) (F (car L)) (F (cdr L))))
+    (t (F (cdr L)))
+  )
+)
+
+
+; Rescrieți această definiție pentru a evita dublul apel recursiv
+;(F (CAR L))
+
+(defun F2(L)
+    (cond
+        ((atom L) -1)
+        (t
+            (   (lambda (a)
+                    (cond
+                        ((> a 0)
+                            (+ (car L) a (F (cdr L)))
+                        )
+                        (t
+                            (F(cdr L))
+                        )
+                    )
+                )
+
+                (F(car L))
+            )
+        )
+    )
+)
+
+% B. Să se scrie un program PROLOG care generează lista submulţimilor cu valori din
+% intervalul [a, b], având număr par de elemente pare și număr impar de elemente impare.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru a=2 și b=4 ⇒ [[2,3,4]]
+
+createList(B,B,[B]):-!.
+createList(A,B,[A|R]):-
+    A1 is A+1,
+    createList(A1,B,R).
+
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T], R):-
+    subset(T,R).
+
+countEvenOdd([],0,0).
+countEvenOdd([H|T],E,O):-
+    countEvenOdd(T,E1,O1),
+    H mod 2 =:= 0,
+    E is E1+1,
+    O is O1.
+countEvenOdd([H|T],E,O):-
+    countEvenOdd(T,E1,O1),
+    H mod 2 =:= 1,
+    E is E1,
+    O is O1+1.
+
+checkEvenOdd(L):-
+    countEvenOdd(L,E,O),
+    E mod 2 =:= 0,
+    O mod 2 =:= 1.
+
+oneSol(L,Sub):-
+    subset(L,Sub),
+    checkEvenOdd(Sub).
+
+allSols(A,B,R):-
+    createList(A,B,L),
+    findall(Subs, oneSol(L,Subs), R).
+    
+    
+    
+    
+    
+    

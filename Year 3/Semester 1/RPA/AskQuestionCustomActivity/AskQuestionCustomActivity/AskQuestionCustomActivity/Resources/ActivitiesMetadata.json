@@ -1,0 +1,13 @@
+{
+  "resourceManagerName": "AskQuestionCustomActivity.Resources.Resources",
+  "activities": [
+    {
+      "fullName": "AskQuestionCustomActivity.ActivityTemplate",
+      "shortName": "Template",
+      "displayNameKey": "ActivityTemplate_DisplayName",
+      "descriptionKey": "ActivityTemplate_Description",
+      "categoryKey": "Templates",
+      "viewModelType": "AskQuestionCustomActivity.ViewModels.ActivityTemplateViewModel"
+    }
+  ]
+}

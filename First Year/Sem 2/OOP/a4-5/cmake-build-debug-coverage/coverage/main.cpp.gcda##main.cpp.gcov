@@ -1,0 +1,184 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/main.cpp
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\main.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:// You will be given one of the problems below to solve
+        -:    2:// The application must be implemented in C++ and use layered architecture.
+        -:    3:// Provide tests and specifications for non-trivial functions outside the UI. Test coverage must be at least 98% for all layers,
+        -:    4:// except the UI
+        -:    5:// Have at least 10 entities in your memory repository
+        -:    6://
+        -:    7:// Lectures, seminars and labs ... school in general must be taken seriously; BUT so must be your social life and leisure time. To manage the latter and be always informed about the interesting events happening in your city you will implement a software application. The application can be used in two modes: administrator and user. When the application is started, it will offer the option to choose the mode.
+        -:    8:// Administrator mode: The application will have a database which holds all the interesting events in your area.
+        -:    9:// You must be able to update the database, meaning: add a new event, delete an event and update the information of an event.
+        -:   10:// Each Event has a title, a description, a date and time, a number of people who are going and a link towards
+        -:   11:// the online resource containing the event. The administrators will also have the option to see all the events in the database.
+        -:   12:
+        -:   13:// User mode: A user can create a list with the events that he/she is interested in. The application will allow the user to:
+        -:   14:// See the events in the database for a given month (if there is no month given, see all the events, ordered chronologically), one by one. When the user chooses this option, the data of the first event (title, description, date and time, number of people who are going) is displayed, and the event is opened in the browser (e.g. Facebook event).
+        -:   15:// If the user wants to participate in the event he/she can choose to add it to his/her events list. When this happens, the number of people who are going to the event increases (for the event in the repository).
+        -:   16:// If the event seems uninteresting, the user can choose not to add it to the list and continue to the next. In this case, the information corresponding to the next event is shown, and the user is again offered the possibility to add it to his/her list. This can continue as long as the user wants, as when arriving to the end of the list of events for the given month, if the user chooses next, the application will again show the first event.
+        -:   17:// Delete an event from the list. When the user deletes an event from his/her list, the number of people who are going to the event decreases.
+        -:   18:// See the list of events the user wants to attend.
+        -:   19:
+        -:   20:#include <iostream>
+        -:   21:#include <string>
+        -:   22:#include <windows.h>
+        -:   23:#include "Repository/Repository.h"
+        -:   24:#include "DynamicArray.h"
+        -:   25:#include "Domain/Event.h"
+        -:   26:#include "Validator/Validator.h"
+        -:   27:#include "Service/Service.h"
+        -:   28:#include "Console/Console.h"
+        -:   29:#include "Tests/test_domain.h"
+        -:   30:#include "Tests/test_dyn_arr.h"
+        -:   31:#include "Tests/test_repo.h"
+        -:   32:#include "Tests/test_service.h"
+        -:   33:#include "Tests/test_validation.h"
+        -:   34:using namespace std;
+        -:   35:
+function main called 1 returned 0% blocks executed 48%
+        1:   36:int main() {
+        1:   37:    DynamicArray<Event>* adminDA = new DynamicArray<Event>(100);
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   37-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   37-block  3
+call    8 never executed
+        1:   38:    DynamicArray<Event>* userDA = new DynamicArray<Event>(100);
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   38-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   38-block  3
+call    8 never executed
+        -:   39:
+        1:   40:    Repository* adminRepo = new Repository(adminDA);
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   40-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   40-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   40-block  3
+call    8 never executed
+        1:   41:    Repository* userRepo = new Repository(userDA);
+        1:   41-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   41-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   41-block  3
+call    8 never executed
+        1:   42:    adminRepo->initRepo();
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43:    Service* service = new Service(adminRepo, userRepo);
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   43-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   43-block  3
+call    8 never executed
+        1:   44:    Validator* validator = new Validator();
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45:    Console* console = new Console(service, validator);
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   45-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   45-block  3
+call    8 never executed
+        -:   46:
+        -:   47:    testDomain D;
+        1:   48:    D.testAllDomain();
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   49:    Test_DynamicArray DA;
+        1:   50:    DA.TestAllDynamicArray();
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   51:    testRepository R;
+        1:   52:    R.testAllRepository();
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   53:    testService S;
+        1:   54:    S.testAllService();
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   55:    testValidation V;
+        1:   56:    V.testAllValidation();
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   57:
+        1:   58:    console->Start();
+        1:   58-block  0
+call    0 returned 0
+branch  1 taken 0 (fallthrough)
+branch  2 taken 0 (throw)
+    #####:   59:    delete console;
+    %%%%%:   59-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   59-block  1
+call    2 never executed
+call    3 never executed
+    #####:   60:}
+    %%%%%:   60-block  0
+    %%%%%:   60-block  1
+        -:   61:

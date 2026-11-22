@@ -1,0 +1,8 @@
+USE dbms_s6
+
+BEGIN TRAN
+UPDATE Users
+SET name='dirty'
+WHERE id=1
+WAITFOR DELAY '00:00:10'
+ROLLBACK TRAN

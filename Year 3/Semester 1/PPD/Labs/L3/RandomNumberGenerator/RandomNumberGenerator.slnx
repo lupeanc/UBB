@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="RandomNumberGenerator/RandomNumberGenerator.vcxproj" Id="55326a3c-e6f3-4df1-b4ab-fd47b703e9eb" />
+</Solution>

@@ -1,0 +1,6 @@
+@webLab8_HostAddress = http://localhost:5174
+
+GET {{webLab8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,13 @@
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\bin\Release\net6.0\AskQuestionCustomActivity.Packaging.deps.json
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\bin\Release\net6.0\AskQuestionCustomActivity.Packaging.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\bin\Release\net6.0\AskQuestionCustomActivity.Packaging.pdb
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\bin\Release\net6.0\AskQuestionCustomActivity.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\bin\Release\net6.0\AskQuestionCustomActivity.pdb
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.csproj.AssemblyReference.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.AssemblyInfoInputs.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.AssemblyInfo.cs
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuest.330D3255.Up2Date
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity.Packaging\obj\Release\net6.0\AskQuestionCustomActivity.Packaging.pdb

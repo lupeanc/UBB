@@ -1,0 +1,57 @@
+.character-table-container {
+    width: 1126px;
+    /* max-width: 100%; */
+}
+
+table {
+    border: 1px solid rgb(47, 46, 60);
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+table tr {
+    border-bottom: 1px solid rgb(47, 46, 60);
+    color:white
+}
+
+table tr th, table tr td {
+    color:white;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.action-button {
+    width:100px;
+    height:30px;
+    margin-left:3px;
+    background-color: rgb(28, 30, 44);
+    border:none;
+    border-radius: 5px;
+}
+
+.action-button:hover{
+    background-color: rgb(34, 36, 53);
+}
+
+.form-div {
+    width: 1080px;
+    padding:10px;
+    /* margin:0; */
+    text-align: center;
+    justify-content: center;
+}
+
+.form-field {
+    background-color: rgb(21, 23, 29);
+    border: 1px solid rgb(47, 46, 60);
+    border-radius: 5px;
+    padding:7px;
+    width:15%;
+    margin-right:7px;
+}
+
+input:active, input:focus {
+    outline: none;
+    border-color: rgb(74, 73, 98);
+}

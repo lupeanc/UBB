@@ -1,0 +1,64 @@
+(defun f(l)
+    (cond
+        ((atom l) -1)
+        (t
+            (   (lambda (a)
+                    (cond
+                        ((> a 0)
+                            (+ (car l) a (f(cdr l)))
+                        )
+                        (t
+                            (f (cdr l))
+                        )
+                    )
+                )
+                (f(car l))
+            )
+        )
+    )
+)
+
+
+(defun replaceEven(l)
+    (cond
+        ((and (numberp l) (equal (mod l 2)0))
+            (+ 1 l)
+        )
+        ((atom l) l)
+        (t
+            (mapcar #'(lambda(a) (replaceEven a)) l)
+        )
+    )
+)
+
+(format t "~s" (replaceEven '(1 s 4 (2 f (7))) ))
+
+
+insert(E,L,[E|L]).
+insert(E,[H|T], [H|R]):-
+    insert(E,T,R).
+
+arr([H|_], 1,[H]).
+arr([_|T], K, R):-
+    arr(T,K,R).
+arr([H|T], K, R):-
+    K>1,
+    K1 is K-1,
+    arr(T,K1,R1),
+    insert(H,R1,R).
+
+prod([],1).
+prod([H|T],P):-
+    prod(T,P1),
+    P is P1*H.
+
+checkProd(L,V):-
+    prod(L,P),
+    V>P.
+
+oneSol(L,K,V,R):-
+    arr(L,K,R),
+    checkProd(R,V).
+
+allSols(L,K,V,R):-
+    findall(A,oneSol(L,K,V,A), R).

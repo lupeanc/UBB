@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OOPExamPracticeDeliverNow",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeDeliverNow::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeDeliverNow-Debug-370be30dfd027fa9d0df.json",
+					"name" : "OOPExamPracticeDeliverNow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeDeliverNow_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeDeliverNow_autogen-Debug-e7393a84c907210a72f6.json",
+					"name" : "OOPExamPracticeDeliverNow_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeDeliverNow_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeDeliverNow_autogen_timestamp_deps-Debug-ea56e1079e9e3e7e5b18.json",
+					"name" : "OOPExamPracticeDeliverNow_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/c projects uni/OOPExamPracticeDeliverNow/cmake-build-debug",
+		"source" : "F:/c projects uni/OOPExamPracticeDeliverNow"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

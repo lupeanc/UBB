@@ -1,0 +1,8 @@
+    //ADD
+    setNewSteps((prev) => [...prev, newStep]);
+    // NOT steps.push(value)!!!
+
+    //REMOVE
+    const removeStep = (c) => {
+    setNewSteps((prev) => prev.filter((s) => s != c));
+  };

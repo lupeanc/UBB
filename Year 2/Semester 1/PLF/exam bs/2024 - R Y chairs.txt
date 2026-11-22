@@ -1,0 +1,28 @@
+chair('R').
+chair('Y').
+
+allCombinations(N,N,C,C):-!.
+allCombinations(N,I,C,R):-
+    chair(X),
+    NewI is I+1,
+    allCombinations(N,NewI, [X|C], R).
+
+countY([],0).
+countY([H|T], R):-
+    H == 'Y', !,
+    countY(T, R1),
+    R is R1+1.
+countY([H|T], R):-
+    H \= 'Y',
+    countY(T,R).
+
+checkCount(L):-
+    countY(L,Cont),
+    Cont =< 3.
+
+oneSol(N, Comb):-
+    allCombinations(N,0,[],Comb),
+    checkCount(Comb).
+
+allSols(N, R):-
+    findall(Combs, oneSol(N, Combs), R).

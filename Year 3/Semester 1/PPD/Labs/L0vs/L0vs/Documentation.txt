@@ -1,0 +1,32 @@
+1. Requirements:
+Write a C++ program that adds two vectors A and B each with n elements (the result is vector C with n elements).
+Measure the execution time.
+Write a script (see examples) that allow repeated executions and evaluate the average execution time for 10 execution.
+
+- I've made a way to measure performance both internally (chrono library) and externally (script)
+
+2. Design:
+	a. Functions
+		i. void allocateVectors()
+			- parameters: none
+			- returns: void
+			- populates vectors A and B with random values
+		ii. void calculateC()
+			- parameters: none
+			- returns: void
+			- calculates vector C as the sum of vectors A and B
+
+3. Implementation Details:
+	- see comments
+
+4. Test Cases:
+	- none
+
+5. Results & Analysis:
+	- Internal execution time average: 0.0829 ms
+	- External execution time average: 10.74998 ms
+	- Results:
+		The external execution time is higher on average than the internal execution time.
+		This is because the internal measurement focuses on how long it takes to execute the functions mentioned above,
+		while the external measurement includes additional overhead from the script execution, 
+		such as process creation and termination, which can add to the total time measured.

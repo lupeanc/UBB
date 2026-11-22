@@ -1,0 +1,71 @@
+f([],[]).
+f([H|T],[H|S]):-f(T,S).
+f([H|T],S):-H mod 2 =:=0, f(T,S).
+
+%-----------------
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+perm([],[]).
+perm([H|T],R):-
+    perm(T,R1),
+    insert(H,R1,R).
+
+absDif(A,B,R):-
+    A>=B,
+    R is A-B.
+absDif(A,B,R):-
+    B>A,
+    R is B-A.
+
+checkAbsDif([H1,H2]):-
+    absDif(H1,H2,R),
+    R=<3.
+checkAbsDif([H1,H2|T]):-
+    absDif(H1,H2,R),
+    R=<3,
+    checkAbsDif([H2|T]).
+
+oneSol(L,R):-
+    perm(L,R),
+    checkAbsDif(R).
+
+allSols(L,R):-
+    findall(Perms, oneSol(L,Perms), R).
+
+
+; (defun f(l1 l2)
+;     (   (lambda (a)
+;             (append a
+;                 (cond
+;                     ((null l1) (cdr l2))
+;                     (t (list a (car l2)))
+;                 )
+;             )
+;         )
+    
+;         (f(car l1) l2)
+
+;     )
+; )
+
+; (f '(1 2) '(3 4))
+
+(defun remove3 (l)
+    (cond
+        ((and (numberp l) (equal (mod l 3) 0))
+            nil
+        )
+        ((atom l) (list l))
+        (t
+            (list (mapcan #'(lambda (a) (remove3 a)) l))
+        )
+    )
+)
+
+(defun main(l)
+    (car (remove3 l))
+)
+
+(format t "~s" (main '(1 (2 A (3 A)) (6)) ))

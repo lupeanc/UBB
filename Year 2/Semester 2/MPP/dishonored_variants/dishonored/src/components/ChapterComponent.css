@@ -1,0 +1,40 @@
+.main-div-chapter-component {
+    margin: 20px 10px 0 10px;
+}
+
+.chapter-title-div {
+    padding:10px
+}
+
+/* .chapter-title-div:hover {
+    background-color: rgb(33, 33, 33);
+} */
+
+.title-chapter {
+    text-align: left;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.chapters-container {
+    /* margin: 50px; */
+    /* justify-content: left; */
+    /* text-align: left; */
+    /* place-items: center; */
+    /* width:1500px; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-left:30px;
+    display: inline-flex;
+    /* grid-template-columns: auto auto auto auto auto; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+/* .align-chapters { */
+    /* justify-content: left; */
+/* } */
+
+.show {
+    display:inline-flex;
+}

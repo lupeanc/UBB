@@ -1,0 +1,11 @@
+.title-sketches {
+    margin-top:50px
+}
+
+.sketches-container {
+    margin: 50px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}

@@ -1,0 +1,12 @@
+Position	Type	Lexeme
+5	CONSTANT	"Sony 4d-f"
+10	CONSTANT	'A'
+6	CONSTANT	60
+8	CONSTANT	true
+0	IDENTIFIER	Camera
+4	IDENTIFIER	camera
+3	IDENTIFIER	createBasicCamera
+2	IDENTIFIER	fps
+9	IDENTIFIER	initial
+7	IDENTIFIER	isValid
+1	IDENTIFIER	name

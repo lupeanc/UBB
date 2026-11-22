@@ -1,0 +1,113 @@
+IDENTIFIER	Camera
+IDENTIFIER	name
+IDENTIFIER	fps
+IDENTIFIER	Scene
+IDENTIFIER	characterName
+IDENTIFIER	characterLine
+IDENTIFIER	Movie
+IDENTIFIER	Camera
+IDENTIFIER	camera
+IDENTIFIER	Scene
+IDENTIFIER	scenes
+IDENTIFIER	Camera
+IDENTIFIER	createBasicCamera
+IDENTIFIER	Camera
+IDENTIFIER	camera
+IDENTIFIER	name
+IDENTIFIER	fps
+IDENTIFIER	name
+CONSTANT	"Sony 4d-f"
+IDENTIFIER	fps
+CONSTANT	60
+IDENTIFIER	camera
+IDENTIFIER	Camera
+IDENTIFIER	name
+IDENTIFIER	fps
+IDENTIFIER	camera
+IDENTIFIER	main
+IDENTIFIER	useBasicCamera
+IDENTIFIER	name
+IDENTIFIER	characterName
+IDENTIFIER	characterLine
+IDENTIFIER	keepBloopers
+IDENTIFIER	switchBloopersAndCredits
+IDENTIFIER	fps
+IDENTIFIER	numberOfScenes
+IDENTIFIER	sceneIndex
+IDENTIFIER	bloopersIndex
+IDENTIFIER	Camera
+IDENTIFIER	camera
+IDENTIFIER	Scene
+IDENTIFIER	scene
+IDENTIFIER	Scene
+IDENTIFIER	scenes
+IDENTIFIER	Movie
+IDENTIFIER	movie
+IDENTIFIER	camera
+IDENTIFIER	createBasicCamera
+IDENTIFIER	sceneIndex
+CONSTANT	0
+CONSTANT	"Would you like to use a basic camera? y/n"
+IDENTIFIER	useBasicCamera
+IDENTIFIER	useBasicCamera
+CONSTANT	"n"
+CONSTANT	"Input a name: "
+IDENTIFIER	name
+CONSTANT	"Input fps: "
+IDENTIFIER	fps
+IDENTIFIER	camera
+IDENTIFIER	Camera
+IDENTIFIER	name
+IDENTIFIER	fps
+IDENTIFIER	useBasicCamera
+CONSTANT	"y"
+CONSTANT	"Input not recognized. Using basic camera."
+CONSTANT	"How many scenes does your movie have? Bloopers and credits included"
+IDENTIFIER	numberOfScenes
+IDENTIFIER	bloopersIndex
+IDENTIFIER	numberOfScenes
+CONSTANT	1
+IDENTIFIER	sceneIndex
+IDENTIFIER	numberOfScenes
+CONSTANT	"Character name: "
+IDENTIFIER	characterName
+CONSTANT	"Character line: "
+IDENTIFIER	characterLine
+IDENTIFIER	scene
+IDENTIFIER	Scene
+IDENTIFIER	characterName
+IDENTIFIER	characterLine
+IDENTIFIER	scenes
+IDENTIFIER	scene
+IDENTIFIER	sceneIndex
+IDENTIFIER	sceneIndex
+CONSTANT	1
+CONSTANT	"Would you like to keep the bloopers? y/n"
+IDENTIFIER	keepBloopers
+IDENTIFIER	keepBloopers
+CONSTANT	"n"
+IDENTIFIER	scenes
+IDENTIFIER	bloopersIndex
+CONSTANT	"Would you like to switch the bloopers and credits? y/n"
+IDENTIFIER	switchBloopersAndCredits
+IDENTIFIER	switchBloopersAndCredits
+CONSTANT	"y"
+IDENTIFIER	Scene
+IDENTIFIER	bloopers
+IDENTIFIER	credits
+IDENTIFIER	bloopers
+IDENTIFIER	scenes
+IDENTIFIER	bloopersIndex
+IDENTIFIER	credits
+IDENTIFIER	scenes
+IDENTIFIER	numberOfScenes
+IDENTIFIER	scenes
+IDENTIFIER	bloopersIndex
+IDENTIFIER	credits
+IDENTIFIER	scenes
+IDENTIFIER	numberOfScenes
+IDENTIFIER	bloopers
+IDENTIFIER	movie
+IDENTIFIER	Movie
+IDENTIFIER	camera
+IDENTIFIER	scenes

@@ -1,0 +1,2696 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/Console/Console.cpp
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Console\Console.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Console\Console.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <windows.h>
+        -:    2:#include <shellapi.h>
+        -:    3:#include "Console.h"
+        -:    4:#include <iostream>
+        -:    5:
+        -:    6:using namespace std;
+function _ZN7ConsoleC2Ev called 0 returned 0% blocks executed 0%
+    #####:    7:Console::Console(){}
+        -:    8:
+function _ZN7ConsoleC2EP7ServiceP9Validator called 1 returned 100% blocks executed 100%
+        1:    9:Console::Console(Service* service, Validator* validator){
+        1:   10:  this->service = service;
+        1:   11:  this->validator = validator;
+        1:   12:}
+        -:   13:
+function _ZN7Console8AddAdminEv called 0 returned 0% blocks executed 0%
+    #####:   14:void Console::AddAdmin(){
+    #####:   15:  string title, description, link;
+    %%%%%:   15-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   16:  int day, month, year, time, attendance;
+    #####:   17:  int is_valid = 0, is_added = 0;
+    #####:   18:  cout<<"Title:";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   19:  cin>>title;
+    %%%%%:   19-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   20:
+    #####:   21:  cout<<"Description:";
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   22:  cin>>description;
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   23:
+    #####:   24:  cout<<"Date"<<endl<<"Day:";
+    %%%%%:   24-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   24-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   24-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    #####:   25:  cin>>day;
+    %%%%%:   25-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   26:  cout<<"Month:";
+    %%%%%:   26-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   27:  cin>>month;
+    %%%%%:   27-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   28:  cout<<"Year:";
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   29:  cin>>year;
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   30:  is_valid = this->validator->validateDate(day, month, year);
+    %%%%%:   30-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   31:  Date date(day, month, year);
+    %%%%%:   31-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   32:
+    #####:   33:  if(!is_valid){
+    %%%%%:   33-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   34:    cout<<"Invalid Date"<<endl;
+    %%%%%:   34-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   34-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   35:    return;
+    %%%%%:   35-block  0
+        -:   36:  }
+        -:   37:
+    #####:   38:  cout<<"Time:";
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   39:  cin>>time;
+    %%%%%:   39-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   40:  is_valid = this->validator->validateTime(time);
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   41:  if(!is_valid){
+    %%%%%:   41-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   42:    cout<<"Invalid Time"<<endl;
+    %%%%%:   42-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   42-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   43:    return;
+    %%%%%:   43-block  0
+        -:   44:  }
+        -:   45:
+    #####:   46:  cout<<"Attendance:";
+    %%%%%:   46-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   47:  cin>>attendance;
+    %%%%%:   47-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   48:  is_valid = this->validator->validateAttendance(attendance);
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   49:  if(!is_valid){
+    %%%%%:   49-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   50:    cout<<"Invalid Attendance"<<endl;
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   50-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   51:    return;
+    %%%%%:   51-block  0
+        -:   52:  }
+        -:   53:
+    #####:   54:  cout<<"Link: ";
+    %%%%%:   54-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   55:  cin>>link;
+    %%%%%:   55-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   56:
+    #####:   57:  is_added = this->service->addServiceAdmin(title, description, date, time, attendance, link);
+    %%%%%:   57-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   57-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   57-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   57-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   57-block  4
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:   57-block  5
+call   15 never executed
+    $$$$$:   57-block  6
+    $$$$$:   57-block  7
+call   16 never executed
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+call   17 never executed
+    $$$$$:   57-block 10
+    #####:   58:  if(is_added == 1){
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   59:    cout<<"Event already exists"<<endl;
+    %%%%%:   59-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   59-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   60:  }
+        -:   61:  else
+    #####:   62:    cout<<"Event added"<<endl;
+    %%%%%:   62-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   62-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   63:
+    #####:   64:}
+    %%%%%:   64-block  0
+    %%%%%:   64-block  1
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    %%%%%:   64-block  2
+    %%%%%:   64-block  3
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:   64-block  4
+    %%%%%:   64-block  5
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
+    $$$$$:   64-block  6
+call    9 never executed
+    $$$$$:   64-block  7
+call   10 never executed
+    $$$$$:   64-block  8
+call   11 never executed
+        -:   65:
+function _ZN7Console11DeleteAdminEv called 0 returned 0% blocks executed 0%
+    #####:   66:void Console::DeleteAdmin(){
+    #####:   67:  string title;
+    %%%%%:   67-block  0
+call    0 never executed
+    #####:   68:  int is_deleted = 0;
+    #####:   69:  cout<<"Title:";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   70:  cin>>title;
+    %%%%%:   70-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   71:
+    #####:   72:  is_deleted = this->service->deleteServiceAdmin(title);
+    %%%%%:   72-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   72-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   72-block  2
+call    6 never executed
+    $$$$$:   72-block  3
+call    7 never executed
+    $$$$$:   72-block  4
+    #####:   73:  if(!is_deleted){
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   74:    cout<<"Event not found"<<endl;
+    %%%%%:   74-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   74-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   75:  }
+        -:   76:  else
+    #####:   77:    cout<<"Event deleted"<<endl;
+    %%%%%:   77-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   77-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   78:}
+    %%%%%:   78-block  0
+call    0 never executed
+    $$$$$:   78-block  1
+call    1 never executed
+        -:   79:
+function _ZN7Console11UpdateAdminEv called 0 returned 0% blocks executed 0%
+    #####:   80:void Console::UpdateAdmin(){
+    #####:   81:  string title, newText;
+    %%%%%:   81-block  0
+call    0 never executed
+call    1 never executed
+    #####:   82:  int cmd, newInt, is_updated = 0, day, month, year, exists = 0;
+    #####:   83:  cout<<"Title:";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   84:  cin>>title;
+    %%%%%:   84-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   85:  cout<<"What would you like to update?"<<endl;
+    %%%%%:   85-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   85-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   86:  cout<<"1. Title"<<endl<<"2. Description"<<endl<<"3. Date"<<endl<<"4. Time"<<endl<<"5. Attendance"<<endl<<"6. Link"<<endl;
+    %%%%%:   86-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   86-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   86-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   86-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   86-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   86-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   86-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   86-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   86-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:   86-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:   86-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:   86-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    #####:   87:  cin>>cmd;
+    %%%%%:   87-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   88:  if(cmd == 1 || cmd == 2 || cmd == 6){
+    %%%%%:   88-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   88-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   88-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    #####:   89:    cout<<"New Text:"<<endl;
+    %%%%%:   89-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   89-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   90:    cin>>newText;
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   91:    is_updated = this->service->updateEventStringAdmin(title, newText, cmd);
+    %%%%%:   91-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   91-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   91-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   91-block  3
+call    9 never executed
+call   10 never executed
+    $$$$$:   91-block  4
+call   11 never executed
+    $$$$$:   91-block  5
+    $$$$$:   91-block  6
+call   12 never executed
+    $$$$$:   91-block  7
+    #####:   92:    if(is_updated){
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   93:      cout<<"Event not found"<<endl;
+    %%%%%:   93-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   93-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   94:    }
+        -:   95:    else
+    #####:   96:      cout<<"Event updated"<<endl;
+    %%%%%:   96-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   96-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   97:  }
+    #####:   98:  else if(cmd == 3){
+    %%%%%:   98-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   99:    cout<<"New Day:"<<endl;
+    %%%%%:   99-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   99-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  100:    cin>>day;
+    %%%%%:  100-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  101:    cout<<"New Month:"<<endl;
+    %%%%%:  101-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  101-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  102:    cin>>month;
+    %%%%%:  102-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  103:    cout<<"New Year:"<<endl;
+    %%%%%:  103-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  103-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  104:    cin>>year;
+    %%%%%:  104-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  105:    if(validator->validateDate(day, month, year)){
+    %%%%%:  105-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  105-block  1
+branch  3 never executed (fallthrough)
+branch  4 never executed
+    #####:  106:      is_updated = this->service->updateEventDateAdmin(title, day, month, year);
+    %%%%%:  106-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  106-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  106-block  2
+call    6 never executed
+    $$$$$:  106-block  3
+call    7 never executed
+    $$$$$:  106-block  4
+        -:  107:    }
+        -:  108:    else
+    #####:  109:      cout<<"Invalid Date"<<endl;
+    %%%%%:  109-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  109-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  110:    if(is_updated){
+    %%%%%:  110-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  111:      cout<<"Event not found"<<endl;
+    %%%%%:  111-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  111-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  112:    }
+        -:  113:    else
+    #####:  114:      cout<<"Event updated"<<endl;
+    %%%%%:  114-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  114-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  115:  }
+    #####:  116:  else if(cmd == 4){
+    %%%%%:  116-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  117:    cout<<"New Int:"<<endl;
+    %%%%%:  117-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  117-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  118:    cin>>newInt;
+    %%%%%:  118-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  119:    if(validator->validateTime(newInt)){
+    %%%%%:  119-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  119-block  1
+branch  3 never executed (fallthrough)
+branch  4 never executed
+    #####:  120:      is_updated = this->service->updateEventIntAdmin(title, newInt, cmd);
+    %%%%%:  120-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  120-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  120-block  2
+call    6 never executed
+    $$$$$:  120-block  3
+call    7 never executed
+    $$$$$:  120-block  4
+    #####:  121:      if(is_updated == 1){
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  122:        cout<<"Event not found"<<endl;
+    %%%%%:  122-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  122-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  123:      }
+        -:  124:      else
+    #####:  125:        cout<<"Event updated"<<endl;
+    %%%%%:  125-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  125-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  126:    }
+        -:  127:  }
+    #####:  128:  else if(cmd == 5){
+    %%%%%:  128-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  129:    cout<<"New Int:"<<endl;
+    %%%%%:  129-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  129-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  130:    cin>>newInt;
+    %%%%%:  130-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  131:    if(validator->validateAttendance(newInt)){
+    %%%%%:  131-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  131-block  1
+branch  3 never executed (fallthrough)
+branch  4 never executed
+    #####:  132:      is_updated = this->service->updateEventIntAdmin(title, newInt, cmd);
+    %%%%%:  132-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  132-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  132-block  2
+call    6 never executed
+    $$$$$:  132-block  3
+call    7 never executed
+    $$$$$:  132-block  4
+    #####:  133:      if(is_updated == 1){
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  134:        cout<<"Event not found"<<endl;
+    %%%%%:  134-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  134-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  135:      }
+        -:  136:      else
+    #####:  137:        cout<<"Event updated"<<endl;
+    %%%%%:  137-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  137-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  138:    }
+        -:  139:  }
+        -:  140:  else
+    #####:  141:    cout<<"Invalid Command"<<endl;
+    %%%%%:  141-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  141-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  142:}
+    %%%%%:  142-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  142-block  1
+call    2 never executed
+    $$$$$:  142-block  2
+call    3 never executed
+function _ZN7Console16DisplayAdminListEv called 0 returned 0% blocks executed 0%
+    #####:  143:void Console::DisplayAdminList(){
+    #####:  144:  int n = this->service->getSizeAdmin();
+    %%%%%:  144-block  0
+call    0 never executed
+        -:  145:
+    #####:  146:  for(int i = 0; i < n; i++){
+    %%%%%:  146-block  0
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  147:    cout<<"Title: "<<(*this->service->getAdminRepo())[i].getTitle()<<endl;
+    %%%%%:  147-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  147-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  147-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  147-block  3
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  147-block  4
+call   14 never executed
+    $$$$$:  147-block  5
+call   15 never executed
+    $$$$$:  147-block  6
+call   16 never executed
+    #####:  148:    cout<<"Description: "<<(*this->service->getAdminRepo())[i].getDescription()<<endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  148-block  0
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  148-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  148-block  2
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  148-block  3
+call   14 never executed
+    $$$$$:  148-block  4
+call   15 never executed
+    $$$$$:  148-block  5
+call   16 never executed
+    #####:  149:    cout<<"Date: "<<(*this->service->getAdminRepo())[i].getDateString()<<endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  149-block  0
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  149-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  149-block  2
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  149-block  3
+call   14 never executed
+    $$$$$:  149-block  4
+call   15 never executed
+    $$$$$:  149-block  5
+call   16 never executed
+    #####:  150:    cout<<"Time: "<<(*this->service->getAdminRepo())[i].getTime()<<endl;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+    #####:  151:    cout<<"Attendance: "<<(*this->service->getAdminRepo())[i].getAttendance()<<endl;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+    #####:  152:    cout<<"Link: "<<(*this->service->getAdminRepo())[i].getLink()<<endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  152-block  0
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  152-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  152-block  2
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  152-block  3
+call   14 never executed
+    $$$$$:  152-block  4
+call   15 never executed
+    #####:  153:    cout<<endl;
+call    0 never executed
+        -:  154:  }
+    #####:  155:}
+    %%%%%:  155-block  0
+function _ZN7Console9AdminModeEv called 0 returned 0% blocks executed 0%
+    #####:  156:void Console::AdminMode(){
+        -:  157:  int command;
+        -:  158:  while(true){
+    #####:  159:    cout<<"==============================="<<endl;
+    %%%%%:  159-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  159-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  159-block  2
+    #####:  160:    cout<<"ADMIN MENU"<<endl;
+    %%%%%:  160-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  160-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  161:    cout<<"==============================="<<endl;
+    %%%%%:  161-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  161-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  162:
+    #####:  163:    cout<<"1. Add"<<endl<<"2. Delete"<<endl<<"3. Update"<<endl<<"4. Display"<<endl<<"0. Exit"<<endl;
+    %%%%%:  163-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  163-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  163-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  163-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  163-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  163-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  163-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  163-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  163-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  163-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    #####:  164:    cin>>command;
+    %%%%%:  164-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  165:
+    #####:  166:    if(command == 1){
+    %%%%%:  166-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  167:      AddAdmin();
+    %%%%%:  167-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  168:    }
+    #####:  169:    else if(command == 2){
+    %%%%%:  169-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  170:      DeleteAdmin();
+    %%%%%:  170-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  171:    }
+    #####:  172:    else if(command == 3){
+    %%%%%:  172-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  173:      UpdateAdmin();
+    %%%%%:  173-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  174:    }
+    #####:  175:    else if(command == 4){
+    %%%%%:  175-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  176:      DisplayAdminList();
+    %%%%%:  176-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  177:    }
+    #####:  178:    else if(command == 0){
+    %%%%%:  178-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  179:      return;
+    %%%%%:  179-block  0
+    %%%%%:  179-block  1
+        -:  180:    }
+        -:  181:    else
+    #####:  182:      cout<<"Invalid Command"<<endl;
+    %%%%%:  182-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  182-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  183:  }
+        -:  184:}
+        -:  185:
+function _ZN7Console5StartEv called 1 returned 0% blocks executed 58%
+        1:  186:void Console::Start(){
+        -:  187:  int command;
+        -:  188:  while(true){
+       1*:  189:    cout<<"==============================="<<endl;
+        1:  189-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  189-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    %%%%%:  189-block  2
+        1:  190:    cout<<"MAIN MENU"<<endl;
+        1:  190-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  190-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  191:    cout<<"==============================="<<endl;
+        1:  191-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  191-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        -:  192:
+        1:  193:    cout<<"1. Admin Mode"<<endl<<"2. User Mode"<<endl<<"0. Exit"<<endl;
+        1:  193-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  193-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  193-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  193-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  193-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  193-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  194:    cin>>command;
+        1:  194-block  0
+call    0 returned 0
+branch  1 taken 0 (fallthrough)
+branch  2 taken 0 (throw)
+    #####:  195:    if(command == 1){
+    %%%%%:  195-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  196:      AdminMode();
+    %%%%%:  196-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  197:    }
+    #####:  198:    else if(command == 2){
+    %%%%%:  198-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  199:      UserMode();
+    %%%%%:  199-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  200:    }
+    #####:  201:    else if(command == 0){
+    %%%%%:  201-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  202:      break;
+    %%%%%:  202-block  0
+        -:  203:    }
+        -:  204:    else
+    #####:  205:      cout<<"Invalid Command"<<endl;
+    %%%%%:  205-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  205-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  206:  }
+        -:  207:
+    #####:  208:}
+    %%%%%:  208-block  0
+        -:  209:
+function _ZN7Console8UserModeEv called 0 returned 0% blocks executed 0%
+    #####:  210:void Console::UserMode() {
+        -:  211:  int command;
+        -:  212:  while (true) {
+    #####:  213:    cout<<"1. Your List"<<endl<<"2. List of Events"<<endl<<"0. Exit"<<endl;
+    %%%%%:  213-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  213-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  213-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  213-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  213-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  213-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  213-block  6
+    #####:  214:    cin>>command;
+    %%%%%:  214-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  215:    if(command == 1) {
+    %%%%%:  215-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  216:      UsersOwnListMenu();
+    %%%%%:  216-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  217:    }
+    #####:  218:    else if(command == 2) {
+    %%%%%:  218-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  219:      DisplayUserListAll();
+    %%%%%:  219-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  220:    }
+    #####:  221:    else if(command == 0) {
+    %%%%%:  221-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  222:      return;
+    %%%%%:  222-block  0
+    %%%%%:  222-block  1
+        -:  223:    }
+        -:  224:    else
+    #####:  225:      cout<<"Invalid Command"<<endl;
+    %%%%%:  225-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  225-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  226:  }
+        -:  227:
+        -:  228:}
+        -:  229:
+function _ZN7Console16UsersOwnListMenuEv called 0 returned 0% blocks executed 0%
+    #####:  230:void Console::UsersOwnListMenu() {
+        -:  231:  int command, month;
+        -:  232:  while (true) {
+    #####:  233:    cout<<"1. See list of all events one by one"<<endl<<"2. See list of events happening during a certain month"<<endl
+    %%%%%:  233-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  233-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  233-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  233-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    #####:  234:    <<"3. See all events at once"<<endl<<"0. Exit"<<endl;
+    %%%%%:  234-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  234-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  234-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  234-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  234-block  4
+    #####:  235:    cin>>command;
+    %%%%%:  235-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  236:    if(command == 1) {
+    %%%%%:  236-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  237:      DisplayUserList();
+    %%%%%:  237-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  238:    }
+    #####:  239:    else if(command == 2) {
+    %%%%%:  239-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  240:      cout<<"Month: ";
+    %%%%%:  240-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  241:      cin>>month;
+    %%%%%:  241-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  242:      if (validator->validateDate(1, month, 2025)) {
+    %%%%%:  242-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  242-block  1
+branch  3 never executed (fallthrough)
+branch  4 never executed
+    #####:  243:        DisplayUserListMonth(month);
+    %%%%%:  243-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  244:      }
+        -:  245:      else
+    #####:  246:        cout<<"Invalid Month"<<endl;
+    %%%%%:  246-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  246-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  247:    }
+    #####:  248:    else if (command == 3) {
+    %%%%%:  248-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  249:      DisplayUserListAllAtOnce();
+    %%%%%:  249-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  250:    }
+    #####:  251:    else if(command == 0) {
+    %%%%%:  251-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  252:      return;
+    %%%%%:  252-block  0
+    %%%%%:  252-block  1
+        -:  253:    }
+    #####:  254:    else cout<<"Invalid Command"<<endl;
+    %%%%%:  254-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  254-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  255:  }
+        -:  256:}
+        -:  257:
+function _Z11OpenWebsitePKc called 0 returned 0% blocks executed 0%
+    #####:  258:void OpenWebsite (const char * cpURL) {
+    #####:  259:  ShellExecute (NULL, "open", cpURL, NULL, NULL, SW_SHOWNORMAL);
+    %%%%%:  259-block  0
+call    0 never executed
+    #####:  260:}
+        -:  261:
+function _ZN7Console15DisplayUserListEv called 0 returned 0% blocks executed 0%
+    #####:  262:void Console::DisplayUserList() {
+        -:  263:  //has the add option as the user goes through the list + open in browser option
+    #####:  264:  string title, desc, link;
+    %%%%%:  264-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:  265:  int time, attendance;
+    #####:  266:  Date date;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  267:  int n = this->service->getSizeUser(), command = -1;
+    %%%%%:  267-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  268:  if (n == 0)
+    %%%%%:  268-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  269:    cout<<"There is no list"<<endl;
+    %%%%%:  269-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  269-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  270:  else {
+    #####:  271:    int i = 0;
+    #####:  272:    while (command !=0) {
+    %%%%%:  272-block  0
+    %%%%%:  272-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  273:      cout<<"Title: "<<(*this->service->getUserRepo())[i].getTitle()<<endl;
+    %%%%%:  273-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  273-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  273-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  273-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  273-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  273-block  5
+call   16 never executed
+    $$$$$:  273-block  6
+call   17 never executed
+    $$$$$:  273-block  7
+    #####:  274:      title = (*this->service->getUserRepo())[i].getTitle();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  274-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  274-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  274-block  2
+    #####:  275:      cout<<"Description: "<<(*this->service->getUserRepo())[i].getDescription()<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  275-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  275-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  275-block  2
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  275-block  3
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  275-block  4
+call   16 never executed
+    $$$$$:  275-block  5
+call   17 never executed
+    $$$$$:  275-block  6
+    #####:  276:      desc = (*this->service->getUserRepo())[i].getDescription();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  276-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  276-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  276-block  2
+    #####:  277:      cout<<"Date: "<<(*this->service->getUserRepo())[i].getDateString()<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  277-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  277-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  277-block  2
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  277-block  3
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  277-block  4
+call   16 never executed
+    $$$$$:  277-block  5
+call   17 never executed
+    $$$$$:  277-block  6
+    #####:  278:      date = (*this->service->getUserRepo())[i].getDate();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  278-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  279:      cout<<"Time: "<<(*this->service->getUserRepo())[i].getTime()<<endl;
+    %%%%%:  279-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  279-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  279-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  279-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  279-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    #####:  280:      time = (*this->service->getUserRepo())[i].getTime();
+    %%%%%:  280-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  280-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  281:      cout<<"Attendance: "<<(*this->service->getUserRepo())[i].getAttendance()<<endl;
+    %%%%%:  281-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  281-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  281-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  281-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  281-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    #####:  282:      attendance = (*this->service->getUserRepo())[i].getAttendance();
+    %%%%%:  282-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  282-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  283:      cout<<"Link: "<<(*this->service->getUserRepo())[i].getLink()<<endl;
+    %%%%%:  283-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  283-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  283-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  283-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  283-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  283-block  5
+call   16 never executed
+    $$$$$:  283-block  6
+call   17 never executed
+    $$$$$:  283-block  7
+    #####:  284:      link = (*this->service->getUserRepo())[i].getLink();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  284-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  284-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  284-block  2
+    #####:  285:      cout<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  286:      Event e = Event(title, desc, date, time, attendance, link);
+    %%%%%:  286-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  286-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  286-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  286-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  286-block  4
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:  286-block  5
+call   15 never executed
+    $$$$$:  286-block  6
+    $$$$$:  286-block  7
+call   16 never executed
+    $$$$$:  286-block  8
+    $$$$$:  286-block  9
+call   17 never executed
+    $$$$$:  286-block 10
+    #####:  287:      cout<<"Options:"<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  287-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  288:      cout<<"1.Next     2.Delete    3.Open in Browser    0.Exit"<<endl;
+    %%%%%:  288-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  288-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  289:      cin>>command;
+    %%%%%:  289-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  290:
+    #####:  291:      if(command != 1 && command != 2 && command != 3 && command != 0) {
+    %%%%%:  291-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  291-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:  291-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:  291-block  3
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    #####:  292:        cout<<"Invalid Command"<<endl;
+    %%%%%:  292-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  292-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  292-block  2
+        -:  293:      }
+    #####:  294:      else if(command == 2) {
+    %%%%%:  294-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  295:        this->service->deleteServiceAUser(e);
+    %%%%%:  295-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  295-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  295-block  2
+call    6 never executed
+    $$$$$:  295-block  3
+call    7 never executed
+    $$$$$:  295-block  4
+        -:  296:      }
+    #####:  297:      else if(command == 3) {
+    %%%%%:  297-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+        -:  298:        // int placeholder;
+    #####:  299:        OpenWebsite(link.c_str());
+    %%%%%:  299-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+        -:  300:      }
+        -:  301:
+    #####:  302:      i++;
+    #####:  303:      if (i==n)
+    %%%%%:  303-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  304:        i = 0;
+    %%%%%:  304-block  0
+    #####:  305:    }
+    %%%%%:  305-block  0
+call    0 never executed
+    $$$$$:  305-block  1
+call    1 never executed
+        -:  306:  }
+    #####:  307:}
+    %%%%%:  307-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:  307-block  1
+call    3 never executed
+    $$$$$:  307-block  2
+call    4 never executed
+    $$$$$:  307-block  3
+call    5 never executed
+        -:  308:
+function _ZN7Console20DisplayUserListMonthEi called 0 returned 0% blocks executed 0%
+    #####:  309:void Console::DisplayUserListMonth(int month) {
+    #####:  310:  string title, desc, link;
+    %%%%%:  310-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:  311:  int time, attendance, current_event_month;
+    #####:  312:  Date date;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  313:  int n = this->service->getSizeUser(), command = -1;
+    %%%%%:  313-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  314:  if (n == 0)
+    %%%%%:  314-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  315:    cout<<"There is no list"<<endl;
+    %%%%%:  315-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  315-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  316:  else {
+    #####:  317:    int i = 0;
+    #####:  318:    while (command !=0) {
+    %%%%%:  318-block  0
+    %%%%%:  318-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  319:      current_event_month = (*this->service->getUserRepo())[i].getDate().getMonth();
+    %%%%%:  319-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  319-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  319-block  2
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    $$$$$:  319-block  3
+    #####:  320:      if (current_event_month == month) {
+    %%%%%:  320-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  321:        cout<<"Title: "<<(*this->service->getUserRepo())[i].getTitle()<<endl;
+    %%%%%:  321-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  321-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  321-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  321-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  321-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  321-block  5
+call   16 never executed
+    $$$$$:  321-block  6
+call   17 never executed
+    $$$$$:  321-block  7
+    #####:  322:        title = (*this->service->getUserRepo())[i].getTitle();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  322-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  322-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  322-block  2
+    #####:  323:        cout<<"Description: "<<(*this->service->getUserRepo())[i].getDescription()<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  323-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  323-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  323-block  2
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  323-block  3
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  323-block  4
+call   16 never executed
+    $$$$$:  323-block  5
+call   17 never executed
+    $$$$$:  323-block  6
+    #####:  324:        desc = (*this->service->getUserRepo())[i].getDescription();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  324-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  324-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  324-block  2
+    #####:  325:        cout<<"Date: "<<(*this->service->getUserRepo())[i].getDateString()<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  325-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  325-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  325-block  2
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  325-block  3
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  325-block  4
+call   16 never executed
+    $$$$$:  325-block  5
+call   17 never executed
+    $$$$$:  325-block  6
+    #####:  326:        date = (*this->service->getUserRepo())[i].getDate();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  326-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  327:        cout<<"Time: "<<(*this->service->getUserRepo())[i].getTime()<<endl;
+    %%%%%:  327-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  327-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  327-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  327-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  327-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    #####:  328:        time = (*this->service->getUserRepo())[i].getTime();
+    %%%%%:  328-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  328-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  329:        cout<<"Attendance: "<<(*this->service->getUserRepo())[i].getAttendance()<<endl;
+    %%%%%:  329-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  329-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  329-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  329-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  329-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    #####:  330:        attendance = (*this->service->getUserRepo())[i].getAttendance();
+    %%%%%:  330-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  330-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  331:        cout<<"Link: "<<(*this->service->getUserRepo())[i].getLink()<<endl;
+    %%%%%:  331-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  331-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  331-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  331-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  331-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  331-block  5
+call   16 never executed
+    $$$$$:  331-block  6
+call   17 never executed
+    $$$$$:  331-block  7
+    #####:  332:        link = (*this->service->getUserRepo())[i].getLink();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  332-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  332-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  332-block  2
+    #####:  333:        cout<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  334:        Event e = Event(title, desc, date, time, attendance, link);
+    %%%%%:  334-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  334-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  334-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  334-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  334-block  4
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:  334-block  5
+call   15 never executed
+    $$$$$:  334-block  6
+    $$$$$:  334-block  7
+call   16 never executed
+    $$$$$:  334-block  8
+    $$$$$:  334-block  9
+call   17 never executed
+    $$$$$:  334-block 10
+    #####:  335:        cout<<"Options:"<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  335-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  336:        cout<<"1.Next     2.Delete    3.Open in Browser    0.Exit"<<endl;
+    %%%%%:  336-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  336-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  337:        cin>>command;
+    %%%%%:  337-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  338:
+    #####:  339:        if(command != 1 && command != 2 && command != 3 && command != 0) {
+    %%%%%:  339-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  339-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:  339-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:  339-block  3
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    #####:  340:          cout<<"Invalid Command"<<endl;
+    %%%%%:  340-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  340-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  340-block  2
+        -:  341:        }
+    #####:  342:        else if(command == 2) {
+    %%%%%:  342-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  343:          this->service->deleteServiceAUser(e);
+    %%%%%:  343-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  343-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  343-block  2
+call    6 never executed
+    $$$$$:  343-block  3
+call    7 never executed
+    $$$$$:  343-block  4
+        -:  344:        }
+    #####:  345:        else if(command == 3) {
+    %%%%%:  345-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  346:          OpenWebsite(link.c_str());
+    %%%%%:  346-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+        -:  347:        }
+    #####:  348:      }
+    %%%%%:  348-block  0
+call    0 never executed
+    $$$$$:  348-block  1
+call    1 never executed
+        -:  349:
+    #####:  350:      i++;
+    #####:  351:      if (i==n)
+    %%%%%:  351-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  352:        i = 0;
+    %%%%%:  352-block  0
+        -:  353:    }
+        -:  354:  }
+    #####:  355:}
+    %%%%%:  355-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:  355-block  1
+call    3 never executed
+    $$$$$:  355-block  2
+call    4 never executed
+    $$$$$:  355-block  3
+call    5 never executed
+        -:  356:
+function _ZN7Console24DisplayUserListAllAtOnceEv called 0 returned 0% blocks executed 0%
+    #####:  357:void Console::DisplayUserListAllAtOnce() {
+    #####:  358:  int n = this->service->getSizeUser();
+    %%%%%:  358-block  0
+call    0 never executed
+    #####:  359:  if (n == 0)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  360:    cout<<"There is no list"<<endl;
+    %%%%%:  360-block  0
+call    0 never executed
+call    1 never executed
+        -:  361:  else {
+    #####:  362:    for(int i = 0; i < n; i++){
+    %%%%%:  362-block  0
+    %%%%%:  362-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  363:      cout<<"Title: "<<(*this->service->getUserRepo())[i].getTitle()<<endl;
+    %%%%%:  363-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  363-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  363-block  2
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  363-block  3
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  363-block  4
+call   14 never executed
+    $$$$$:  363-block  5
+call   15 never executed
+    $$$$$:  363-block  6
+call   16 never executed
+    #####:  364:      cout<<"Description: "<<(*this->service->getUserRepo())[i].getDescription()<<endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  364-block  0
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  364-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  364-block  2
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  364-block  3
+call   14 never executed
+    $$$$$:  364-block  4
+call   15 never executed
+    $$$$$:  364-block  5
+call   16 never executed
+    #####:  365:      cout<<"Date: "<<(*this->service->getUserRepo())[i].getDateString()<<endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  365-block  0
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  365-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  365-block  2
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  365-block  3
+call   14 never executed
+    $$$$$:  365-block  4
+call   15 never executed
+    $$$$$:  365-block  5
+call   16 never executed
+    #####:  366:      cout<<"Time: "<<(*this->service->getUserRepo())[i].getTime()<<endl;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+    #####:  367:      cout<<"Attendance: "<<(*this->service->getUserRepo())[i].getAttendance()<<endl;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+    #####:  368:      cout<<"Link: "<<(*this->service->getUserRepo())[i].getLink()<<endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  368-block  0
+call    4 never executed
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  368-block  1
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    %%%%%:  368-block  2
+call   11 never executed
+branch 12 never executed (fallthrough)
+branch 13 never executed (throw)
+    %%%%%:  368-block  3
+call   14 never executed
+    $$$$$:  368-block  4
+call   15 never executed
+    #####:  369:      cout<<endl;
+call    0 never executed
+        -:  370:    }
+        -:  371:  }
+        -:  372:
+    #####:  373:}
+    %%%%%:  373-block  0
+        -:  374:
+function _ZN7Console18DisplayUserListAllEv called 0 returned 0% blocks executed 0%
+    #####:  375:void Console::DisplayUserListAll() {
+    #####:  376:  string title, desc, link;
+    %%%%%:  376-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  377:  int time, attendance, added = 0;
+    #####:  378:  Date date;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  379:  int n = this->service->getSizeAdmin(), command = -1;
+    %%%%%:  379-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  380:  if (n == 0)
+    %%%%%:  380-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  381:    cout<<"There is no list"<<endl;
+    %%%%%:  381-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  381-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:  382:  else {
+    #####:  383:    int i = 0;
+    #####:  384:    while (command !=0) {
+    %%%%%:  384-block  0
+    %%%%%:  384-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:  385:      cout<<"Title: "<<(*this->service->getAdminRepo())[i].getTitle()<<endl;
+    %%%%%:  385-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  385-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  385-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  385-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  385-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  385-block  5
+call   16 never executed
+    $$$$$:  385-block  6
+call   17 never executed
+    $$$$$:  385-block  7
+    #####:  386:      title = (*this->service->getAdminRepo())[i].getTitle();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  386-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  386-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  386-block  2
+    #####:  387:      cout<<"Description: "<<(*this->service->getAdminRepo())[i].getDescription()<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  387-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  387-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  387-block  2
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  387-block  3
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  387-block  4
+call   16 never executed
+    $$$$$:  387-block  5
+call   17 never executed
+    $$$$$:  387-block  6
+    #####:  388:      desc = (*this->service->getAdminRepo())[i].getDescription();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  388-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  388-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  388-block  2
+    #####:  389:      cout<<"Date: "<<(*this->service->getAdminRepo())[i].getDateString()<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  389-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  389-block  1
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  389-block  2
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  389-block  3
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  389-block  4
+call   16 never executed
+    $$$$$:  389-block  5
+call   17 never executed
+    $$$$$:  389-block  6
+    #####:  390:      date = (*this->service->getAdminRepo())[i].getDate();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  390-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  391:      cout<<"Time: "<<(*this->service->getAdminRepo())[i].getTime()<<endl;
+    %%%%%:  391-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  391-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  391-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  391-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  391-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    #####:  392:      time = (*this->service->getAdminRepo())[i].getTime();
+    %%%%%:  392-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  392-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  393:      cout<<"Attendance: "<<(*this->service->getAdminRepo())[i].getAttendance()<<endl;
+    %%%%%:  393-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  393-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  393-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  393-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  393-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    #####:  394:      attendance = (*this->service->getAdminRepo())[i].getAttendance();
+    %%%%%:  394-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  394-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:  395:      cout<<"Link: "<<(*this->service->getAdminRepo())[i].getLink()<<endl;
+    %%%%%:  395-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  395-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  395-block  2
+call    6 never executed
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed (throw)
+    %%%%%:  395-block  3
+call   10 never executed
+branch 11 never executed (fallthrough)
+branch 12 never executed (throw)
+    %%%%%:  395-block  4
+call   13 never executed
+branch 14 never executed (fallthrough)
+branch 15 never executed (throw)
+    %%%%%:  395-block  5
+call   16 never executed
+    $$$$$:  395-block  6
+call   17 never executed
+    $$$$$:  395-block  7
+    #####:  396:      link = (*this->service->getAdminRepo())[i].getLink();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  396-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  396-block  1
+call    7 never executed
+call    8 never executed
+    $$$$$:  396-block  2
+    #####:  397:      cout<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  398:      Event e = Event(title, desc, date, time, attendance, link);
+    %%%%%:  398-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  398-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  398-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  398-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  398-block  4
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:  398-block  5
+call   15 never executed
+    $$$$$:  398-block  6
+    $$$$$:  398-block  7
+call   16 never executed
+    $$$$$:  398-block  8
+    $$$$$:  398-block  9
+call   17 never executed
+    $$$$$:  398-block 10
+    #####:  399:      cout<<"Options:"<<endl;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  399-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  400:      cout<<"1.Next     2.Add    3.Open in Browser    0.Exit"<<endl;
+    %%%%%:  400-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  400-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  401:      cin>>command;
+    %%%%%:  401-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  402:
+    #####:  403:      if(command != 1 && command != 2 && command != 3 && command != 0) {
+    %%%%%:  403-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  403-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:  403-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    %%%%%:  403-block  3
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    #####:  404:        cout<<"Invalid Command"<<endl;
+    %%%%%:  404-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  404-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  404-block  2
+        -:  405:      }
+    #####:  406:      else if(command == 2) {
+    %%%%%:  406-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  407:        for(int i = 0; i < this->service->getSizeUser(); i++) {
+    %%%%%:  407-block  0
+    %%%%%:  407-block  1
+    %%%%%:  407-block  2
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  407-block  3
+branch  3 never executed
+branch  4 never executed (fallthrough)
+    #####:  408:          if (title == (*this->service->getUserRepo())[i].getTitle()) {
+    %%%%%:  408-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  408-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  408-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed
+    $$$$$:  408-block  3
+    #####:  409:            cout<<endl<<"Already added!";
+    %%%%%:  409-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  409-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:  410:            added = 1;
+    %%%%%:  410-block  0
+        -:  411:          }
+        -:  412:        }
+    #####:  413:        if (!added)
+    %%%%%:  413-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  414:          this->service->addServiceUser(e);
+    %%%%%:  414-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  414-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  414-block  2
+call    6 never executed
+    $$$$$:  414-block  3
+call    7 never executed
+    $$$$$:  414-block  4
+        -:  415:      }
+    #####:  416:      else if(command == 3) {
+    %%%%%:  416-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  417:        OpenWebsite(link.c_str());
+    %%%%%:  417-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+        -:  418:      }
+        -:  419:
+    #####:  420:      i++;
+    #####:  421:      if (i==n)
+    %%%%%:  421-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  422:        i = 0;
+    %%%%%:  422-block  0
+    #####:  423:    }
+    %%%%%:  423-block  0
+call    0 never executed
+    $$$$$:  423-block  1
+call    1 never executed
+        -:  424:  }
+    #####:  425:}
+    %%%%%:  425-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:  425-block  1
+call    3 never executed
+    $$$$$:  425-block  2
+call    4 never executed
+    $$$$$:  425-block  3
+call    5 never executed
+        -:  426:
+function _ZN7ConsoleD2Ev called 0 returned 0% blocks executed 0%
+    #####:  427:Console::~Console(){
+    #####:  428:  delete service;
+    %%%%%:  428-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  428-block  1
+call    2 never executed
+call    3 never executed
+    #####:  429:  delete validator;
+    %%%%%:  429-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:  429-block  1
+call    2 never executed
+    #####:  430:}

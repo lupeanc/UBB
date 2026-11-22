@@ -1,0 +1,20 @@
+# ninja log v6
+36	151	7716323573334831	F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/OOPExamPracticeDriveConnect_autogen/mocs_compilation.cpp	f0b52209c3eeea56
+36	151	7716323573334831	OOPExamPracticeDriveConnect_autogen/timestamp	f0b52209c3eeea56
+36	151	7716323573334831	OOPExamPracticeDriveConnect_autogen/mocs_compilation.cpp	f0b52209c3eeea56
+4245	4787	7716323615423994	OOPExamPracticeDriveConnect.exe	194471f03ac4f6e7
+36	151	7716323573334831	F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/OOPExamPracticeDriveConnect_autogen/timestamp	f0b52209c3eeea56
+209	274	7716290382690587	CMakeFiles/OOPExamPracticeDriveConnect.dir/OOPExamPracticeDriveConnect_autogen/mocs_compilation.cpp.obj	70fbf225fae69eca
+35	930	7716972335602136	build.ninja	f0fee052ba2083b4
+152	4244	7716323574494975	CMakeFiles/OOPExamPracticeDriveConnect.dir/main.cpp.obj	c39e40d87de6bd41
+158	873	7716311782937724	CMakeFiles/OOPExamPracticeDriveConnect.dir/Domain/Driver.cpp.obj	81a16827668ed89
+161	992	7716311782979178	CMakeFiles/OOPExamPracticeDriveConnect.dir/Domain/Report.cpp.obj	9e69910cef1416a4
+163	1345	7716323364336045	CMakeFiles/OOPExamPracticeDriveConnect.dir/Repository/Repository.cpp.obj	e5d9bdb321cdfbf0
+167	5291	7716323364376101	CMakeFiles/OOPExamPracticeDriveConnect.dir/GUI/GUI.cpp.obj	968ab171157b1df5
+49	180	7716996633355630	OOPExamPracticeDriveConnect_autogen/timestamp	f0b52209c3eeea56
+49	180	7716996633355630	OOPExamPracticeDriveConnect_autogen/mocs_compilation.cpp	f0b52209c3eeea56
+49	180	7716996633355630	F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/OOPExamPracticeDriveConnect_autogen/timestamp	f0b52209c3eeea56
+49	180	7716996633355630	F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug/OOPExamPracticeDriveConnect_autogen/mocs_compilation.cpp	f0b52209c3eeea56
+180	3767	7716996634658078	CMakeFiles/OOPExamPracticeDriveConnect.dir/main.cpp.obj	c39e40d87de6bd41
+184	3915	7716996634698061	CMakeFiles/OOPExamPracticeDriveConnect.dir/GUI/GUI.cpp.obj	968ab171157b1df5
+3915	5821	7716996672009229	OOPExamPracticeDriveConnect.exe	194471f03ac4f6e7

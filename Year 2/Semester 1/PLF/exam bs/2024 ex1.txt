@@ -1,0 +1,102 @@
+f(0,0):-!.
+f(I,Y):-
+    J is I-2,
+    f(J,V),
+    (	V>1 ->  K is I-2, Y is K
+    	;   Y is V+1
+    ).
+
+f2(0,0):-!.
+f2(I,Y):-
+    J is I-2,
+    f2(J,V),
+	aux(V,I,Y).
+
+aux(V,I,Y):-
+    V>1,
+    Y is I-2.
+aux(V,_,Y):-
+    Y is V+1.
+
+% -------------------------
+chair('Y').
+chair('R').
+
+allArrs(N,N,C,C):-!.
+allArrs(N,I,C,R):-
+    chair(X),
+    NewI is I+1,
+    allArrs(N,NewI,[X|C], R).
+
+count([],0).
+count([H|T], R):-
+    count(T,R1),
+    H == 'Y',
+    R is R1+1.
+count([H|T], R):-
+    count(T,R1),
+    H \= 'Y',
+    R is R1.
+
+checkCount(L):-
+    count(L,R),
+    R=<3.
+
+oneSol(Arr):-
+    allArrs(5,0,[],Arr),
+    checkCount(Arr).
+
+allSols(R):-
+    findall(Arrs,oneSol(Arrs), R).
+
+
+(defun f(l)
+    (cond
+        ((null l)
+            nil
+        )
+        (t
+            (   (lambda (a)
+                    (cond
+                        ((listp (car l))
+                            (append a (f(cdr l)) (car a))
+                        )
+                        (t
+                            (list(car l))
+                        )
+                    )
+                )
+                (f (car l))
+            )
+        )
+    )
+)
+
+; -----------
+(defun f(x &optional y)
+    (cond
+        ((null y) (cdr x))
+        (t
+            (cons (car x) y)
+        )
+    )
+)
+
+(format t "~s" (append (F '(1 2)) (F '(3 4) '(5 6)) ))
+
+; ----------------------
+(defun replaceOddWith(l level e e1)
+    (cond
+        ((and (and (atom l) (equal (mod level 2) 1)) (equal l e))
+            e1
+        )
+        ((atom l) l)
+        (t
+            (mapcar #'(lambda (a) (replaceOddWith a (+ 1 level) e e1)) l
+            
+            )
+        )
+    )
+)
+
+(format t "~s" (replaceOddWith '(1 d(2 d (d))) 0 'd '0))

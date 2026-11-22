@@ -1,0 +1,15 @@
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\bin\Debug\net6.0\AskQuestionCustomActivity.deps.json
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\bin\Debug\net6.0\AskQuestionCustomActivity.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\bin\Debug\net6.0\AskQuestionCustomActivity.pdb
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.csproj.AssemblyReference.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.Resources.Resources.resources
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.csproj.GenerateResource.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.AssemblyInfoInputs.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.AssemblyInfo.cs
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\refint\AskQuestionCustomActivity.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuestionCustomActivity.pdb
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\ref\AskQuestionCustomActivity.dll
+C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\AskQuestionCustomActivity\AskQuestionCustomActivity\AskQuestionCustomActivity\obj\Debug\net6.0\AskQuest.0E08414E.Up2Date

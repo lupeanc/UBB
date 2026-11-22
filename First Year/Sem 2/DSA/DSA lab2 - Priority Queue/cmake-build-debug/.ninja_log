@@ -1,0 +1,17 @@
+# ninja log v6
+31	549	7664376417680496	build.ninja	bb320d4c04eeb63f
+34	368	7664128150416013	CMakeFiles/DSA_lab_2___Priority_Queue.dir/ShortTest.cpp.obj	5e102f63c7dfd2f
+310	415	7664166784124567	DSA_lab_2___Priority_Queue.exe	ca2f743083fae13
+25	309	7664166781275381	CMakeFiles/DSA_lab_2___Priority_Queue.dir/PriorityQueue.cpp.obj	aa50491057f8a14a
+26	585	7664128150326350	CMakeFiles/DSA_lab_2___Priority_Queue.dir/App.cpp.obj	7d79f7633f4183f
+29	613	7664128150356000	CMakeFiles/DSA_lab_2___Priority_Queue.dir/ExtendedTest.cpp.obj	554ab48d616a91a8
+19	1398	7664902918060142	CMakeFiles/DSA_lab_2___Priority_Queue.dir/PriorityQueue.cpp.obj	aa50491057f8a14a
+1399	1868	7664902931853040	DSA_lab_2___Priority_Queue.exe	ca2f743083fae13
+27	470	7664904177650324	CMakeFiles/DSA_lab_2___Priority_Queue.dir/PriorityQueue.cpp.obj	aa50491057f8a14a
+20	901	7664904177589354	CMakeFiles/DSA_lab_2___Priority_Queue.dir/App.cpp.obj	7d79f7633f4183f
+902	1052	7664904186406224	DSA_lab_2___Priority_Queue.exe	ca2f743083fae13
+66	571	7664916567602716	CMakeFiles/DSA_lab_2___Priority_Queue.dir/ShortTest.cpp.obj	5e102f63c7dfd2f
+61	575	7664916567551834	CMakeFiles/DSA_lab_2___Priority_Queue.dir/PriorityQueue.cpp.obj	aa50491057f8a14a
+50	919	7664916567438760	CMakeFiles/DSA_lab_2___Priority_Queue.dir/App.cpp.obj	7d79f7633f4183f
+56	993	7664916567500413	CMakeFiles/DSA_lab_2___Priority_Queue.dir/ExtendedTest.cpp.obj	554ab48d616a91a8
+993	1343	7664916576871220	DSA_lab_2___Priority_Queue.exe	ca2f743083fae13

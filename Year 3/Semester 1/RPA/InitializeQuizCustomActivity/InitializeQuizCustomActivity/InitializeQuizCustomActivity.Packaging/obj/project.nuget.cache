@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tZVD5I48ejA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\InitializeQuizCustomActivity\\InitializeQuizCustomActivity\\InitializeQuizCustomActivity.Packaging\\InitializeQuizCustomActivity.Packaging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Clayton\\.nuget\\packages\\system.activities.viewmodels\\1.20260609.1\\system.activities.viewmodels.1.20260609.1.nupkg.sha512",
+    "C:\\Users\\Clayton\\.nuget\\packages\\initializequizcustomactivity.activities\\1.0.0\\initializequizcustomactivity.activities.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

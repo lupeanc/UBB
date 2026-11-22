@@ -1,0 +1,3 @@
+F:/c projects uni/assignment 4-5/cmake-build-debug-coverage/CMakeFiles/assignment_4_5.dir
+F:/c projects uni/assignment 4-5/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+F:/c projects uni/assignment 4-5/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,202 @@
+;;;; Describe Program -----------------------------------------------
+;;; Basic comment
+;; commenct indented with code
+; comment coming after a line of code
+
+#|
+    woah multiline comment
+|#
+
+;; format -> used for better printing
+;; t -> print in TERMINAL
+;; ~% -> new line
+(format t "wassup")
+(print "am chillin")
+(format t "im still on the same line")
+(format t "..omg wait? ~% INSANERS ~%")
+
+;;;; READ A NAME ------------------------------------------------------------------------------------------------------------------
+(format t "What's ur name? ~%")
+
+;;; DEFINING VARIABLES: ------------------------------------------------------------------------------------------------------------------
+;; (defvar var)
+; global variables are usually written as *var*
+
+; read the variable
+(defvar *name*(read))
+
+; define function
+(defun hello-user (name)
+    (format t "U suck dick ~a ~%" name)
+)
+
+;;;; THIS WILL PRINT THE NAME IN ALL CAPS
+;; SO we add this fancy smancy stuffs
+(setq *print-case* :capitalize) ; can also be upcase or downcase
+;; MUST ADD SPACE BETWEEN * and :
+
+(hello-user *name*)
+
+;;;; number has the default value 0 ---------------------------------------------------------
+(defvar *number* 0)
+(setf *number* 6)
+(format t "The new number is: ~a ~%" *number*)
+
+;;;; FORMAT DIFFERENT OPTIONS ---------------------------------------------------------
+(format t "Number with commas: ~:d ~%" 1000000)
+(format t "Show the first 3 CHARACTERS for: 1.234567 - ~3f ~%" 1.234567)
+(format t "Show the first 3 DECIMALS for: 1.234567 - ~,3f ~%" 1.234567)
+(format t "Percent: ~,,2f ~%" .68)
+
+;;;; MATH STUFF ------------------------------------------------------------------------------------------------------------------
+(format t "(/ 5 4) will have the same output: ~d ~%" (/ 5 4))
+(format t "in order for it to have decimals, add .0 after second number: (/ 5 4.0) = ~d ~%" (/ 5 4.0))
+(format t "(rem 5 4) = (mod 5 4) -> ~d = ~d ~%" (rem 5 4) (mod 5 4))
+
+;--------
+(format t "(expt 4 2) = ~d ~%" (expt 4 2)) ; = 4^2
+(format t "(sqrt 81) = ~d ~%" (sqrt 81)) ; = 9
+(format t "(exp 1) = ~d ~%" (exp 1)) ; = e^1
+(format t "(log 1000 10) = ~d ~%" (log 1000 10)) ; = 3 = Because 10^3 = 1000
+(format t "(eq 'dog 'dog) = ~d ~%" (eq 'dog 'dog)) ; = T Check Equality
+(format t "(floor 5.5) = ~d ~%" (floor 5.5)) ; = 5
+(format t "(ceiling 5.5) = ~d ~%" (ceiling 5.5)) ; = 6
+(format t "(max 5 10) = ~d ~%" (max 5 10)) ; = 10
+(format t "(min 5 10) = ~d ~%" (min 5 10)) ; = 5
+(format t "(oddp 15) = ~d ~%" (oddp 15)) ; = T Check if 15 is odd 
+(format t "(evenp 15) = ~d ~%" (evenp 15)) ; = NIL = FALSE Check if 15 is even 
+(format t "(numberp 2) = ~d ~%" (numberp 2)) ; = T Is 2 a number
+(format t "(null nil) = ~d ~%" (null nil)) ; = T Is something equal to nil
+
+;;;; EQUALITY ------------------------------------------------------------------------------------------------------------------
+;; values have a ' in front.
+; name = variable ; knightu_ba = value
+(defparameter name 'Knightu_ba)
+
+; eq OR equal for: numbers, strings, lists
+(format t "(eq name 'Knightu_ba) = ~d ~%" (eq name 'Knightu_ba))
+(format t "(equal name 'Knightu_ba) = ~d ~%" (equal name 'Knightu_ba))
+(format t "~d ~%" (eq 10 11)) ; NIL
+(format t "~d ~%" (equal 10 11)) ; NIL
+(format t "(equal \"String\" \"string\") = ~d ~%" (equal "String" "string")) ; NIL
+(format t "(equal (list 1 2 3) (list 1 2 3)) = ~d ~%" (equal (list 1 2 3) (list 1 2 3)))
+
+;;; FOR COMPARING DIFFERENT TYPES: EQUALP
+;; int with float OR strings without taking into account capitalization
+(format t "(equalp 1.0 1) = ~d ~%" (equalp 1.0 1))
+(format t "(equalp \"prrrintu\" \"Prrrintu\") = ~d ~%" (equalp "prrrintu" "Prrrintu"))
+
+;;;; CONDITIONALS ---------------------------------------------------------------------------------
+(defvar age 18)
+
+(if (= age 18)
+    (format t "u can legally watch porn!! ~%")
+    ; the else clause is built in
+    (format t "u can't legally watch porn :(( ~%")
+
+)
+
+(if (not (= age 18))
+    (format t "u can't legally watch porn :,( ~%")
+    ; the else clause is built in
+    (format t "u can legally watch porn :)) ~%")
+
+)
+
+(defvar getAge (read))
+
+(if(< getAge 0)
+    (format t "o pl ai ~d ani ~%" getAge)
+)
+
+(if(or (<= getAge 6) (>= getAge 100))
+    (format t "taci ca minti ~%")
+)
+
+(if (and (>= getAge 7) (< getAge 100))
+    (format t "waw. ai ~d ani ~%" getAge)
+)
+;;;; for getAge = -2: it will print both the first and the second statement 
+;;; shit overlaps so..
+(format t "----------------~%")
+(if(< getAge 0)
+    (format t "o pl ai ~d ani ~%" getAge)
+    (if(or (<= getAge 6) (>= getAge 100))
+        (format t "taci ca minti ~%")
+        (if(and (> getAge 6) (< getAge 100))
+            (format t "waw. ai ~d ani ~%" getAge)
+        )
+    )
+)
+
+;;; Say you wanna run more than one line in an if statement ---------------------------------------------------------
+;;; if(cond){
+        ; do thing one
+        ; do thing two
+        ; ...
+        ; else ...
+;;; }
+
+;;; WE USE: progn
+(format t "Enter a positive number < 100: ~%")
+(defvar n (read))
+(defvar newN)
+(if (and (>= n 0) (<= n 100))
+    (progn
+        (setf newN (sqrt n))
+        (format t "root of ~d is ~d ~%" n newN)
+    )
+    (progn
+        (format t "that aint what i asked for, dumbass ~%")
+        (format t "go in the corner ~%")
+    )
+)
+
+;; we also have case but fuck that shit
+
+;; WHEN - !!!!!!!!!!!!!!!!!!!!!!! -------------------------------------------------------------------------------------------------------
+(defvar thisAge 18)
+(when (= thisAge 18)
+    (format t "shoo away and do big boy stuff ~%")
+)
+;; UNLESS - !!!!!!!!!!!!!!!!!!!!!!
+; unless (cond) -> DONT execute the following code
+; so: unless = when (cond==false)
+(unless (= thisAge 18)
+    ; dont ...
+    (format t "shoo away and do big boy stuff")
+)
+(unless (not(= thisAge 18))
+    ; dont ...
+    (format t "shoo away but in unless ~%")
+)
+
+;; COND ------------------------------------------------------------------------------------------------------------------
+(defvar age 18)
+(defvar college-ready nil)
+
+;;; SYNTAX
+; ( cond ((condition)
+;		(do stuff))
+;	((condition)
+;		(do other stuff))
+; )
+; basically cond is built from a bunch of (condition)(do stuff) pairs => ((condition)(do stuff)(do stuff))
+(cond( (>= age 18) ;condition
+            ;; what to do if cond is true
+            (setf college-ready 'yes)
+            (format t "Ready? ~a ~%" college-ready)
+     )
+
+     ( (< age 18) ; condition
+            ;; what to do if cond is true
+            (setf college-ready 'no)
+            (format t "Ready? ~a ~%" college-ready)
+     )
+    
+     ;; if u get here, you are in neither of the cases above
+     ;; why is there true in there? idk. false can also be put in its place.
+     ;; ig we just need a condition of some sort
+     ( t (format t "IDK MAN ~%"))
+)
+

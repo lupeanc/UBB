@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1775208257589" clover="3.2.0">
+  <project timestamp="1775208257589" name="All files">
+    <metrics statements="81" coveredstatements="81" conditionals="23" coveredconditionals="21" methods="23" coveredmethods="23" elements="127" coveredelements="125" complexity="0" loc="81" ncloc="81" packages="3" files="10" classes="10"/>
+    <package name="assets">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="hero.png" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\assets\hero.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="75" coveredstatements="75" conditionals="23" coveredconditionals="21" methods="20" coveredmethods="20"/>
+      <file name="CharacterCard.css" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\CharacterCard.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="CharacterCard.tsx" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\CharacterCard.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+      </file>
+      <file name="CharacterIndexTable.css" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\CharacterIndexTable.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="CharacterIndexTable.tsx" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\CharacterIndexTable.tsx">
+        <metrics statements="58" coveredstatements="58" conditionals="19" coveredconditionals="18" methods="17" coveredmethods="17"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="24" count="93" type="stmt"/>
+        <line num="25" count="93" type="stmt"/>
+        <line num="26" count="93" type="stmt"/>
+        <line num="27" count="93" type="stmt"/>
+        <line num="28" count="93" type="stmt"/>
+        <line num="29" count="93" type="stmt"/>
+        <line num="30" count="93" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="35" count="5" type="cond" truecount="7" falsecount="0"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="46" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="77" count="93" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="87" count="93" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="92" count="93" type="stmt"/>
+        <line num="102" count="17" type="stmt"/>
+        <line num="108" count="18" type="stmt"/>
+        <line num="115" count="8" type="stmt"/>
+        <line num="121" count="9" type="stmt"/>
+        <line num="127" count="24" type="stmt"/>
+        <line num="152" count="17" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="167" count="1" type="stmt"/>
+      </file>
+      <file name="NewestPage.css" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\NewestPage.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="NewestPage.tsx" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\NewestPage.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+      </file>
+      <file name="NewestSilliesSketch.css" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\NewestSilliesSketch.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="NewestSilliesSketch.tsx" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\components\NewestSilliesSketch.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="MainPage.tsx" path="C:\Users\Clayton\Uni\MPP\dishonouredcomic\src\pages\MainPage.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

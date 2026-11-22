@@ -1,0 +1,42 @@
+.main-div-contact {
+    text-align: center;
+    color:rgb(199, 203, 217);
+
+}
+
+.title-contact {
+    font-size: 20px;
+    /* color:white; */
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.socials-card {
+    width:70px;
+    height:90px;
+    margin: 10px 20px 0 20px;
+    text-decoration: none;
+}
+
+.socials-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.socials-title {
+    font-size: 15px;
+    /* color:white; */
+    color:rgb(199, 203, 217);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials-card:hover {
+    .socials-title {
+        color:rgb(255, 255, 255);
+    }
+}

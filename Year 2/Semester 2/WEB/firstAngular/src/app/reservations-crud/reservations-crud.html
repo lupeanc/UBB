@@ -1,0 +1,62 @@
+<div class="spacer"><button type="button" onclick="location.href='./reservations-home'">Home</button></div>
+<br><br><br>
+<div class="crud">
+    <h3>Add/Update/Delete Reservations!</h3>
+    <section style="text-align: center; place-items: center;">
+        <section id="add_form" style=" display: block; padding-left: 50px; padding-top: 12px">
+        <form (submit)="$event.preventDefault()">
+            <input id="user_id1" type="text" #newUser_id placeholder="user_id" style="margin: 5px; width: 191px">
+            <input id="room_id1" type="text" #newRoom_id placeholder="room_id" style="margin: 5px; width: 191px">
+            <input id="start1" type="text" #newStart placeholder="start" style="margin: 5px; width: 191px">
+            <input id="end1" type="text" #newEnd placeholder="end" style="margin: 5px; width: 191px">
+            <button id="submitAddBtn" style="margin-top: 10px" (click)="addReservation(newUser_id, newRoom_id, newStart, newEnd)">
+            Add new reservation</button>
+        </form>
+        </section>
+      </section>
+
+      <section style="text-align: center; place-items: center;">
+        <section id="update_form" style=" display: none; padding-left: 50px; padding-top: 12px">
+        <form (submit)="$event.preventDefault()">
+            <input id="id2" type="text" #uId placeholder="id" style="margin: 5px; width: 191px;" disabled>
+            <input id="user_id2" type="text" #uUser_id placeholder="user_id" style="margin: 5px; width: 191px">
+            <input id="room_id2" type="text" #uRoom_id placeholder="room_id" style="margin: 5px; width: 191px">
+            <input id="start2" type="text" #uStart placeholder="start" style="margin: 5px; width: 191px">
+            <input id="end2" type="text" #uEnd placeholder="end" style="margin: 5px; width: 191px">
+            <button id="submitUpdateBtn" style="margin-top: 10px" (click)="updateReservation(uId, uUser_id, uRoom_id, uStart, uEnd)">
+            Update reservation</button>
+        </form>
+        </section>
+      <!-- </section> -->
+    <!-- </div> -->
+    
+      <!-- <pre>{{ reservations | json }}</pre> -->
+      <br>
+      <table class="all-reservations">
+        <thead>
+        <th>ID</th>
+        <th>User_id</th>
+        <th>Room_id</th>
+        <th>Start</th>
+        <th>End</th>
+        <th> </th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let res of reservations">
+          <td>{{res.id}}</td>
+          <td>{{res.user_id}}</td>
+          <td>{{res.room_id}}</td>
+          <td>{{res.start}}</td>
+          <td>{{res.end}}</td>
+          <td>
+            <button class='btnUpdate' type='button' (click)="onUpdate(res)">Update</button>
+            <button class='btnDelete' type='button' (click)="onDelete(res.id)">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p> </p>
+      <br>
+    </section>
+
+</div>

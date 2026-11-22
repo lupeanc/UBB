@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OOPExamPracticeEventPlanner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeEventPlanner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeEventPlanner-Debug-0ebd8a33e6bd4d19afb3.json",
+					"name" : "OOPExamPracticeEventPlanner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeEventPlanner_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeEventPlanner_autogen-Debug-570971980c963a795ed6.json",
+					"name" : "OOPExamPracticeEventPlanner_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeEventPlanner_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeEventPlanner_autogen_timestamp_deps-Debug-bbc1a865add63d4e4615.json",
+					"name" : "OOPExamPracticeEventPlanner_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/c projects uni/OOPExamPracticeEventPlanner/cmake-build-debug",
+		"source" : "F:/c projects uni/OOPExamPracticeEventPlanner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

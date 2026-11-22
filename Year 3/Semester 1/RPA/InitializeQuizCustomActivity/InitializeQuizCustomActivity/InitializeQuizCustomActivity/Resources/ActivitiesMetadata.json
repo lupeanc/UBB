@@ -1,0 +1,13 @@
+{
+  "resourceManagerName": "InitializeQuizCustomActivity.Resources.Resources",
+  "activities": [
+    {
+      "fullName": "InitializeQuizCustomActivity.ActivityTemplate",
+      "shortName": "Template",
+      "displayNameKey": "ActivityTemplate_DisplayName",
+      "descriptionKey": "ActivityTemplate_Description",
+      "categoryKey": "Templates",
+      "viewModelType": "InitializeQuizCustomActivity.ViewModels.ActivityTemplateViewModel"
+    }
+  ]
+}

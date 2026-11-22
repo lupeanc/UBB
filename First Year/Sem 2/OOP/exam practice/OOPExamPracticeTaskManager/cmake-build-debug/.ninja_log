@@ -1,0 +1,25 @@
+# ninja log v6
+23	131	7716265415362826	OOPExamPracticeTaskManager_autogen/timestamp	12d9fe8fd6acfe39
+23	131	7716265415362826	F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp	12d9fe8fd6acfe39
+224	299	7716240520687911	CMakeFiles/OOPExamPracticeTaskManager.dir/OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp.obj	cc3a58212d842e11
+18	788	7716241079668876	build.ninja	e1848b121af0efb
+23	131	7716265415362826	OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp	12d9fe8fd6acfe39
+23	131	7716265415362826	F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/OOPExamPracticeTaskManager_autogen/timestamp	12d9fe8fd6acfe39
+134	4558	7716264915417992	CMakeFiles/OOPExamPracticeTaskManager.dir/main.cpp.obj	a5874753910ac13c
+151	921	7716260803278853	CMakeFiles/OOPExamPracticeTaskManager.dir/Domain/Task.cpp.obj	44ab012f5674b7ba
+147	934	7716260803249180	CMakeFiles/OOPExamPracticeTaskManager.dir/Domain/Programmer.cpp.obj	c9497412fca75c38
+137	4819	7716264915448262	CMakeFiles/OOPExamPracticeTaskManager.dir/GUI/GUI.cpp.obj	66590e8f2d2be7b2
+132	1250	7716265416449692	CMakeFiles/OOPExamPracticeTaskManager.dir/Repository/Repository.cpp.obj	8390aa690c9dfdea
+1251	1803	7716265427643166	OOPExamPracticeTaskManager.exe	2a2ada267d957a62
+22	134	7716266232820300	OOPExamPracticeTaskManager_autogen/timestamp	12d9fe8fd6acfe39
+22	134	7716266232820300	OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp	12d9fe8fd6acfe39
+22	134	7716266232820300	F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/OOPExamPracticeTaskManager_autogen/timestamp	12d9fe8fd6acfe39
+22	134	7716266232820300	F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp	12d9fe8fd6acfe39
+134	4275	7716266233940018	CMakeFiles/OOPExamPracticeTaskManager.dir/GUI/GUI.cpp.obj	66590e8f2d2be7b2
+4275	4834	7716266275348309	OOPExamPracticeTaskManager.exe	2a2ada267d957a62
+12	125	7716270296768850	OOPExamPracticeTaskManager_autogen/timestamp	12d9fe8fd6acfe39
+12	125	7716270296768850	OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp	12d9fe8fd6acfe39
+12	125	7716270296768850	F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/OOPExamPracticeTaskManager_autogen/timestamp	12d9fe8fd6acfe39
+12	125	7716270296768850	F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug/OOPExamPracticeTaskManager_autogen/mocs_compilation.cpp	12d9fe8fd6acfe39
+126	4495	7716270297906155	CMakeFiles/OOPExamPracticeTaskManager.dir/GUI/GUI.cpp.obj	66590e8f2d2be7b2
+4495	5082	7716270341598681	OOPExamPracticeTaskManager.exe	2a2ada267d957a62

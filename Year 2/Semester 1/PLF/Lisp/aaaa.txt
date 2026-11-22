@@ -1,0 +1,32 @@
+; INORDER
+(defun inorder (tree)
+  (cond
+    ((null tree) nil)
+    ((atom tree) (list tree))
+    (t
+     (append
+       (inorder (second tree))   ; first subtree
+       (list (first tree))       ; root
+       (apply #'append           ; remaining subtrees
+              (mapcar #'inorder (cddr tree)))))))
+
+
+(defun preorder (tree)
+  (cond
+    ((null tree) nil)
+    ((atom tree) (list tree))
+    (t
+     (cons (first tree)
+           (apply #'append
+                  (mapcar #'preorder (rest tree)))))))
+
+
+(defun postorder (tree)
+  (cond
+    ((null tree) nil)
+    ((atom tree) (list tree))
+    (t
+     (append
+      (apply #'append
+             (mapcar #'postorder (rest tree)))
+      (list (first tree))))))

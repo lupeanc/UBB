@@ -1,0 +1,214 @@
+% MIN
+findMin([],CurrentMin,CurrentMin).
+findMin([H|T],CurrentMin,Min):-
+    H>CurrentMin,
+    findMin(T,CurrentMin,Min).
+findMin([H|T],CurrentMin,Min):-
+    H=<CurrentMin,
+    findMin(T,H,Min).
+
+% MAX
+findMax([],CurrentMax,CurrentMax).
+findMax([H|T],CurrentMax,Max):-
+    H<CurrentMax,
+    findMax(T,CurrentMax,Max).
+findMax([H|T],CurrentMax,Max):-
+   	H>=CurrentMax,
+    findMax(T,H,Max).
+
+% SUM OF ELEMS IN LIST
+sumElems([],0).
+sumElems([H|T],R):-
+    sumElems(T,R1),
+    R is R1+H.
+
+% PROD OF ELEMS IN LIST
+prodElems([],1).
+prodElems([H|T],R):-
+    prodElems(T,R1),
+    R is R1*H.
+
+% NB OF OCCURENCES, NO INIT
+counter([],_,0).
+counter([H|T],E,R):-
+    H=\=E,
+    counter(T,E,R).
+counter([H|T], E, R):-
+    H=:=E,
+    counter(T,E,R1),
+    R is R1+1.
+
+% FIND POSITION OF ELEM E
+findFirstPos([],_,1).
+findFirstPos([H|T],E,R):-
+    H=\=E,
+    findFirstPos(T,E,R).
+findFirstPos([H|T], E, R):-
+    H=:=E,
+    findFirstPos(T,E,R1),
+    R is R1+1.
+
+findAllPos([],_,_,[]).
+findAllPos([H|T],E,Index,R):-
+    H=\=E,
+    NewI is Index+1,
+    findAllPos(T,E,NewI, R).
+findAllPos([H|T],E,Index,[Index|R]):-
+    H=:=E,
+    NewI is Index+1,
+    findAllPos(T,E,NewI,R).
+
+% DIVISORS
+%ALL
+getDivisorsAll(Nb,DivBy,[]):-
+    DivBy>Nb,
+    !.
+getDivisorsAll(Nb,DivBy,R):-
+    DivBy=<Nb,
+    Rest is Nb mod DivBy,
+    Rest =\= 0,
+    NewDivBy is DivBy+1,
+    getDivisorsAll(Nb, NewDivBy,R).
+getDivisorsAll(Nb,DivBy, [DivBy|R]):-
+    DivBy=<Nb,
+    Rest is Nb mod DivBy,
+    Rest =:= 0,
+    NewDivBy is DivBy+1,
+    getDivisorsAll(Nb, NewDivBy,R).
+
+% NO 1 AND ITSELF
+getDivisors(Nb,DivBy,[]):-
+    DivBy>=Nb div 2,
+    !.
+getDivisors(Nb,DivBy,R):-
+    DivBy<Nb div 2,
+    Rest is Nb mod DivBy,
+    Rest =\= 0,
+    NewDivBy is DivBy+1,
+    getDivisors(Nb, NewDivBy,R).
+getDivisors(Nb,DivBy, [DivBy|R]):-
+    DivBy<Nb div 2,
+    Rest is Nb mod DivBy,
+    Rest =:= 0,
+    NewDivBy is DivBy+1,
+    getDivisors(Nb, NewDivBy,R).
+
+% VERSION 2
+getDivisors(N,DivBy,[]):-
+    DivBy>N div 2.
+getDivisors(N, DivBy, R):-
+    DivBy=<N div 2,
+    N mod DivBy =\= 0,
+    NewDivBy is DivBy+1,
+    getDivisors(N,NewDivBy,R).
+getDivisors(N, DivBy, [DivBy|R]):-
+    DivBy=<N div 2,
+    N mod DivBy =:= 0,
+    NewDivBy is DivBy+1,
+    getDivisors(N,NewDivBy,R).
+
+% PRIME
+isEmpty([]).
+
+isPrime(2).
+isPrime(X):-
+    X>2,
+    getDivisors(X,2,DivList),
+    isEmpty(DivList).
+
+% GCD
+gcd(0, B, B):- !.
+gcd(A, 0, A):- !.
+gcd(A, B, R):-
+    A >= B, 
+	A1 is A mod B,
+	gcd(A1, B, R), !.
+gcd(A, B, R):-
+	A < B,
+	B1 is B mod A,
+	gcd(A, B1, R), !.
+
+%LCM
+lcm(A, B, R):-
+    gcd(A, B, RGCD),
+    R is A * B / RGCD.
+
+
+% INSERT AN ELEM ON EVERY POSITION OF A LIST
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E: element, R: result list)
+% (i,i,o)
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+
+% PERMUTATIONS
+% perm(l1l2...ln) = 
+% = [], if n = 0 
+% = insert(l1, perm(l2...ln)), otherwise
+
+% perm(L:list, R: result list)
+% (i,o)
+
+perm([],[]).
+perm([H|T],R1):-
+    perm(T,R),
+    insert(H,R,R1).
+
+
+% ARRANGEMENTS
+% arr(l1l2...ln, k) = 
+% = l1, if k = 1
+% = arr(l1l2...ln, k), if k >= 1
+% = insert(l1, arr(l2...ln, k - 1)), if k > 1
+
+% arr(L:list, K:number, R:list)
+% (i,i,o)
+
+arr([H|_],1,[H]).
+arr([_|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R1):-
+    K > 1,
+    K1 is K - 1,
+    arr(T,K1,R),
+    insert(H,R,R1).
+
+
+% COMBINATIONS
+% comb(l1l2...ln, k) = 
+% = l1, if k = 1 and n >= 1
+% = comb(l2...ln, k), if k >= 1
+% = {l1} U comb(l2...ln, k - 1), if k > 1
+
+% comb(L:list, K:number, R:list)
+% (i,i,o)
+
+comb([E|_],1,[E]).
+comb([_|T],K,R):-
+    comb(T,K,R).
+comb([H|T],K,[H|R]):-
+    K > 1,
+    K1 is K - 1,
+    comb(T, K1, R).
+
+
+% SUBSETS
+% subset(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subset(l2...ln), if n >= 1
+% = subset(l2...ln), if n >= 1
+
+% subset(L:list, R:result list)
+% (i,o)
+
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T],R):-
+    subset(T,R).

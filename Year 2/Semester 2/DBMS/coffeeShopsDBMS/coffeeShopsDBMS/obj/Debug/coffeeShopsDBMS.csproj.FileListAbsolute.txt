@@ -1,0 +1,10 @@
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\bin\Debug\coffeeShopsDBMS.exe.config
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\bin\Debug\coffeeShopsDBMS.exe
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\bin\Debug\coffeeShopsDBMS.pdb
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.csproj.AssemblyReference.cache
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.Form1.resources
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.Properties.Resources.resources
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.csproj.GenerateResource.cache
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.exe
+C:\Users\Clayton\Uni\DBMS\coffeeShopsDBMS\coffeeShopsDBMS\obj\Debug\coffeeShopsDBMS.pdb

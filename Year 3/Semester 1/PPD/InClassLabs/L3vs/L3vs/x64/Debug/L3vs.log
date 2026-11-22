@@ -1,0 +1,3 @@
+﻿  L3vs.cpp
+C:\Users\Clayton\Uni\Year 3\Semester 1\PPD\InClassLabs\L3vs\L3vs\L3vs.cpp(37,14): error C3861: 'aligned_alloc': identifier not found
+C:\Users\Clayton\Uni\Year 3\Semester 1\PPD\InClassLabs\L3vs\L3vs\L3vs.cpp(38,14): error C3861: 'aligned_alloc': identifier not found

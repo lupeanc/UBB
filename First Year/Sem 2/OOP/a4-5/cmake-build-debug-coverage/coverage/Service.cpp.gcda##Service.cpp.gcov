@@ -1,0 +1,396 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/Service/Service.cpp
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Service\Service.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Service\Service.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Service.h"
+function _ZN7ServiceC2EP10RepositoryS1_ called 12 returned 100% blocks executed 100%
+       12:    2:Service::Service(Repository* adminRepo, Repository* userRepo) {
+       12:    3:    this->adminRepo = adminRepo;
+       12:    4:    this->userRepo = userRepo;
+       12:    5:}
+        -:    6:
+function _ZN7Service12getAdminRepoEv called 2 returned 100% blocks executed 100%
+        2:    7:DynamicArray<Event>* Service::getAdminRepo() {
+        2:    8:    return this->adminRepo->getDynamicArray();
+        2:    8-block  0
+call    0 returned 2
+        -:    9:}
+function _ZN7Service11getUserRepoEv called 2 returned 100% blocks executed 100%
+        2:   10:DynamicArray<Event>* Service::getUserRepo() {
+        2:   11:    return this->userRepo->getDynamicArray();
+        2:   11-block  0
+call    0 returned 2
+        -:   12:}
+        -:   13:
+        -:   14://! ADMIN
+function _ZN7Service15addServiceAdminENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_4DateiiS5_ called 5 returned 100% blocks executed 58%
+        5:   15:int Service::addServiceAdmin(string title, string description, Date date, int time, int attendance, string link) {
+        5:   16:    return this->adminRepo->addRepo(title, description, date, time, attendance, link);
+        5:   16-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   16-block  1
+call    3 returned 5
+branch  4 taken 5 (fallthrough)
+branch  5 taken 0 (throw)
+        5:   16-block  2
+call    6 returned 5
+branch  7 taken 5 (fallthrough)
+branch  8 taken 0 (throw)
+        5:   16-block  3
+call    9 returned 5
+branch 10 taken 5 (fallthrough)
+branch 11 taken 0 (throw)
+        5:   16-block  4
+        5:   16-block  5
+call   12 returned 5
+call   13 returned 5
+call   14 returned 5
+        5:   16-block  6
+    $$$$$:   16-block  7
+call   15 never executed
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+call   16 never executed
+    $$$$$:   16-block 10
+    $$$$$:   16-block 11
+call   17 never executed
+        -:   17:}
+        -:   18:
+function _ZN7Service18deleteServiceAdminENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 69%
+        2:   19:int Service::deleteServiceAdmin(string title) {
+        -:   20:    int deleted_admin;
+        2:   21:    deleted_admin = this->adminRepo->deleteEvent(title);
+        2:   21-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   21-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   21-block  2
+call    6 returned 2
+    $$$$$:   21-block  3
+call    7 never executed
+    $$$$$:   21-block  4
+call    8 never executed
+        2:   22:    this->userRepo->deleteEvent(title);
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   22-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   22-block  1
+call    6 returned 2
+    $$$$$:   22-block  2
+call    7 never executed
+        2:   23:    if (!deleted_admin)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   24:        return 0;
+        1:   24-block  0
+        1:   25:    return 1;
+        1:   25-block  0
+        -:   26:}
+        -:   27:
+function _ZN7Service22updateEventStringAdminENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_i called 4 returned 100% blocks executed 58%
+        4:   28:int Service::updateEventStringAdmin(string title, string newText, int command) {
+        -:   29:    int updated_admin;
+        4:   30:    updated_admin = this->adminRepo->updateEventString(title, newText, command);
+        4:   30-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   30-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   30-block  2
+call    6 returned 4
+branch  7 taken 4 (fallthrough)
+branch  8 taken 0 (throw)
+        4:   30-block  3
+call    9 returned 4
+call   10 returned 4
+    $$$$$:   30-block  4
+call   11 never executed
+    $$$$$:   30-block  5
+    $$$$$:   30-block  6
+call   12 never executed
+    $$$$$:   30-block  7
+call   13 never executed
+        4:   31:    this->userRepo->updateEventString(title, newText, command);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   31-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   31-block  1
+call    6 returned 4
+branch  7 taken 4 (fallthrough)
+branch  8 taken 0 (throw)
+        4:   31-block  2
+call    9 returned 4
+call   10 returned 4
+    $$$$$:   31-block  3
+call   11 never executed
+    $$$$$:   31-block  4
+    $$$$$:   31-block  5
+call   12 never executed
+        4:   32:    if (!updated_admin)
+branch  0 taken 3 (fallthrough)
+branch  1 taken 1
+        3:   33:        return 0;
+        3:   33-block  0
+        1:   34:    return 1;
+        1:   34-block  0
+        -:   35:}
+function _ZN7Service19updateEventIntAdminENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii called 3 returned 100% blocks executed 69%
+        3:   36:int Service::updateEventIntAdmin(string title, int newInt, int command) {
+        -:   37:    int updated_admin;
+        3:   38:    updated_admin = this->adminRepo->updateEventInt(title, newInt, command);
+        3:   38-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   38-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   38-block  2
+call    6 returned 3
+    $$$$$:   38-block  3
+call    7 never executed
+    $$$$$:   38-block  4
+call    8 never executed
+        3:   39:    this->userRepo->updateEventInt(title, newInt, command);
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   39-block  0
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   39-block  1
+call    6 returned 3
+    $$$$$:   39-block  2
+call    7 never executed
+        3:   40:    if (!updated_admin)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        2:   41:        return 0;
+        2:   41-block  0
+        1:   42:    return 1;
+        1:   42-block  0
+        -:   43:}
+function _ZN7Service20updateEventDateAdminENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiii called 2 returned 100% blocks executed 69%
+        2:   44:int Service::updateEventDateAdmin(string title, int day, int month, int year) {
+        -:   45:    int updated_admin;
+        2:   46:    updated_admin = this->adminRepo->updateEventDate(title, day, month, year);
+        2:   46-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   46-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   46-block  2
+call    6 returned 2
+    $$$$$:   46-block  3
+call    7 never executed
+    $$$$$:   46-block  4
+call    8 never executed
+        2:   47:    this->userRepo->updateEventDate(title, day, month, year);
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   47-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   47-block  1
+call    6 returned 2
+    $$$$$:   47-block  2
+call    7 never executed
+        2:   48:    if (!updated_admin)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   49:        return 0;
+        1:   49-block  0
+        1:   50:    return 1;
+        1:   50-block  0
+        -:   51:
+        -:   52:}
+        -:   53:
+        -:   54://! USER
+function _ZN7Service14addServiceUserE5Event called 3 returned 100% blocks executed 61%
+        3:   55:int Service::addServiceUser(Event e) {
+        3:   56:    int added, updated, new_attendance = e.getAttendance()+1;
+        3:   56-block  0
+call    0 returned 3
+        3:   57:    updated = this->adminRepo->updateEventInt(e.getTitle(), new_attendance, 2);
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   57-block  0
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   57-block  1
+call    6 returned 3
+    $$$$$:   57-block  2
+call    7 never executed
+    $$$$$:   57-block  3
+call    8 never executed
+        3:   58:    added = this->userRepo->addRepo(e.getTitle(), e.getDescription(), e.getDate(), e.getTime(), e.getAttendance(), e.getLink());
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   58-block  0
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   58-block  1
+call    6 returned 3
+branch  7 taken 3 (fallthrough)
+branch  8 taken 0 (throw)
+        3:   58-block  2
+call    9 returned 3
+branch 10 taken 3 (fallthrough)
+branch 11 taken 0 (throw)
+        3:   58-block  3
+call   12 returned 3
+branch 13 taken 3 (fallthrough)
+branch 14 taken 0 (throw)
+        3:   58-block  4
+call   15 returned 3
+branch 16 taken 3 (fallthrough)
+branch 17 taken 0 (throw)
+        3:   58-block  5
+call   18 returned 3
+branch 19 taken 3 (fallthrough)
+branch 20 taken 0 (throw)
+        3:   58-block  6
+call   21 returned 3
+call   22 returned 3
+call   23 returned 3
+    $$$$$:   58-block  7
+call   24 never executed
+    $$$$$:   58-block  8
+    $$$$$:   58-block  9
+call   25 never executed
+    $$$$$:   58-block 10
+    $$$$$:   58-block 11
+call   26 never executed
+        -:   59:
+        3:   60:    if (!added && !updated)
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   60-block  0
+branch  2 taken 0 (fallthrough)
+branch  3 taken 3
+    #####:   61:        return 0;
+    %%%%%:   61-block  0
+        3:   62:    return 1;
+        3:   62-block  0
+        -:   63:}
+        -:   64:
+function _ZN7Service18deleteServiceAUserE5Event called 2 returned 100% blocks executed 60%
+        2:   65:int Service::deleteServiceAUser(Event e) {
+        2:   66:    int deleted, updated, new_attendance = e.getAttendance()-1, exists = this->adminRepo->checkExistance(e.getTitle());
+        2:   66-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   66-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:   66-block  2
+call    7 returned 2
+    $$$$$:   66-block  3
+call    8 never executed
+    $$$$$:   66-block  4
+call    9 never executed
+        2:   67:    deleted = this->userRepo->deleteEvent(e.getTitle());
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   67-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   67-block  1
+call    6 returned 2
+    $$$$$:   67-block  2
+call    7 never executed
+    $$$$$:   67-block  3
+call    8 never executed
+        2:   68:    updated = this->adminRepo->updateEventInt(e.getTitle(), new_attendance, 2);
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   68-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   68-block  1
+call    6 returned 2
+    $$$$$:   68-block  2
+call    7 never executed
+       2*:   69:    if (!deleted && !updated && exists!=-1)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   69-block  0
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:   69-block  1
+branch  4 never executed (fallthrough)
+branch  5 never executed
+    #####:   70:        return 0;
+    %%%%%:   70-block  0
+        2:   71:    return 1;
+        2:   71-block  0
+        -:   72:}
+        -:   73:
+function _ZN7Service12getSizeAdminEv called 1 returned 100% blocks executed 100%
+        1:   74:int Service::getSizeAdmin() {
+        1:   75:    return this->getAdminRepo()->GetSize();
+        1:   75-block  0
+call    0 returned 1
+call    1 returned 1
+        -:   76:}
+        -:   77:
+function _ZN7Service11getSizeUserEv called 1 returned 100% blocks executed 100%
+        1:   78:int Service::getSizeUser() {
+        1:   79:    return this->getUserRepo()->GetSize();
+        1:   79-block  0
+call    0 returned 1
+call    1 returned 1
+        -:   80:}
+        -:   81:
+function _ZN7ServiceD2Ev called 6 returned 100% blocks executed 100%
+        6:   82:Service::~Service() {
+        6:   83:    delete this->adminRepo;
+        6:   83-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 0
+        6:   83-block  1
+call    2 returned 6
+call    3 returned 6
+        6:   84:    delete this->userRepo;
+        6:   84-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 0
+        6:   84-block  1
+call    2 returned 6
+call    3 returned 6
+        6:   85:}

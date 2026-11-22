@@ -1,0 +1,51 @@
+# Keywords
+int 1
+char 2
+# float 3
+script 4
+bool 5
+new 6
+film 7
+onScreen 8
+# i have these saved as boolean constants
+# true 9
+# false 10
+check 11
+else 12
+for 13
+do 14
+while 15
+record 16
+reel 17
+return 18
+add 19
+cut 20
+get 21
+overwrite 22
+nomemory 23
+
+# Operators
++ 30
+- 31
+* 32
+/ 33
+% 34
+< 35
+<= 36
+> 37
+>= 38
+== 39
+!= 40
+= 41
+&& 42
+|| 43
+
+# Separators
+( 50
+) 51
+{ 52
+} 53
+: 54
+; 55
+, 56
+. 57

@@ -1,0 +1,10 @@
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.csproj.AssemblyReference.cache
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.Form1.resources
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.Properties.Resources.resources
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.csproj.GenerateResource.cache
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\bin\Debug\CofShop2.exe.config
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\bin\Debug\CofShop2.exe
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\bin\Debug\CofShop2.pdb
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.exe
+C:\Users\Clayton\Uni\DBMS\CofShop2\CofShop2\obj\Debug\CofShop2.pdb

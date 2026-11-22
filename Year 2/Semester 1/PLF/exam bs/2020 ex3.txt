@@ -1,0 +1,43 @@
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T], R):-
+    subset(T,R).
+
+count([],0).
+count([_|T], R):-
+    count(T,R1),
+    R is R1+1.
+
+sum([],0).
+sum([H|T],S):-
+    sum(T,S1),
+    S is S1+H.
+
+checkProps(L,N):-
+    count(L,C),
+    C>=N,
+    sum(L,S),
+    S mod 3 =:= 0.
+
+oneSol(L,N,R):-
+    subset(L,R),
+    checkProps(R,N).
+
+allSols(L,N,R):-
+    findall(Subs, oneSol(L,N,Subs), R).
+
+
+(defun replaceK (l level k)
+    (cond
+        ((and (atom l) (equal level k))
+            0
+        )
+        ((atom l) l)
+        (t
+            (mapcar #' (lambda (a) (replaceK a (+ 1 level) k)) l)
+        )
+    )
+)
+
+(format t "~s" (replaceK '(a(1(2 b))(c(d))) 0 2) )

@@ -1,0 +1,38 @@
+(defun maxDepth (l)
+    (cond
+        ((atom l) 0)
+        (t
+            (+ 1 (apply #'max (mapcar #'maxDepth l)))
+        )
+    )
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(defun countElems(l)
+    (cond
+        ((null l) 0)
+        (t
+            (+ 1 (countElems (cdr l)))
+        )
+    )
+
+)
+
+; (format t "~s" (countElems '(1 2 3 4)))

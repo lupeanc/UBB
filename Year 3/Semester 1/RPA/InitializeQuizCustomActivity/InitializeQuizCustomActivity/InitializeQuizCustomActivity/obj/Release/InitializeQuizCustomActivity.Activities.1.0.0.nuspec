@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>InitializeQuizCustomActivity.Activities</id>
+    <version>1.0.0</version>
+    <authors>InitializeQuizCustomActivity</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="System.Activities.ViewModels" version="1.20260609.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Clayton\Uni\Year 3\Semester 1\RPA\InitializeQuizCustomActivity\InitializeQuizCustomActivity\InitializeQuizCustomActivity\bin\Release\net6.0\InitializeQuizCustomActivity.dll" target="lib\net6.0\InitializeQuizCustomActivity.dll" />
+  </files>
+</package>

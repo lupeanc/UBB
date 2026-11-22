@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AskQuestionCustomActivity/AskQuestionCustomActivity.Packaging/AskQuestionCustomActivity.Packaging.csproj" />
+  <Project Path="AskQuestionCustomActivity/AskQuestionCustomActivity.Tests/AskQuestionCustomActivity.Tests.csproj" />
+  <Project Path="AskQuestionCustomActivity/AskQuestionCustomActivity/AskQuestionCustomActivity.csproj" />
+</Solution>

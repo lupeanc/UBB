@@ -1,0 +1,37 @@
+Position	Type	Lexeme
+31	CONSTANT	"Character line: "
+30	CONSTANT	"Character name: "
+28	CONSTANT	"How many scenes does your movie have? Bloopers and credits included"
+24	CONSTANT	"Input a name: "
+25	CONSTANT	"Input fps: "
+27	CONSTANT	"Input not recognized. Using basic camera."
+10	CONSTANT	"Sony 4d-f"
+32	CONSTANT	"Would you like to keep the bloopers? y/n"
+33	CONSTANT	"Would you like to switch the bloopers and credits? y/n"
+22	CONSTANT	"Would you like to use a basic camera? y/n"
+23	CONSTANT	"n"
+26	CONSTANT	"y"
+21	CONSTANT	0
+29	CONSTANT	1
+11	CONSTANT	60
+0	IDENTIFIER	Camera
+6	IDENTIFIER	Movie
+3	IDENTIFIER	Scene
+34	IDENTIFIER	bloopers
+18	IDENTIFIER	bloopersIndex
+7	IDENTIFIER	camera
+5	IDENTIFIER	characterLine
+4	IDENTIFIER	characterName
+9	IDENTIFIER	createBasicCamera
+35	IDENTIFIER	credits
+2	IDENTIFIER	fps
+14	IDENTIFIER	keepBloopers
+12	IDENTIFIER	main
+20	IDENTIFIER	movie
+1	IDENTIFIER	name
+16	IDENTIFIER	numberOfScenes
+19	IDENTIFIER	scene
+17	IDENTIFIER	sceneIndex
+8	IDENTIFIER	scenes
+15	IDENTIFIER	switchBloopersAndCredits
+13	IDENTIFIER	useBasicCamera

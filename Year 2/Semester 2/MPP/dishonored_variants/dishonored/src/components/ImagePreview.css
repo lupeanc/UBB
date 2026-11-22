@@ -1,0 +1,40 @@
+.main-div-preview{
+    width:200px;
+    /* height: 200px; */
+    /* background-color: black; */
+    overflow:hidden;
+    /* align-items: center; */
+    padding:18px;
+    /* border:2px solid grey; */
+    /* display: block; */
+    /* box-sizing: border-box; */
+
+}
+
+.title-preview {
+    /* text-align: center; */
+    font-size: 16px;
+    margin:0;
+}
+
+
+.image-fit-preview {
+    width:200px;
+    height: auto;
+    object-fit: contain;
+    border:1px solid grey;
+    /* display: flex; */
+    /* float:left; */
+
+}
+
+.date {
+    font-size: 12px;
+    margin:0;
+    color:rgb(81, 81, 81);
+    /* text-align: justify; */
+    /* padding: 20px; */
+    /* display: flex; */
+}
+
+/* .clear {clear: both;} */

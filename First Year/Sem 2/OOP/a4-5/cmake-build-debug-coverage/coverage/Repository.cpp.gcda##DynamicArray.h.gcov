@@ -1,0 +1,276 @@
+        -:    0:Source:F:/c projects uni/assignment 4-5/DynamicArray.h
+        -:    0:Graph:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Repository\Repository.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment 4-5\cmake-build-debug-coverage\CMakeFiles\assignment_4_5.dir\Repository\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#ifndef DYNAMICARRAY_H
+        -:    3:#define DYNAMICARRAY_H
+        -:    4:#pragma once
+        -:    5:
+        -:    6:template <class TElem>
+        -:    7:class DynamicArray
+        -:    8:{
+        -:    9:private:
+        -:   10:    TElem* elements;
+        -:   11:    int length;
+        -:   12:    int initial_capacity;
+        -:   13:    int capacity;
+        -:   14:
+        -:   15:    /// With this function we resize the dynamic array
+function _ZN12DynamicArrayI5EventE6ResizeEv called 0 returned 0% blocks executed 0%
+    #####:   16:    void Resize()
+        -:   17:    {
+        -:   18:        TElem* NewElements;
+    #####:   19:        this->capacity = this->capacity * 2;
+    #####:   20:        NewElements = new TElem[this->capacity];
+    %%%%%:   20-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   20-block  1
+    %%%%%:   20-block  2
+    %%%%%:   20-block  3
+call    2 never executed
+    %%%%%:   20-block  4
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   20-block  5
+    %%%%%:   20-block  6
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    $$$$$:   20-block  7
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    $$$$$:   20-block  8
+    $$$$$:   20-block  9
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:   20-block 10
+call   12 never executed
+    $$$$$:   20-block 11
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   20-block 12
+branch 15 never executed (fallthrough)
+branch 16 never executed
+    $$$$$:   20-block 13
+    $$$$$:   20-block 14
+    $$$$$:   20-block 15
+call   17 never executed
+    #####:   21:        for(int i = 0; i < this->length; i++)
+    %%%%%:   21-block  0
+    %%%%%:   21-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+        -:   22:        {
+    #####:   23:            NewElements[i] = this->elements[i];
+    %%%%%:   23-block  0
+call    0 never executed
+        -:   24:        }
+    #####:   25:        delete[] this->elements;
+    %%%%%:   25-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   25-block  1
+    %%%%%:   25-block  2
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   25-block  3
+call    4 never executed
+    %%%%%:   25-block  4
+call    5 never executed
+    #####:   26:        this->elements = NewElements;
+    #####:   27:    }
+    %%%%%:   27-block  0
+        -:   28:
+        -:   29:    /// With this function we clear the dynamic array
+function _ZN12DynamicArrayI5EventE5ClearEv called 2 returned 100% blocks executed 55%
+        2:   30:    void Clear()
+        -:   31:    {
+        2:   32:        this->length = 0;
+        -:   33:        TElem* NewElements;
+        2:   34:        this->capacity = this->initial_capacity;
+     202*:   35:        NewElements = new TElem[this->capacity];
+        2:   35-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   35-block  1
+    %%%%%:   35-block  2
+        2:   35-block  3
+call    2 returned 2
+      200:   35-block  4
+call    3 returned 200
+branch  4 taken 200 (fallthrough)
+branch  5 taken 0 (throw)
+      200:   35-block  5
+      202:   35-block  6
+branch  6 taken 200
+branch  7 taken 2 (fallthrough)
+    $$$$$:   35-block  7
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:   35-block 10
+call   12 never executed
+    $$$$$:   35-block 11
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   35-block 12
+branch 15 never executed (fallthrough)
+branch 16 never executed
+    $$$$$:   35-block 13
+    $$$$$:   35-block 14
+    $$$$$:   35-block 15
+call   17 never executed
+       2*:   36:        for(int i = 0; i < this->length; i++)
+        2:   36-block  0
+        2:   36-block  1
+branch  0 taken 0
+branch  1 taken 2 (fallthrough)
+        -:   37:        {
+    #####:   38:            NewElements[i] = this->elements[i];
+    %%%%%:   38-block  0
+call    0 never executed
+        -:   39:        }
+      202:   40:        delete[] this->elements;
+        2:   40-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   40-block  1
+      202:   40-block  2
+branch  2 taken 200 (fallthrough)
+branch  3 taken 2
+      200:   40-block  3
+call    4 returned 200
+        2:   40-block  4
+call    5 returned 2
+        2:   41:        this->elements = NewElements;
+        2:   42:    }
+        2:   42-block  0
+        -:   43:
+        -:   44:public:
+        -:   45:/// Constructor
+        -:   46:    DynamicArray(){
+        -:   47:    }
+        -:   48:
+        -:   49:    ///  With this function we initialize the dynamic array
+        -:   50:    /// \param capacity
+        -:   51:    DynamicArray(int capacity)
+        -:   52:    {
+        -:   53:        this->capacity = capacity;
+        -:   54:        this->length = 0;
+        -:   55:        this->elements = new TElem[capacity];
+        -:   56:        this->initial_capacity = capacity;
+        -:   57:    }
+        -:   58:
+        -:   59:/// Destructor
+function _ZN12DynamicArrayI5EventED1Ev called 13 returned 100% blocks executed 100%
+       13:   60:    ~DynamicArray(){
+     1313:   61:        delete [] this->elements;
+       13:   61-block  0
+branch  0 taken 13 (fallthrough)
+branch  1 taken 0
+       13:   61-block  1
+     1313:   61-block  2
+branch  2 taken 1300 (fallthrough)
+branch  3 taken 13
+     1300:   61-block  3
+call    4 returned 1300
+       13:   61-block  4
+call    5 returned 13
+       13:   62:    }
+        -:   63:
+        -:   64:/// With this function we add an element
+        -:   65:/// \param element the element we are about to add
+function _ZN12DynamicArrayI5EventE3AddERKS0_ called 42 returned 100% blocks executed 75%
+       42:   66:    void Add (const TElem &element)
+        -:   67:    {
+        -:   68://        if(this->elements == nullptr)
+        -:   69://            return;
+       42:   70:        if(this->length == this->capacity)
+       42:   70-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 42
+    #####:   71:            Resize();
+    %%%%%:   71-block  0
+call    0 never executed
+       42:   72:        this->elements[this->length++] = element;
+       42:   72-block  0
+call    0 returned 42
+       42:   73:    }
+        -:   74:
+        -:   75:/// With this function we delete an element
+        -:   76:/// \param position the position of the element we are about to delete
+function _ZN12DynamicArrayI5EventE6DeleteEi called 3 returned 100% blocks executed 100%
+        3:   77:    void Delete(int position)
+        -:   78:    {
+        3:   79:        if (this->length == 1) // If array has only one element
+        3:   79-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        2:   80:            Clear(); // than we clear it, since it will be deleted
+        2:   80-block  0
+call    0 returned 2
+        -:   81:        else
+        -:   82:        {
+        -:   83:            // otherwise, shift array elements
+        5:   84:            for(int i = position; i < this->length - 1; i++)
+        1:   84-block  0
+        5:   84-block  1
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+        4:   85:                this->elements[i] = this->elements[i+1];
+        4:   85-block  0
+call    0 returned 4
+        -:   86:
+        -:   87:            // decrease array size
+        1:   88:            this->length--;
+        1:   88-block  0
+        -:   89:        }
+        3:   90:    }
+        -:   91:
+        -:   92:/// With this function we update an element
+        -:   93:/// \param element the element we are about to update
+        -:   94:/// \param position the position of the element
+function _ZN12DynamicArrayI5EventE6UpdateERKS0_i called 12 returned 100% blocks executed 100%
+       12:   95:    void Update(const TElem &element, int position){
+       12:   96:        this->elements[position] = element;
+       12:   96-block  0
+call    0 returned 12
+       12:   97:    }
+        -:   98:
+        -:   99:///With this function we get the number of elements from the dynamic array
+function _ZN12DynamicArrayI5EventE7GetSizeEv called 156 returned 100% blocks executed 100%
+      156:  100:    int GetSize()
+        -:  101:    {
+      156:  102:        return this->length;
+      156:  102-block  0
+        -:  103:    }
+        -:  104:
+        -:  105:/// With this function we get an exact element from the array
+        -:  106:/// \param position the position of the element; we are about to get
+        -:  107:/// \return it returns the element
+function _ZN12DynamicArrayI5EventEixEi called 0 returned 0% blocks executed 0%
+    #####:  108:    TElem& operator [] (int position){
+    #####:  109:        return this->elements[position];
+    %%%%%:  109-block  0
+        -:  110:    }
+        -:  111:    DynamicArray& operator = (const DynamicArray &a){
+        -:  112:        if(this == &a)
+        -:  113:            return *this;
+        -:  114:
+        -:  115:        if(a.capacity == 0)
+        -:  116:            Clear();
+        -:  117:
+        -:  118:        this->capacity = a.capacity/2;
+        -:  119:        Resize();
+        -:  120:
+        -:  121:        memcpy(this->elements, a.elements, sizeof(TElem)*a.capacity);
+        -:  122:        return *this;
+        -:  123:
+        -:  124:    }
+        -:  125:};
+        -:  126:#endif //DYNAMICARRAY_H

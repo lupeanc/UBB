@@ -1,0 +1,134 @@
+% 9. 
+% a. For a list of integer number, write a predicate to add in list after
+% 1-st, 3-rd, 7-th, 15-th element a given value e.
+
+addElem([],_,_,[]).
+addElem([H|T],E,Ct,[H|R]):-
+    \+ (Ct=:=1; Ct=:=3; Ct=:=7; Ct=:=15),
+    !,
+    NCt is Ct+1,
+    addElem(T,E,NCt,R).
+addElem([H|T],E,Ct,[H,E|R]):-
+    !,
+    NCt is Ct+1,
+    addElem(T,E,NCt,R).
+
+%b. For a heterogeneous list, formed from integer numbers and list of numbers;
+% add in every sublist after 1-st, 3-rd, 7-th, 15-th element the value 
+% found before the sublist in the heterogenous list. The list has the particularity 
+% that starts with a number and there aren’t two consecutive elements lists.
+
+heter9([],_,[]).
+heter9([H|T],_,[H|R]):-
+    \+ is_list(H),
+    NewPrev is H,
+    heter9(T,NewPrev,R).
+heter9([H|T],Prev,[NewList|R]):-
+    is_list(H),
+    addElem(H,Prev,1,NewList),
+    heter9(T,Prev,R).
+
+% 10. 
+% a. For a list of integer numbers, define a predicate to write 
+% twice in list every prime number.
+getDivisors(N,DivBy,[]):-
+    DivBy>N div 2.
+getDivisors(N, DivBy, R):-
+    DivBy=<N div 2,
+    N mod DivBy =\= 0,
+    NewDivBy is DivBy+1,
+    getDivisors(N,NewDivBy,R).
+getDivisors(N, DivBy, [DivBy|R]):-
+    DivBy=<N div 2,
+    N mod DivBy =:= 0,
+    NewDivBy is DivBy+1,
+    getDivisors(N,NewDivBy,R).
+    
+
+isEmpty([]).
+
+isPrime(2).
+isPrime(X):-
+    X>2,
+    getDivisors(X,2,DivList),
+    isEmpty(DivList).
+
+twicePrime([],[]).
+twicePrime([H|T],[H|R]):-
+    \+ isPrime(H),
+    twicePrime(T,R).
+twicePrime([H|T],[H,H|R]):-
+    isPrime(H),
+    twicePrime(T,R).
+
+% 11.
+% a. Replace all occurrences of an element from a list with another element e.
+
+replace([],_,_,[]).
+replace([H|T],Replace,E,[H|R]):-
+    H=\=Replace,
+    replace(T,Replace,E,R).
+replace([H|T],Replace,E,[E|R]):-
+    H=:=Replace,
+    replace(T,Replace,E,R).
+% b. For a heterogeneous list, formed from integer numbers and list of numbers, 
+% define a predicate to determine the maximum number of the list, 
+% and then to replace this value in sublists with the maximum value of sublist.
+
+getNumbers([],[]).
+getNumbers([H|T],[H|R]):-
+    number(H),
+    getNumbers(T,R).
+getNumbers([H|T],R):-
+    is_list(H),
+    getNumbers(T,R).
+
+findMax([],CurrentMax,CurrentMax).
+findMax([H|T],CurrentMax,R):-
+    H<CurrentMax,
+    findMax(T,CurrentMax,R).
+findMax([H|T],CurrentMax,R):-
+    H>=CurrentMax,
+    findMax(T,H,R).
+
+replaceSub([],_,[]).
+replaceSub([H|T],Max,[H|R]):-
+    number(H),
+    replaceSub(T,Max,R).
+replaceSub([H|T],Max,[NewSub|R]):-
+    is_list(H),
+    findMax(H,0,SubMax),
+    replace(H,Max,SubMax,NewSub),
+    replaceSub(T,Max,R).
+
+main11(L,R):-
+    getNumbers(L,Nbs),
+    findMax(Nbs,0,Max),
+    replaceSub(L,Max,R).
+
+% 12.
+% a. Define a predicate to add after every element from a list, 
+% the divisors of that number.
+
+getDivisors2(N, DivBy, []):-
+    DivBy>N,
+    !.
+getDivisors2(N,DivBy,R):-
+    DivBy=<N,
+    N mod DivBy =\= 0,
+    NewDivBy is DivBy+1,
+    getDivisors2(N,NewDivBy,R).
+getDivisors2(N,DivBy,[DivBy|R]):-
+    DivBy=<N,
+    N mod DivBy =:= 0,
+    NewDivBy is DivBy+1,
+    getDivisors2(N,NewDivBy,R).
+
+insert([],L,L).
+insert([H|T],L,[H|R]):-
+    insert(T,L,R).
+
+main12a([H|T],[H|R]):-
+    getDivisors(H,1,DivList),
+    insert(DivList,R,Res),
+    main12a(T,Res).

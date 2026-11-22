@@ -1,0 +1,17 @@
+# ninja log v6
+20	405	7679638422781157	build.ninja	714bd47540505a0b
+67	997	7675656684177230	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/SortedBagIterator.cpp.obj	a8ac5ff02dc6f261
+53	988	7675656684037178	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/App.cpp.obj	8ef4f8af300c395c
+21	476	7675669179343946	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/SortedBag.cpp.obj	1c5e8c80bcd6189a
+486	572	7675671302327893	DSA_lab3___Sorted_Bag_DLLA.exe	1560e563fec10985
+62	998	7675656684127184	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/ShortTest.cpp.obj	1dbbec67cc072e9a
+19	486	7675671297653934	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/ExtendedTest.cpp.obj	8a3de77baaf89e56
+97	4339	7683051848903229	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/SortedBagIterator.cpp.obj	a8ac5ff02dc6f261
+107	4341	7683051849015207	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/SortedBag.cpp.obj	1c5e8c80bcd6189a
+4341	4839	7683051891346525	DSA_lab3___Sorted_Bag_DLLA.exe	1560e563fec10985
+64	770	7721478965640039	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/App.cpp.obj	8ef4f8af300c395c
+75	772	7721478965759811	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/ShortTest.cpp.obj	1dbbec67cc072e9a
+80	776	7721478965809791	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/SortedBagIterator.cpp.obj	a8ac5ff02dc6f261
+84	777	7721478965849823	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/SortedBag.cpp.obj	1c5e8c80bcd6189a
+70	806	7721478965709802	CMakeFiles/DSA_lab3___Sorted_Bag_DLLA.dir/ExtendedTest.cpp.obj	8a3de77baaf89e56
+806	1125	7721478973059802	DSA_lab3___Sorted_Bag_DLLA.exe	1560e563fec10985

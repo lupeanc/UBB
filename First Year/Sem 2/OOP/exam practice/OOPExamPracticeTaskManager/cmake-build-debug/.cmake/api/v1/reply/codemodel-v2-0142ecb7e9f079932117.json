@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OOPExamPracticeTaskManager",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeTaskManager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeTaskManager-Debug-a8147bd1edda1e7e308a.json",
+					"name" : "OOPExamPracticeTaskManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeTaskManager_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeTaskManager_autogen-Debug-7ab8e3cf81d84e466c9e.json",
+					"name" : "OOPExamPracticeTaskManager_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeTaskManager_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeTaskManager_autogen_timestamp_deps-Debug-5c9fa7ebfee62cd0ee47.json",
+					"name" : "OOPExamPracticeTaskManager_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/c projects uni/OOPExamPracticeTaskManager/cmake-build-debug",
+		"source" : "F:/c projects uni/OOPExamPracticeTaskManager"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

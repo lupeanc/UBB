@@ -1,0 +1,10 @@
+USE Lab3_DBMS;
+GO
+
+--SOLUTION: set transaction isolation level to read commited
+SET TRAN ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+SELECT * FROM Library
+WAITFOR DELAY '00:00:10'
+SELECT * FROM Library
+COMMIT TRAN

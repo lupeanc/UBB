@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Reservations</title>
+
+    <script src="js/jquery-2.0.3.js"></script>
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .mytablerow {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+
+    <script>
+
+        function showAllReservations(reservations) {
+
+            console.log("Received reservations:");
+            console.log(reservations);
+
+            var content =
+                "<table>" +
+                "<thead>" +
+                "<tr>" +
+                "<th>ID</th>" +
+                "<th>User_id</th>" +
+                "<th>Room_id</th>" +
+                "<th>Start</th>" +
+                "<th>End</th>" +
+                "</tr>" +
+                "</thead>" +
+                "<tbody>";
+
+            reservations.forEach(function(reserv, i) {
+
+                if (i % 2 === 0) {
+                    content += "<tr class='mytablerow'>";
+                } else {
+                    content += "<tr>";
+                }
+
+                content +=
+                    "<td>" + reserv.id + "</td>" +
+                    "<td>" + reserv.user_id + "</td>" +
+                    "<td>" + reserv.room_id + "</td>" +
+                    "<td>" + reserv.start + "</td>" +
+                    "<td>" + reserv.end + "</td>" +
+                    "</tr>";
+            });
+
+            content += "</tbody></table>";
+
+            $("#main").html(content);
+        }
+
+        function showOneReservation(reserv) {
+
+            console.log("Received reservation:");
+            console.log(reserv);
+
+            var content =
+                "<table>" +
+                "<thead>" +
+                "<tr>" +
+                "<th>ID</th>" +
+                "<th>User_id</th>" +
+                "<th>Room_id</th>" +
+                "<th>Start</th>" +
+                "<th>End</th>" +
+                "</tr>" +
+                "</thead>" +
+                "<tbody>";
+
+            content +=
+                "<tr>" +
+                "<td>" + reserv.id + "</td>" +
+                "<td>" + reserv.user_id + "</td>" +
+                "<td>" + reserv.room_id + "</td>" +
+                "<td>" + reserv.start + "</td>" +
+                "<td>" + reserv.end + "</td>" +
+                "</tr>";
+
+            content += "</tbody></table>";
+
+            $("#main").html(content);
+        }
+
+        function showOneUser(user) {
+
+            console.log("Received user:");
+            console.log(user);
+
+            var content =
+                "<table>" +
+                "<thead>" +
+                "<tr>" +
+                "<th>ID</th>" +
+                "<th>Username</th>" +
+                "<th>Password</th>" +
+                "</tr>" +
+                "</thead>" +
+                "<tbody>";
+
+            content +=
+                "<tr>" +
+                "<td>" + user.id + "</td>" +
+                "<td>" + user.username + "</td>" +
+                "<td>" + user.password + "</td>" +
+                "</tr>";
+
+            content += "</tbody></table>";
+
+            $("#main").html(content);
+        }
+
+        $(document).ready(function () {
+            // GET USER BY USERNAME AND PASSWORD
+
+            $("#btn_getUser").click(function () {
+
+                var username = $("#username").val();
+                var password = $("#password").val();
+
+                if (username === "" || password === "") {
+
+                    alert("Please enter username and password.");
+                    return;
+                }
+
+                $.ajax({
+
+                    url: "controller/Controller.php",
+                    type: "GET",
+
+                    data: {
+                        action: "getUser",
+                        username: username,
+                        password: password
+                    },
+
+                    success: function(response) {
+
+                        console.log(response);
+
+                        if (response.trim() === "Success") {
+
+                            $("#main").html(
+                                "<h2>Login successful!</h2>"
+                            );
+
+                        } else {
+
+                            $("#main").html(
+                                "<h2>Invalid username or password.</h2>"
+                            );
+                        }
+                    },
+
+                    error: function(xhr, status, error) {
+
+                        console.log(status);
+                        console.log(error);
+
+                        $("#main").html(
+                            "<h3>ERROR</h3>"
+                        );
+                    }
+                });
+
+            });
+
+
+        // GET ALL RESERVATIONS
+
+            $("#btn_getReservations").click(function () {
+
+                $.ajax({
+
+                    url: "controller/Controller.php",
+                    type: "GET",
+
+                    data: {
+                        action: "getAllReservations"
+                    },
+
+                    success: function(response) {
+
+                        console.log("RAW RESPONSE:");
+                        console.log(response);
+
+                        try {
+
+                            var reservations = JSON.parse(response);
+
+                            showAllReservations(reservations);
+
+                        } catch(e) {
+
+                            console.log("JSON PARSE ERROR");
+                            console.log(e);
+
+                            $("#main").html(
+                                "<pre>" + response + "</pre>"
+                            );
+                        }
+                    },
+
+                    error: function(xhr, status, error) {
+
+                        console.log("AJAX ERROR:");
+                        console.log(status);
+                        console.log(error);
+                        console.log(xhr.responseText);
+
+                        $("#main").html(
+                            "<h3>ERROR</h3><pre>" +
+                            xhr.responseText +
+                            "</pre>"
+                        );
+                    }
+                });
+
+            });
+
+            // GET ONE RESERVATION BY ID
+
+            $("#btn_getReservation").click(function () {
+
+                var reservationId = $("#reservation_id").val();
+
+                if (reservationId === "") {
+
+                    alert("Please enter a reservation ID.");
+                    return;
+                }
+
+                $.ajax({
+
+                    url: "controller/Controller.php",
+                    type: "GET",
+
+                    data: {
+                        action: "getReservation",
+                        id: reservationId
+                    },
+
+                    success: function(response) {
+
+                        console.log("RAW RESPONSE:");
+                        console.log(response);
+
+                        try {
+
+                            var reservation = JSON.parse(response);
+
+                            showOneReservation(reservation);
+
+                        } catch(e) {
+
+                            console.log("JSON PARSE ERROR");
+                            console.log(e);
+
+                            $("#main").html(
+                                "<pre>" + response + "</pre>"
+                            );
+                        }
+                    },
+
+                    error: function(xhr, status, error) {
+
+                        console.log("AJAX ERROR:");
+                        console.log(status);
+                        console.log(error);
+                        console.log(xhr.responseText);
+
+                        $("#main").html(
+                            "<h3>ERROR</h3><pre>" +
+                            xhr.responseText +
+                            "</pre>"
+                        );
+                    }
+                });
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+<section style="border: 1px solid red; width: 400px; padding: 10px;">
+
+    <h3>Get all reservations</h3>
+
+    <input
+            type="button"
+            id="btn_getReservations"
+            value="Get all reservations"
+    />
+
+</section>
+
+<hr/>
+
+<section style="border: 1px solid blue; width: 400px; padding: 10px;">
+
+    <h3>Get reservation by ID</h3>
+
+    <input
+            type="number"
+            id="reservation_id"
+            placeholder="Reservation ID"
+    />
+
+    <input
+            type="button"
+            id="btn_getReservation"
+            value="Get reservation"
+    />
+
+</section>
+
+<hr/>
+<section style="border: 1px solid purple; width: 400px; padding: 10px;">
+
+    <h3>Login</h3>
+
+    <input
+            type="text"
+            id="username"
+            placeholder="Username"
+    />
+
+    <br/><br/>
+
+    <input
+            type="password"
+            id="password"
+            placeholder="Password"
+    />
+
+    <br/><br/>
+
+    <input
+            type="button"
+            id="btn_getUser"
+            value="Login"
+    />
+
+</section>
+
+</body>
+</html>

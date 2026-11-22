@@ -1,0 +1,11 @@
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\bin\Debug\dbms_s6.exe.config
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\bin\Debug\dbms_s6.exe
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\bin\Debug\dbms_s6.pdb
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.csproj.AssemblyReference.cache
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.Properties.Resources.resources
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.csproj.GenerateResource.cache
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.exe
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.pdb
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\dbms_s6.Form1.resources
+C:\Users\Clayton\Uni\DBMS\dbms_s6\dbms_s6\obj\Debug\PracticalExamModel.Form1.resources

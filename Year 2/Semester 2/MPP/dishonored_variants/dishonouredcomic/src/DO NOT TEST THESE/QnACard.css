@@ -1,0 +1,19 @@
+.qna-div {
+    /* width: 100%; */
+    padding:40px;
+    padding-bottom: 0;
+    height:auto;
+}
+
+.question {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.answer {
+    text-align: left;
+    font-size: 15px;
+    padding:20px 0 20px 0;
+
+}

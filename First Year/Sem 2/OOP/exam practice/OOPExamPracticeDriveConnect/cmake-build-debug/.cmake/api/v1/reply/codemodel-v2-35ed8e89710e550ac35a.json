@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OOPExamPracticeDriveConnect",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeDriveConnect::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeDriveConnect-Debug-5654d16e4fd7ecdcb179.json",
+					"name" : "OOPExamPracticeDriveConnect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeDriveConnect_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeDriveConnect_autogen-Debug-d396aaffa74aaaba45f6.json",
+					"name" : "OOPExamPracticeDriveConnect_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPExamPracticeDriveConnect_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPExamPracticeDriveConnect_autogen_timestamp_deps-Debug-385ab0434469945f0711.json",
+					"name" : "OOPExamPracticeDriveConnect_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/c projects uni/OOPExamPracticeDriveConnect/cmake-build-debug",
+		"source" : "F:/c projects uni/OOPExamPracticeDriveConnect"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

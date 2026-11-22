@@ -1,0 +1,23 @@
+// Test program for the Cinematography DSL
+
+record Camera {
+    script name;
+    int fps;
+};
+
+Camera createBasicCamera() {
+    Camera camera;
+    script name;
+    int fps;
+
+    name = "Sony 4d-f";
+    fps = 60;
+
+    return new Camera(name, fps);
+}
+
+bool isValid;
+isValid = true;
+char initial;
+initial = 'A'
+// int invalidNumber = 012;

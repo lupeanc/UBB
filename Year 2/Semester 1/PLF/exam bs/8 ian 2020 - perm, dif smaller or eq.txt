@@ -1,0 +1,34 @@
+% 8 ian 2020 perm -> dif between elems is <= 3
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+perm([],[]).
+perm([H|T], R):-
+    perm(T,R1),
+    insert(H,R1,R).
+
+absDif(A,B,R):-
+    A>=B,
+    !,
+    R is A-B.
+absDif(A,B,R):-
+    B>A,
+    !,
+    R is B-A.
+
+checkAbsDif([H1,H2]):-
+    absDif(H1,H2,R),
+    R =< 3.
+checkAbsDif([H1,H2|T]):-
+    absDif(H1,H2,R),
+    R =< 3,
+    checkAbsDif([H2|T]).
+
+oneSol(L,Perm):-
+    perm(L, Perm),
+    checkAbsDif(Perm).
+
+allSols(L,R):-
+    findall(Perm, oneSol(L,Perm), R).

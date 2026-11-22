@@ -1,0 +1,10 @@
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\bin\Debug\practicdbms.exe.config
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\bin\Debug\practicdbms.exe
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\bin\Debug\practicdbms.pdb
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.csproj.AssemblyReference.cache
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.Form1.resources
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.Properties.Resources.resources
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.csproj.GenerateResource.cache
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.csproj.CoreCompileInputs.cache
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.exe
+C:\Users\Clayton\Uni\DBMS\practicdbms\practicdbms\obj\Debug\practicdbms.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mYu5sqqPhw4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity.Packaging\\AskQuestionCustomActivity.Packaging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Clayton\\.nuget\\packages\\system.activities.viewmodels\\1.20260609.1\\system.activities.viewmodels.1.20260609.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,4 @@
+﻿  L1Cpp.cpp
+C:\Users\Clayton\Uni\Year 3\Semester 1\PPD\Labs\L1\L1Cpp\L1Cpp\L1Cpp.cpp(86,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Clayton\Uni\Year 3\Semester 1\PPD\Labs\L1\L1Cpp\L1Cpp\L1Cpp.cpp(87,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  L1Cpp.vcxproj -> C:\Users\Clayton\Uni\Year 3\Semester 1\PPD\Labs\L1\L1Cpp\x64\Debug\L1Cpp.exe

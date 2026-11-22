@@ -1,0 +1,5 @@
+F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/CMakeFiles/OOPExamPracticeVolunteering.dir
+F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/CMakeFiles/OOPExamPracticeVolunteering_autogen_timestamp_deps.dir
+F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/CMakeFiles/OOPExamPracticeVolunteering_autogen.dir

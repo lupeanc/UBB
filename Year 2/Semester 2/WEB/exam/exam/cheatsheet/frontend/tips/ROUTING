@@ -1,0 +1,7 @@
+//RECEPIES!!!
+
+//1. DECLARE
+navigate=useNavigate()
+
+//2. SEND STATES WITH
+navigate("/link", {state: { user: user, title: title},});

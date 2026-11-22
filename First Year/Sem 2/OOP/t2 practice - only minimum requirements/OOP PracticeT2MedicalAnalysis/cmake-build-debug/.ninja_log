@@ -1,0 +1,13 @@
+# ninja log v6
+22	624	7684018948856814	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/main.cpp.obj	207b588bc6706237
+26	712	7684012523633436	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/Person.cpp.obj	7495572a9be748ca
+548	675	7684021336657535	OOP_PracticeT2MedicalAnalysis.exe	82229c49fe24fcc9
+18	297	7684168904338232	build.ninja	60420c145d4ef3a
+47	584	7684011813037993	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/Measurement.cpp.obj	8ba6566c7e06dc67
+27	700	7684011812837981	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/BMI.cpp.obj	d2b7d82fc65bdd3d
+41	709	7684011812977991	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/BP.cpp.obj	94415d40943e3d35
+5	547	7684021331232278	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/Console.cpp.obj	8496c08f274d9352
+23	629	7684186490977564	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/Console.cpp.obj	8496c08f274d9352
+19	649	7684186490937560	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/main.cpp.obj	207b588bc6706237
+6	588	7684186661195658	CMakeFiles/OOP_PracticeT2MedicalAnalysis.dir/Person.cpp.obj	7495572a9be748ca
+589	726	7684186667020498	OOP_PracticeT2MedicalAnalysis.exe	82229c49fe24fcc9

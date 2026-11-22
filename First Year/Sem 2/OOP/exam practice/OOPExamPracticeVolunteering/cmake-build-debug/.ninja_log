@@ -1,0 +1,14 @@
+# ninja log v6
+28	147	7715260627983003	OOPExamPracticeVolunteering_autogen/timestamp	72a484c7605935cc
+183	5316	7715260263725139	CMakeFiles/OOPExamPracticeVolunteering.dir/main.cpp.obj	5d9dc1fa0d08c470
+28	147	7715260627983003	F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/OOPExamPracticeVolunteering_autogen/timestamp	72a484c7605935cc
+28	147	7715260627983003	OOPExamPracticeVolunteering_autogen/mocs_compilation.cpp	72a484c7605935cc
+28	147	7715260627983003	F:/c projects uni/OOPExamPracticeVolunteering/cmake-build-debug/OOPExamPracticeVolunteering_autogen/mocs_compilation.cpp	72a484c7605935cc
+213	285	7714189255777660	CMakeFiles/OOPExamPracticeVolunteering.dir/OOPExamPracticeVolunteering_autogen/mocs_compilation.cpp.obj	5cebc176ab0ccaad
+4224	4974	7715260669940930	OOPExamPracticeVolunteering.exe	bf916da9fedcbffd
+33	897	7715264419811606	build.ninja	93b22fd987124a8b
+149	834	7715172670415875	CMakeFiles/OOPExamPracticeVolunteering.dir/Domain/Volunteer.cpp.obj	ac954a6f89ad1af9
+145	844	7715172670365769	CMakeFiles/OOPExamPracticeVolunteering.dir/Domain/Department.cpp.obj	52690e9586cc4a49
+142	1341	7715260414925231	CMakeFiles/OOPExamPracticeVolunteering.dir/Repository/Repository.cpp.obj	b4a73ca5d7940db8
+192	5496	7715260263815123	CMakeFiles/OOPExamPracticeVolunteering.dir/GUI/GUI.cpp.obj	2f7e88f97507b9ad
+148	4224	7715260629173033	CMakeFiles/OOPExamPracticeVolunteering.dir/GUI/GUISecondWindow.cpp.obj	4866413a06001367

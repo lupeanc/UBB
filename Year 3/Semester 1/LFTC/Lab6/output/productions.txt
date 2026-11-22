@@ -1,0 +1,115 @@
+program -> statement statement statement statement statement statement
+statement -> userDatatypeStatement
+userDatatypeStatement -> 'record' identifier '{' field field '}' ';'
+identifier -> 'Camera'
+field -> declaredType identifier ';'
+declaredType -> type
+type -> 'script'
+identifier -> 'name'
+field -> declaredType identifier ';'
+declaredType -> type
+type -> 'int'
+identifier -> 'fps'
+statement -> functionStatement
+functionStatement -> declaredType identifier '(' parameters ')' '{' statement statement statement statement statement returnStatement '}'
+declaredType -> identifier
+identifier -> 'Camera'
+identifier -> 'createBasicCamera'
+parameters -> ε
+statement -> declarationStatement
+declarationStatement -> declaredType identifier ';'
+declaredType -> identifier
+identifier -> 'Camera'
+identifier -> 'camera'
+statement -> declarationStatement
+declarationStatement -> declaredType identifier ';'
+declaredType -> type
+type -> 'script'
+identifier -> 'name'
+statement -> declarationStatement
+declarationStatement -> declaredType identifier ';'
+declaredType -> type
+type -> 'int'
+identifier -> 'fps'
+statement -> assignmentStatement
+assignmentStatement -> identifier '=' expression ';'
+identifier -> 'name'
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> value
+value -> '"Sony 4d-f"'
+statement -> assignmentStatement
+assignmentStatement -> identifier '=' expression ';'
+identifier -> 'fps'
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> value
+value -> '60'
+returnStatement -> 'return' expression ';'
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> 'new' constructorCall
+constructorCall -> identifier '(' argumentList ')'
+identifier -> 'Camera'
+argumentList -> expression ',' expression
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> identifier
+identifier -> 'name'
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> identifier
+identifier -> 'fps'
+statement -> declarationStatement
+declarationStatement -> declaredType identifier ';'
+declaredType -> type
+type -> 'bool'
+identifier -> 'isValid'
+statement -> assignmentStatement
+assignmentStatement -> identifier '=' expression ';'
+identifier -> 'isValid'
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> value
+value -> booleanValue
+booleanValue -> 'true'
+statement -> declarationStatement
+declarationStatement -> declaredType identifier ';'
+declaredType -> type
+type -> 'char'
+identifier -> 'initial'
+statement -> assignmentStatement
+assignmentStatement -> identifier '=' expression ';'
+identifier -> 'initial'
+expression -> logicalOrExpression
+logicalOrExpression -> logicalAndExpression
+logicalAndExpression -> comparisonExpression
+comparisonExpression -> additiveExpression
+additiveExpression -> multiplicativeExpression
+multiplicativeExpression -> operand
+operand -> value
+value -> "'A'"

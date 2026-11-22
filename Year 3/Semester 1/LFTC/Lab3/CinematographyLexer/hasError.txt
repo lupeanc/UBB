@@ -1,0 +1,29 @@
+nomemory invalidCharacterQuestionMark() {
+    int fps;
+    fps = 60 ? 2;
+}
+
+nomemory invalidCharacterAt() {
+    int fps;
+    fps = 60 @ 2;
+}
+
+nomemory invalidVariableNames() {
+    int 2fps;
+}
+
+nomemory unterminatedString() {
+    script name;
+    name = "Sony;
+}
+
+nomemory unterminatedChar() {
+    char name;
+    name = 'S;
+}
+
+nomemory invalidCharacter() {
+    char letter;
+    letter = 'AB';
+}
+

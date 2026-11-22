@@ -1,0 +1,29 @@
+% 8 ian 2020
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T],R):-
+    subset(T,R).
+
+checkCount([],0).
+checkCount([_|T], N):-
+    checkCount(T,N1),
+    N is N1+1.
+
+sum([H],H).
+sum([H|T], S):-
+    sum(T, S1),
+    S is S1+H.
+
+oneSol(L,N, Sub):-
+    subset(L,Sub),
+    sum(Sub, S),
+    checkCount(Sub,NbEl),
+    S mod 3 =:= 0,
+    NbEl >= N.
+
+allSols(L,N,FinalR):-
+    findall(Subs, oneSol(L, N, Subs), FinalR).
+
+
+

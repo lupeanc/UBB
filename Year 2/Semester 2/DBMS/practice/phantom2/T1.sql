@@ -1,0 +1,9 @@
+USE dbms_s6
+
+--DELETE FROM Users WHERE name LIKE 'phantom2'
+
+BEGIN TRAN
+WAITFOR DELAY '00:00:06'
+INSERT INTO Users(name, city, dob) VALUES ('phantom2', 'c', '10-10-2002')
+WAITFOR DELAY '00:00:06'
+COMMIT TRAN

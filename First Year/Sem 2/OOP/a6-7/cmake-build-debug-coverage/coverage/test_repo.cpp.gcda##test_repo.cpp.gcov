@@ -1,0 +1,1739 @@
+        -:    0:Source:F:/c projects uni/assignment_6_7/Tests/test_repo.cpp
+        -:    0:Graph:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Tests\test_repo.cpp.gcno
+        -:    0:Data:F:\c projects uni\assignment_6_7\cmake-build-debug-coverage\CMakeFiles\assignment_6_7.dir\Tests\test_repo.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include "test_repo.h"
+        -:    3:#include "../DynamicArray.h"
+        -:    4:#include <assert.h>
+        -:    5:
+        -:    6:#include "../FileRepository/FileRepository.h"
+        -:    7:
+function _ZN14testRepository11testGetSizeEv called 1 returned 100% blocks executed 59%
+        1:    8:void testRepository::testGetSize(){
+        1:    8-block  0
+        1:    9:  FileRepository fileRepo("test_file.txt");
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    9-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:    9-block  2
+call    6 returned 1
+    $$$$$:    9-block  3
+call    7 never executed
+    $$$$$:    9-block  4
+    $$$$$:    9-block  5
+        1:   10:  Repository adminRepo;
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11:  adminRepo.initRepo();
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:  fileRepo.initRepo();
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   13:  assert(adminRepo.getSize() == 5);
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   13-block  2
+call    5 never executed
+        1:   13-block  3
+        1:   14:}
+        1:   14-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   14-block  1
+call    2 never executed
+    $$$$$:   14-block  2
+call    3 never executed
+function _ZN14testRepository12testInitRepoEv called 1 returned 100% blocks executed 59%
+        1:   15:void testRepository::testInitRepo(){
+        1:   15-block  0
+        1:   16:  FileRepository fileRepo("test_file.txt");
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  2
+call    6 returned 1
+    $$$$$:   16-block  3
+call    7 never executed
+    $$$$$:   16-block  4
+    $$$$$:   16-block  5
+        1:   17:  Repository adminRepo;
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18:  adminRepo.initRepo();
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19:  fileRepo.initRepo();
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   20:  assert(adminRepo.getSize() == 5);
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   20-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   20-block  2
+call    5 never executed
+        1:   20-block  3
+        1:   21:}
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   21-block  1
+call    2 never executed
+    $$$$$:   21-block  2
+call    3 never executed
+        -:   22:
+function _ZN14testRepository11testAddRepoEv called 1 returned 100% blocks executed 50%
+        1:   23:void testRepository::testAddRepo(){
+        1:   23-block  0
+        1:   24:  FileRepository fileRepo("test_file.txt");
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   24-block  2
+call    6 returned 1
+    $$$$$:   24-block  3
+call    7 never executed
+    $$$$$:   24-block  4
+    $$$$$:   24-block  5
+        1:   25:  Repository adminRepo;
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       6*:   26:  assert(adminRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link")==0);
+        1:   26-block  0
+        1:   26-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   26-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   26-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   26-block  4
+        1:   26-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   26-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   26-block  7
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:   26-block  8
+call   17 never executed
+        1:   26-block  9
+        1:   26-block 10
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0
+        1:   26-block 11
+call   20 returned 1
+        1:   26-block 12
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:   26-block 13
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0
+        1:   26-block 14
+call   25 returned 1
+        1:   26-block 15
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0
+        1:   26-block 16
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0
+        1:   26-block 17
+call   30 returned 1
+        1:   26-block 18
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0
+    $$$$$:   26-block 19
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    $$$$$:   26-block 20
+call   35 never executed
+    $$$$$:   26-block 21
+    $$$$$:   26-block 22
+branch 36 never executed (fallthrough)
+branch 37 never executed
+    $$$$$:   26-block 23
+    $$$$$:   26-block 24
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    $$$$$:   26-block 25
+call   40 never executed
+    $$$$$:   26-block 26
+    $$$$$:   26-block 27
+branch 41 never executed (fallthrough)
+branch 42 never executed
+    $$$$$:   26-block 28
+    $$$$$:   26-block 29
+    $$$$$:   26-block 30
+branch 43 never executed (fallthrough)
+branch 44 never executed
+    $$$$$:   26-block 31
+call   45 never executed
+    $$$$$:   26-block 32
+    $$$$$:   26-block 33
+branch 46 never executed (fallthrough)
+branch 47 never executed
+    $$$$$:   26-block 34
+       1*:   27:  assert(adminRepo.getSize() == 1);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   27-block  2
+call    5 never executed
+        1:   27-block  3
+       6*:   28:  assert(adminRepo.addRepo("title", "d", Date(1, 3, 2024), 12, 3, "link2"));
+        1:   28-block  0
+        1:   28-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   28-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   28-block  4
+        1:   28-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   28-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   28-block  7
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:   28-block  8
+call   17 never executed
+        1:   28-block  9
+        1:   28-block 10
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0
+        1:   28-block 11
+call   20 returned 1
+        1:   28-block 12
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:   28-block 13
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0
+        1:   28-block 14
+call   25 returned 1
+        1:   28-block 15
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0
+        1:   28-block 16
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0
+        1:   28-block 17
+call   30 returned 1
+        1:   28-block 18
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0
+    $$$$$:   28-block 19
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    $$$$$:   28-block 20
+call   35 never executed
+    $$$$$:   28-block 21
+    $$$$$:   28-block 22
+branch 36 never executed (fallthrough)
+branch 37 never executed
+    $$$$$:   28-block 23
+    $$$$$:   28-block 24
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    $$$$$:   28-block 25
+call   40 never executed
+    $$$$$:   28-block 26
+    $$$$$:   28-block 27
+branch 41 never executed (fallthrough)
+branch 42 never executed
+    $$$$$:   28-block 28
+    $$$$$:   28-block 29
+    $$$$$:   28-block 30
+branch 43 never executed (fallthrough)
+branch 44 never executed
+    $$$$$:   28-block 31
+call   45 never executed
+    $$$$$:   28-block 32
+    $$$$$:   28-block 33
+branch 46 never executed (fallthrough)
+branch 47 never executed
+    $$$$$:   28-block 34
+       6*:   29:  assert(!fileRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link")==0);
+        1:   29-block  0
+        1:   29-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   29-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   29-block  4
+        1:   29-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   29-block  7
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:   29-block  8
+call   17 never executed
+        1:   29-block  9
+        1:   29-block 10
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0
+        1:   29-block 11
+call   20 returned 1
+        1:   29-block 12
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:   29-block 13
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0
+        1:   29-block 14
+call   25 returned 1
+        1:   29-block 15
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0
+        1:   29-block 16
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0
+        1:   29-block 17
+call   30 returned 1
+        1:   29-block 18
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0
+    $$$$$:   29-block 19
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    $$$$$:   29-block 20
+call   35 never executed
+    $$$$$:   29-block 21
+    $$$$$:   29-block 22
+branch 36 never executed (fallthrough)
+branch 37 never executed
+    $$$$$:   29-block 23
+    $$$$$:   29-block 24
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    $$$$$:   29-block 25
+call   40 never executed
+    $$$$$:   29-block 26
+    $$$$$:   29-block 27
+branch 41 never executed (fallthrough)
+branch 42 never executed
+    $$$$$:   29-block 28
+    $$$$$:   29-block 29
+    $$$$$:   29-block 30
+branch 43 never executed (fallthrough)
+branch 44 never executed
+    $$$$$:   29-block 31
+call   45 never executed
+    $$$$$:   29-block 32
+    $$$$$:   29-block 33
+branch 46 never executed (fallthrough)
+branch 47 never executed
+    $$$$$:   29-block 34
+       6*:   30:  assert(fileRepo.addRepo("title", "d", Date(1, 3, 2024), 12, 3, "link2"));
+        1:   30-block  0
+        1:   30-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   30-block  4
+        1:   30-block  5
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   30-block  6
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   30-block  7
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    %%%%%:   30-block  8
+call   17 never executed
+        1:   30-block  9
+        1:   30-block 10
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0
+        1:   30-block 11
+call   20 returned 1
+        1:   30-block 12
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0
+        1:   30-block 13
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0
+        1:   30-block 14
+call   25 returned 1
+        1:   30-block 15
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0
+        1:   30-block 16
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0
+        1:   30-block 17
+call   30 returned 1
+        1:   30-block 18
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0
+    $$$$$:   30-block 19
+branch 33 never executed (fallthrough)
+branch 34 never executed
+    $$$$$:   30-block 20
+call   35 never executed
+    $$$$$:   30-block 21
+    $$$$$:   30-block 22
+branch 36 never executed (fallthrough)
+branch 37 never executed
+    $$$$$:   30-block 23
+    $$$$$:   30-block 24
+branch 38 never executed (fallthrough)
+branch 39 never executed
+    $$$$$:   30-block 25
+call   40 never executed
+    $$$$$:   30-block 26
+    $$$$$:   30-block 27
+branch 41 never executed (fallthrough)
+branch 42 never executed
+    $$$$$:   30-block 28
+    $$$$$:   30-block 29
+    $$$$$:   30-block 30
+branch 43 never executed (fallthrough)
+branch 44 never executed
+    $$$$$:   30-block 31
+call   45 never executed
+    $$$$$:   30-block 32
+    $$$$$:   30-block 33
+branch 46 never executed (fallthrough)
+branch 47 never executed
+    $$$$$:   30-block 34
+        1:   31:}
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   31-block  1
+call    2 never executed
+    $$$$$:   31-block  2
+call    3 never executed
+        -:   32:
+function _ZN14testRepository18testCheckExistanceEv called 1 returned 100% blocks executed 53%
+        1:   33:void testRepository::testCheckExistance(){
+        1:   33-block  0
+        1:   34:  FileRepository fileRepo("test_file.txt");
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   34-block  2
+call    6 returned 1
+    $$$$$:   34-block  3
+call    7 never executed
+    $$$$$:   34-block  4
+    $$$$$:   34-block  5
+        1:   35:  Repository adminRepo;
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:  adminRepo.initRepo();
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37:  fileRepo.initRepo();
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       2*:   38:  assert(adminRepo.checkExistance("title"));
+        1:   38-block  0
+        1:   38-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   38-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   38-block  4
+call    8 never executed
+        1:   38-block  5
+        1:   38-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   38-block  7
+call   11 returned 1
+        1:   38-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   38-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   38-block 10
+call   16 never executed
+    $$$$$:   38-block 11
+    $$$$$:   38-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   38-block 13
+       2*:   39:  assert(!adminRepo.checkExistance("HumanBody"));
+        1:   39-block  0
+        1:   39-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   39-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   39-block  4
+call    8 never executed
+        1:   39-block  5
+        1:   39-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   39-block  7
+call   11 returned 1
+        1:   39-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   39-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   39-block 10
+call   16 never executed
+    $$$$$:   39-block 11
+    $$$$$:   39-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   39-block 13
+       2*:   40:  assert(fileRepo.checkExistance("title"));
+        1:   40-block  0
+        1:   40-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   40-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   40-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   40-block  4
+call    8 never executed
+        1:   40-block  5
+        1:   40-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   40-block  7
+call   11 returned 1
+        1:   40-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   40-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   40-block 10
+call   16 never executed
+    $$$$$:   40-block 11
+    $$$$$:   40-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   40-block 13
+       2*:   41:  assert(fileRepo.checkExistance("HumanBody"));
+        1:   41-block  0
+        1:   41-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   41-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   41-block  4
+call    8 never executed
+        1:   41-block  5
+        1:   41-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   41-block  7
+call   11 returned 1
+        1:   41-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   41-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   41-block 10
+call   16 never executed
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   41-block 13
+        1:   42:}
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   42-block  1
+call    2 never executed
+    $$$$$:   42-block  2
+call    3 never executed
+        -:   43:
+function _ZN14testRepository14testDeleteRepoEv called 1 returned 100% blocks executed 54%
+        1:   44:void testRepository::testDeleteRepo(){
+        1:   45:  Repository adminRepo;
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46:  FileRepository fileRepo("test_file.txt");
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  2
+call    6 returned 1
+    $$$$$:   46-block  3
+call    7 never executed
+    $$$$$:   46-block  4
+    $$$$$:   46-block  5
+        1:   47:  adminRepo.initRepo();
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   48:  fileRepo.initRepo();
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       2*:   49:  assert(!adminRepo.deleteEvent("HumanBody"));
+        1:   49-block  0
+        1:   49-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   49-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   49-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   49-block  4
+call    8 never executed
+        1:   49-block  5
+        1:   49-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   49-block  7
+call   11 returned 1
+        1:   49-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   49-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   49-block 10
+call   16 never executed
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   49-block 13
+       2*:   50:  assert(!fileRepo.deleteEvent("HumanBody"));
+        1:   50-block  0
+        1:   50-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   50-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   50-block  4
+call    8 never executed
+        1:   50-block  5
+        1:   50-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   50-block  7
+call   11 returned 1
+        1:   50-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   50-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   50-block 10
+call   16 never executed
+    $$$$$:   50-block 11
+    $$$$$:   50-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   50-block 13
+        1:   51:}
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   51-block  1
+call    2 never executed
+    $$$$$:   51-block  2
+call    3 never executed
+        -:   52:
+function _ZN14testRepository20testUpdateStringRepoEv called 1 returned 100% blocks executed 50%
+        1:   53:void testRepository::testUpdateStringRepo(){
+        1:   54:  Repository adminRepo;
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   55:  FileRepository fileRepo("test_file.txt");
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   55-block  2
+call    6 returned 1
+        1:   55-block  3
+    $$$$$:   55-block  4
+call    7 never executed
+    $$$$$:   55-block  5
+    $$$$$:   55-block  6
+        6:   56:  adminRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link");
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   56-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   56-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   56-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   56-block  5
+call   15 returned 1
+        1:   56-block  6
+call   16 returned 1
+        1:   56-block  7
+call   17 returned 1
+        1:   56-block  8
+    $$$$$:   56-block  9
+call   18 never executed
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+    $$$$$:   56-block 12
+call   19 never executed
+    $$$$$:   56-block 13
+    $$$$$:   56-block 14
+    $$$$$:   56-block 15
+    $$$$$:   56-block 16
+call   20 never executed
+    $$$$$:   56-block 17
+    $$$$$:   56-block 18
+        5:   57:  fileRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link");
+        1:   57-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   57-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   57-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   57-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   57-block  5
+call   15 returned 1
+        1:   57-block  6
+call   16 returned 1
+        1:   57-block  7
+call   17 returned 1
+    $$$$$:   57-block  8
+call   18 never executed
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+call   19 never executed
+    $$$$$:   57-block 12
+    $$$$$:   57-block 13
+    $$$$$:   57-block 14
+    $$$$$:   57-block 15
+call   20 never executed
+    $$$$$:   57-block 16
+    $$$$$:   57-block 17
+       4*:   58:  assert(!adminRepo.updateEventString("title", "new", 1));
+        1:   58-block  0
+        1:   58-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58-block  2
+        1:   58-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   58-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   58-block  6
+call   11 never executed
+        1:   58-block  7
+        1:   58-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   58-block  9
+call   14 returned 1
+        1:   58-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   58-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   58-block 12
+call   19 returned 1
+        1:   58-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   58-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   58-block 15
+call   24 never executed
+    $$$$$:   58-block 16
+    $$$$$:   58-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   58-block 18
+    $$$$$:   58-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   58-block 20
+call   29 never executed
+    $$$$$:   58-block 21
+    $$$$$:   58-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   58-block 23
+       1*:   59:  assert((adminRepo)[0].getTitle() == "new");
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   59-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   59-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   59-block  3
+call    9 never executed
+        1:   59-block  4
+        1:   59-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   59-block  6
+call   12 returned 1
+    $$$$$:   59-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   59-block  8
+call   15 never executed
+    $$$$$:   59-block  9
+       4*:   60:  assert(!adminRepo.updateEventString("new", "new_desc", 2));
+        1:   60-block  0
+        1:   60-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60-block  2
+        1:   60-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   60-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   60-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   60-block  6
+call   11 never executed
+        1:   60-block  7
+        1:   60-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   60-block  9
+call   14 returned 1
+        1:   60-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   60-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   60-block 12
+call   19 returned 1
+        1:   60-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   60-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   60-block 15
+call   24 never executed
+    $$$$$:   60-block 16
+    $$$$$:   60-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   60-block 18
+    $$$$$:   60-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   60-block 20
+call   29 never executed
+    $$$$$:   60-block 21
+    $$$$$:   60-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   60-block 23
+       4*:   61:  assert(!adminRepo.updateEventString("new", "new_link", 6));
+        1:   61-block  0
+        1:   61-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  2
+        1:   61-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   61-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   61-block  6
+call   11 never executed
+        1:   61-block  7
+        1:   61-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   61-block  9
+call   14 returned 1
+        1:   61-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   61-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   61-block 12
+call   19 returned 1
+        1:   61-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   61-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   61-block 15
+call   24 never executed
+    $$$$$:   61-block 16
+    $$$$$:   61-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   61-block 18
+    $$$$$:   61-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   61-block 20
+call   29 never executed
+    $$$$$:   61-block 21
+    $$$$$:   61-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   61-block 23
+        -:   62:
+       4*:   63:  assert(!fileRepo.updateEventString("title", "new", 1));
+        1:   63-block  0
+        1:   63-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   63-block  2
+        1:   63-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   63-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   63-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   63-block  6
+call   11 never executed
+        1:   63-block  7
+        1:   63-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   63-block  9
+call   14 returned 1
+        1:   63-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   63-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   63-block 12
+call   19 returned 1
+        1:   63-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   63-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   63-block 15
+call   24 never executed
+    $$$$$:   63-block 16
+    $$$$$:   63-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   63-block 18
+    $$$$$:   63-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   63-block 20
+call   29 never executed
+    $$$$$:   63-block 21
+    $$$$$:   63-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   63-block 23
+       4*:   64:  assert(!fileRepo.updateEventString("new", "new_desc", 2));
+        1:   64-block  0
+        1:   64-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   64-block  2
+        1:   64-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   64-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   64-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   64-block  6
+call   11 never executed
+        1:   64-block  7
+        1:   64-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   64-block  9
+call   14 returned 1
+        1:   64-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   64-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   64-block 12
+call   19 returned 1
+        1:   64-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   64-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   64-block 15
+call   24 never executed
+    $$$$$:   64-block 16
+    $$$$$:   64-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   64-block 18
+    $$$$$:   64-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   64-block 20
+call   29 never executed
+    $$$$$:   64-block 21
+    $$$$$:   64-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   64-block 23
+       4*:   65:  assert(!fileRepo.updateEventString("new", "new_link", 6));
+        1:   65-block  0
+        1:   65-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   65-block  2
+        1:   65-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   65-block  4
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   65-block  5
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1
+    %%%%%:   65-block  6
+call   11 never executed
+        1:   65-block  7
+        1:   65-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+        1:   65-block  9
+call   14 returned 1
+        1:   65-block 10
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   65-block 11
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0
+        1:   65-block 12
+call   19 returned 1
+        1:   65-block 13
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+    $$$$$:   65-block 14
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:   65-block 15
+call   24 never executed
+    $$$$$:   65-block 16
+    $$$$$:   65-block 17
+branch 25 never executed (fallthrough)
+branch 26 never executed
+    $$$$$:   65-block 18
+    $$$$$:   65-block 19
+branch 27 never executed (fallthrough)
+branch 28 never executed
+    $$$$$:   65-block 20
+call   29 never executed
+    $$$$$:   65-block 21
+    $$$$$:   65-block 22
+branch 30 never executed (fallthrough)
+branch 31 never executed
+    $$$$$:   65-block 23
+        1:   66:}
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   66-block  1
+call    2 never executed
+    $$$$$:   66-block  2
+call    3 never executed
+        -:   67:
+function _ZN14testRepository17testUpdateIntRepoEv called 1 returned 100% blocks executed 51%
+        1:   68:void testRepository::testUpdateIntRepo(){
+        1:   69:  Repository adminRepo;
+        1:   69-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   70:  FileRepository fileRepo("test_file.txt");
+        1:   70-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   70-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   70-block  2
+call    6 returned 1
+        1:   70-block  3
+    $$$$$:   70-block  4
+call    7 never executed
+    $$$$$:   70-block  5
+    $$$$$:   70-block  6
+        6:   71:  adminRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link");
+        1:   71-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   71-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   71-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   71-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   71-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   71-block  5
+call   15 returned 1
+        1:   71-block  6
+call   16 returned 1
+        1:   71-block  7
+call   17 returned 1
+        1:   71-block  8
+    $$$$$:   71-block  9
+call   18 never executed
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+call   19 never executed
+    $$$$$:   71-block 13
+    $$$$$:   71-block 14
+    $$$$$:   71-block 15
+    $$$$$:   71-block 16
+call   20 never executed
+    $$$$$:   71-block 17
+    $$$$$:   71-block 18
+        5:   72:  fileRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link");
+        1:   72-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   72-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   72-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   72-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   72-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   72-block  5
+call   15 returned 1
+        1:   72-block  6
+call   16 returned 1
+        1:   72-block  7
+call   17 returned 1
+    $$$$$:   72-block  8
+call   18 never executed
+    $$$$$:   72-block  9
+    $$$$$:   72-block 10
+    $$$$$:   72-block 11
+call   19 never executed
+    $$$$$:   72-block 12
+    $$$$$:   72-block 13
+    $$$$$:   72-block 14
+    $$$$$:   72-block 15
+call   20 never executed
+    $$$$$:   72-block 16
+    $$$$$:   72-block 17
+        1:   73:  fileRepo.getDynArr();
+        1:   73-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       2*:   74:  assert(!adminRepo.updateEventInt("title", 20, 4));
+        1:   74-block  0
+        1:   74-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   74-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   74-block  4
+call    8 never executed
+        1:   74-block  5
+        1:   74-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   74-block  7
+call   11 returned 1
+        1:   74-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   74-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   74-block 10
+call   16 never executed
+    $$$$$:   74-block 11
+    $$$$$:   74-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   74-block 13
+       1*:   75:  assert((adminRepo)[0].getTime() == 20);
+        1:   75-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   75-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   75-block  2
+call    6 never executed
+        1:   75-block  3
+       2*:   76:  assert(!adminRepo.updateEventInt("title", 20, 5));
+        1:   76-block  0
+        1:   76-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   76-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   76-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   76-block  4
+call    8 never executed
+        1:   76-block  5
+        1:   76-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   76-block  7
+call   11 returned 1
+        1:   76-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   76-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   76-block 10
+call   16 never executed
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   76-block 13
+        -:   77:
+       2*:   78:  assert(!fileRepo.updateEventInt("title", 20, 4));
+        1:   78-block  0
+        1:   78-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   78-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   78-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   78-block  4
+call    8 never executed
+        1:   78-block  5
+        1:   78-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   78-block  7
+call   11 returned 1
+        1:   78-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   78-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   78-block 10
+call   16 never executed
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   78-block 13
+       2*:   79:  assert(!fileRepo.updateEventInt("title", 20, 5));
+        1:   79-block  0
+        1:   79-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   79-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   79-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   79-block  4
+call    8 never executed
+        1:   79-block  5
+        1:   79-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   79-block  7
+call   11 returned 1
+        1:   79-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   79-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   79-block 10
+call   16 never executed
+    $$$$$:   79-block 11
+    $$$$$:   79-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   79-block 13
+        1:   80:}
+        1:   80-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   80-block  1
+call    2 never executed
+    $$$$$:   80-block  2
+call    3 never executed
+        -:   81:
+function _ZN14testRepository18testUpdateDateRepoEv called 1 returned 100% blocks executed 50%
+        1:   82:void testRepository::testUpdateDateRepo(){
+        1:   82-block  0
+        1:   83:  FileRepository fileRepo("test_file.txt");
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   83-block  2
+call    6 returned 1
+    $$$$$:   83-block  3
+call    7 never executed
+    $$$$$:   83-block  4
+    $$$$$:   83-block  5
+        1:   84:  Repository adminRepo;
+        1:   84-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   85:  fileRepo.getSize();
+        1:   85-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   86:  adminRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link");
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   86-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   86-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   86-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   86-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   86-block  5
+call   15 returned 1
+        1:   86-block  6
+call   16 returned 1
+        1:   86-block  7
+call   17 returned 1
+        1:   86-block  8
+    $$$$$:   86-block  9
+call   18 never executed
+    $$$$$:   86-block 10
+    $$$$$:   86-block 11
+    $$$$$:   86-block 12
+call   19 never executed
+    $$$$$:   86-block 13
+    $$$$$:   86-block 14
+    $$$$$:   86-block 15
+    $$$$$:   86-block 16
+call   20 never executed
+    $$$$$:   86-block 17
+    $$$$$:   86-block 18
+        5:   87:  fileRepo.addRepo("title", "desc", Date(1, 2, 2025), 16, 100, "link");
+        1:   87-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   87-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   87-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   87-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   87-block  5
+call   15 returned 1
+        1:   87-block  6
+call   16 returned 1
+        1:   87-block  7
+call   17 returned 1
+    $$$$$:   87-block  8
+call   18 never executed
+    $$$$$:   87-block  9
+    $$$$$:   87-block 10
+    $$$$$:   87-block 11
+call   19 never executed
+    $$$$$:   87-block 12
+    $$$$$:   87-block 13
+    $$$$$:   87-block 14
+    $$$$$:   87-block 15
+call   20 never executed
+    $$$$$:   87-block 16
+    $$$$$:   87-block 17
+       3*:   88:  assert(!adminRepo.updateEventDate("title", 10, 12, 2024));
+        1:   88-block  0
+        1:   88-block  1
+        1:   88-block  2
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   88-block  3
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   88-block  4
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   88-block  5
+call    8 never executed
+        1:   88-block  6
+        1:   88-block  7
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   88-block  8
+call   11 returned 1
+        1:   88-block  9
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   88-block 10
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   88-block 11
+call   16 never executed
+    $$$$$:   88-block 12
+    $$$$$:   88-block 13
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   88-block 14
+       2*:   89:  assert(!fileRepo.updateEventDate("title", 10, 12, 2024));
+        1:   89-block  0
+        1:   89-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   89-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   89-block  3
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   89-block  4
+call    8 never executed
+        1:   89-block  5
+        1:   89-block  6
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   89-block  7
+call   11 returned 1
+        1:   89-block  8
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0
+    $$$$$:   89-block  9
+branch 14 never executed (fallthrough)
+branch 15 never executed
+    $$$$$:   89-block 10
+call   16 never executed
+    $$$$$:   89-block 11
+    $$$$$:   89-block 12
+branch 17 never executed (fallthrough)
+branch 18 never executed
+    $$$$$:   89-block 13
+        1:   90:}
+        1:   90-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   90-block  1
+call    2 never executed
+    $$$$$:   90-block  2
+call    3 never executed
+        -:   91:
+function _ZN14testRepository17testAllRepositoryEv called 1 returned 100% blocks executed 100%
+        1:   92:void testRepository::testAllRepository(){
+        1:   93:  testGetSize();
+        1:   93-block  0
+call    0 returned 1
+        1:   94:  testInitRepo();
+call    0 returned 1
+        1:   95:  testAddRepo();
+call    0 returned 1
+        1:   96:  testCheckExistance();
+call    0 returned 1
+        1:   97:  testDeleteRepo();
+call    0 returned 1
+        1:   98:  testUpdateStringRepo();
+call    0 returned 1
+        1:   99:  testUpdateIntRepo();
+call    0 returned 1
+        1:  100:  testUpdateDateRepo();
+call    0 returned 1
+        1:  101:}

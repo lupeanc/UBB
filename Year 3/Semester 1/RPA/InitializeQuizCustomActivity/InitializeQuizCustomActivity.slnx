@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="InitializeQuizCustomActivity/InitializeQuizCustomActivity.Packaging/InitializeQuizCustomActivity.Packaging.csproj" />
+  <Project Path="InitializeQuizCustomActivity/InitializeQuizCustomActivity.Tests/InitializeQuizCustomActivity.Tests.csproj" />
+  <Project Path="InitializeQuizCustomActivity/InitializeQuizCustomActivity/InitializeQuizCustomActivity.csproj" />
+</Solution>

@@ -1,0 +1,172 @@
+% 1. Sort a list with removing the double values. E.g.: [4 2 6 2 3 4] --> [2 3 4 6]
+ removeOcc([],_,[]).
+removeOcc([H|T],E,[H|R]):-
+    H =\=E,
+    removeOcc(T,E,R).
+removeOcc([H|T],E,R):-
+    H=:=E,
+    removeOcc(T,E,R).
+
+findMin([],CurrentMin, CurrentMin).
+findMin([H|T], CurrentMin, R):-
+    H>=CurrentMin,
+    findMin(T,CurrentMin,R).
+findMin([H|T], CurrentMin, R):-
+    H<CurrentMin,
+    findMin(T,H,R).
+
+sortList([],[]).
+sortList(L,[Min|R]):-
+    findMin(L,1000,Min),
+    removeOcc(L,Min,NewList),
+    sortList(NewList,R).
+
+% 2. WITH keeping the double values
+removeOneOcc([],_,_,[]).
+removeOneOcc([H|T],E,AlreadyRemoved,[H|R]):-
+    H =\=E,
+    removeOneOcc(T,E,AlreadyRemoved,R).
+removeOneOcc([H|T],E,AlreadyRemoved, R):-
+    H =:= E,
+    AlreadyRemoved =:= 0,
+    removeOneOcc(T,E,1,R).
+removeOneOcc([H|T], E, AlreadyRemoved, [H|R]):-
+    H =:= E,
+    AlreadyRemoved =:= 1,
+    removeOneOcc(T,E,AlreadyRemoved,R).
+
+findElem([E|_], E, 1).
+findElem([H|T], E, Pos):-
+    H=\=E,
+    findElem(T,E, Pos1),
+    Pos is Pos1+1.
+
+sortList2([],[]).
+sortList2(L,[Min|R]):-
+    findMin(L,1000,Min),
+    removeOneOcc(L,Min,0,NewList),
+    sortList2(NewList,R).
+
+% 3. Merge two sorted lists with removing the double values
+
+merge([],L,L).
+merge(L,[],L).
+merge([H1|T1],[H2|T2], [H1|R]):-
+    H1<H2,
+    merge(T1,[H2|T2],R).
+merge([H1|T1],[H2|T2], [H2|R]):-
+    H2<H1,
+    merge([H1|T1],T2,R).
+merge([H1|T1],[H2|T2], [H1|R]):-
+    H1=:=H2,
+    merge(T1,T2,R).
+
+% 4. 
+% a. Write a predicate to determine the sum of two numbers written in list representation
+reverseList([],R,R).
+reverseList([H|T],Z,R):-
+    reverseList(T,Z,[H|R]).
+
+makeNumber([],0,0).
+makeNumber([H|T],Pow,N):-
+    makeNumber(T,Pow1,N1),
+    N is N1+H*(10^Pow1),
+    Pow is Pow1+1.
+
+%5. 
+% a. Substitute all occurrences of an element of a list
+% with all the elements of another list.
+% Eg. subst([1,2,1,3,1,4],1,[10,11],X) produces X=[10,11,2,10,11,3,10,11,4].
+insert([],R,R).
+insert([H1|T],R, [H1|Res]):-
+    insert(T,R,Res).
+
+subst([],_,_,[]).
+subst([H|T],E,L,[H|R]):-
+    H=\=E,
+    subst(T,E,L,R).
+subst([H|T],E,L,Res):-
+    H=:=E,
+    insert(L,R,Res),
+    subst(T,E,L,R).
+
+% 7. 
+% a. Determine the position of the maximal element of a linear list.
+findMax([],CurrentMax,CurrentMax).
+findMax([H|T], CurrentMax, Max):-
+    H<CurrentMax,
+    findMax(T,CurrentMax,Max).
+findMax([H|T], CurrentMax, Max):-
+    H>=CurrentMax,
+    findMax(T,H,Max).
+
+getPos([],_,_,[]).
+getPos([H|T],CurrentPos,Max,[CurrentPos|R]):-
+    H=:=Max,
+    NewCurrentPos is CurrentPos+1,
+    getPos(T,NewCurrentPos, Max, R).
+getPos([H|T],CurrentPos,Max,R):-
+    H=\=Max,
+    NewCurrentPos is CurrentPos+1,
+    getPos(T,NewCurrentPos, Max, R).
+
+mainMax(L,R):-
+    findMax(L,0,Max),
+    getPos(L,1,Max,R).
+
+% b. For a heterogeneous list, formed from integer numbers and list of numbers,
+% replace every sublist with the position of the maximum element from that sublist
+
+heterList([],[]).
+heterList([H|T],[Res|R]):-
+    is_list(H),
+    mainMax(H,Res),
+    heterList(T,R).
+heterList([H|T], [H|R]):-
+    \+ is_list(H),
+    heterList(T,R).
+
+%8. 
+% a. Determine the successor of a number represented as digits in a list. 
+% Eg.: [1 9 3 5 9 9] --> [1 9 3 6 0 0]
+
+getNumber([],0,0).
+getNumber([H|T],Pow,R):-
+    getNumber(T,Pow1,R1),
+    R is R1+H*10^Pow1,
+    Pow is Pow1+1.
+
+makeList(0,[]).
+makeList(N,[Digit|R]):-
+    Digit is N mod 10,
+    NewN is N div 10,
+    makeList(NewN,R).
+
+reverseL([],R,R).
+reverseL([H|T],Z,R):-
+    reverseL(T,Z,[H|R]).
+
+successorMain(L,R):-
+    getNumber(L,_,Nb),
+    Next is Nb+1,
+    makeList(Next, NextL),
+    reverseL(NextL,R,[]).
+% b. For a heterogeneous list, formed from integer numbers and list of numbers,
+% determine the successor of a sublist considered as a number
+
+heter8([],[]).
+heter8([H|T],[H|R]):-
+    \+ is_list(H),
+    heter8(T,R).
+heter8([H|T],[Res|R]):-
+    is_list(H),
+    successorMain(H,Res),
+    heter8(T,R).
+
+
+
+
+
+
+
+

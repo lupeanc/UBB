@@ -1,0 +1,104 @@
+% 1. b. Write a predicate to add a value v after
+%  1-st, 2-nd, 4-th, 8-th, ... element in a list.
+
+addV([],_,_,_,[]).
+addV([H|T], V, Pos, NextPow2, [H|R]):-
+    Pos =\= NextPow2,
+    NewPos is Pos+1,
+    addV(T,V,NewPos, NextPow2, R).
+addV([H|T], V, Pos, NextPow2, [H,V|R]):-
+    Pos =:= NextPow2,
+    NewPos is Pos+1,
+    NewNextPow2 is NextPow2*2,
+ 	addV(T,V,NewPos,NewNextPow2, R).
+
+% 2. a. Write a predicate to remove all occurrences of a certain atom from a list.
+removeOcc([],_,[]).
+removeOcc([H|T],E,[H|R]):-
+    H =\= E,
+    removeOcc(T,E,R).
+removeOcc([H|T], E, R):-
+    H =:= E,
+    removeOcc(T,E,R).
+
+% b. Define a predicate to produce a list of pairs (atom n) from an initial list of atoms.
+%  In this initial list atom has n occurrences.
+%  Eg.: numberatom([1, 2, 1, 2, 1, 3, 1], X) => X = [[1, 4], [2, 2], [3, 1]]
+
+makePairOneElem([],E,Counter,[E,Counter]).
+makePairOneElem([H|T], E, Counter, Pair):-
+    H =\= E,
+    makePairOneElem(T,E,Counter,Pair).
+makePairOneElem([H|T], E, Counter, Pair):-
+    H =:= E,
+    NewCounter is Counter+1,
+    makePairOneElem(T,E,NewCounter,Pair).
+
+makePairs([],[]).
+makePairs([H|T],[Pair|R]):-
+    makePairOneElem(T,H,1,Pair),
+    removeOcc(T,H,NewList),
+    makePairs(NewList, R).
+
+% 3. Define a predicate to remove from a list all repetitive elements.
+% Eg.: l=[1,2,1,4,1,3,4] => l=[2,3])
+
+countAppearance([],_,Counter, Counter).
+countAppearance([H|T], E, Counter, Res):-
+    H =\= E,
+    countAppearance(T,E,Counter, Res).
+countAppearance([H|T], E, Counter, Res):-
+    H =:= E,
+    NewCounter is Counter+1,
+    countAppearance(T,E,NewCounter, Res).
+  
+
+removeRepetitive([],[]).
+removeRepetitive([H|T],R):-
+    countAppearance(T,H,0,App),
+    0 < App,
+    removeOcc(T,H,Res),
+    removeRepetitive(Res,R).
+removeRepetitive([H|T], [H|R]):-
+    removeRepetitive(T,R).
+
+% b. Remove all occurrence of a maximum value from a list on integer numbers
+
+removeOcc2([],_,[]).
+removeOcc2([H|T], E, R):-
+    H=:=E,
+    removeOcc2(T,E,R).
+removeOcc2([H|T],E,[H|R]):-
+    H=\=E,
+    removeOcc2(T,E,R).
+
+findMax([],CurrentMax, CurrentMax).
+findMax([H|T], CurrentMax, R):-
+    H=<CurrentMax,
+    findMax(T,CurrentMax, R).
+findMax([H|T], CurrentMax, R):-
+    H>CurrentMax,
+    NewMax is H,
+    findMax(T, NewMax, R).
+
+main(L, R):-
+    findMax(L, 0, RM),
+    removeOcc(L,RM,R).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+// allow users to record a Movie, by capturing a few scenes and choosing a camera
+
+record Camera{
+	script name;
+	int fps;
+};
+
+record Scene{
+	script characterName;
+	script characterLine;
+};
+
+record Movie{
+	Camera camera;
+	reel(Scene) scenes;
+};
+
+Camera createBasicCamera(){
+	Camera camera;
+	script name;
+	int fps;
+	
+	name = "Sony 4d-f";
+	fps = 60;
+
+	camera = new Camera(name, fps);
+	
+	return camera;
+}
+
+nomemory main(){
+	// declarations
+	script useBasicCamera, name, characterName, characterLine, keepBloopers, switchBloopersAndCredits;
+	int fps, numberOfScenes, sceneIndex, bloopersIndex;
+	Camera camera;
+	Scene scene;
+	reel(Scene) scenes;
+	Movie movie;
+
+	// assignments
+	camera = createBasicCamera();
+	sceneIndex = 0;
+	
+	onScreen("Would you like to use a basic camera? y/n");
+	film(useBasicCamera);
+
+	check(useBasicCamera == "n") do {
+		onScreen("Input a name: ");
+		film(name);
+
+		onScreen("Input fps: ");
+		film(fps);
+
+		camera = new Camera(name, fps);
+	}
+	
+	else {
+		check(useBasicCamera != "y") do {
+			onScreen("Input not recognized. Using basic camera.");
+		}
+	}
+
+	onScreen("How many scenes does your movie have? Bloopers and credits included");
+	film(numberOfScenes);
+
+	bloopersIndex = numberOfScenes - 1;
+
+	while(sceneIndex < numberOfScenes) do {
+		onScreen("Character name: ");
+		film(characterName);
+
+		onScreen("Character line: ");
+		film(characterLine);
+
+		scene = new Scene(characterName, characterLine);
+		
+		scenes.add(scene);
+
+		sceneIndex = sceneIndex + 1;
+	}
+	
+	onScreen("Would you like to keep the bloopers? y/n");
+	film(keepBloopers);
+
+	check(keepBloopers == "n") do{
+		scenes.cut(bloopersIndex);
+	}
+
+	onScreen("Would you like to switch the bloopers and credits? y/n");
+	film(switchBloopersAndCredits);
+
+	check(switchBloopersAndCredits == "y") do {
+		Scene bloopers, credits;
+		bloopers = scenes.get(bloopersIndex);
+		credits = scenes.get(numberOfScenes);
+	
+		scenes.overwrite(bloopersIndex, credits);
+		scenes.overwrite(numberOfScenes, bloopers);	
+	}
+
+	movie = new Movie(camera, scenes);
+
+}
+

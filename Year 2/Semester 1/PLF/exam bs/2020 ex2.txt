@@ -1,0 +1,43 @@
+insert(E,L,[E|L]).
+insert(E,[H|T], [H|R]):-
+    insert(E,T,R).
+
+arr([H|_], 1, [H]).
+arr([_|T], K, R):-
+    arr(T,K,R).
+arr([H|T],K,R):-
+    K>1,
+    K1 is K-1,
+    arr(T,K1,R1),
+    insert(H,R1,R).
+
+prod([],1).
+prod([H|T], P):-
+    prod(T,P1),
+    P is P1*H.
+
+checkProd(L,P):-
+    prod(L,Prod),
+    Prod =:= P.
+
+oneSol(L,K,P,R):-
+    arr(L,K,R),
+    checkProd(R,P).
+
+allSols(L,K,P,R):-
+    findall(Res, oneSol(L,K,P,Res),R).
+
+(defun replaceOddWith(l counter e)
+    (cond
+        ((and (atom l) (equal (mod counter 2) 1))
+            e
+        )
+        ((atom l) l)
+        (t
+            (mapcar #'(lambda (a) (replaceOddWith a (+ 1 counter) e)) l)
+        )
+    )
+
+)
+
+(format t "~s" (replaceOddWith '(a (b(g)) (c(d(e)) (f) ) ) -1 0))

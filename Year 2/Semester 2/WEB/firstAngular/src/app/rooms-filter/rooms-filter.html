@@ -1,0 +1,79 @@
+<div class="spacer"><button type="button" onclick="location.href='./reservations-home'">Home</button></div>
+<br><br><br>
+<div class="browse">
+
+    <h2>Browse available rooms!</h2>
+
+  <!-- FILTER TYPE -->
+   <div class="filter-container">
+        <select
+          class="filter"
+            [(ngModel)]="selectedFilter"
+            (change)="onFilterChange()"
+        >
+            <option value="nbBeds">Number of Beds</option>
+            <option value="category">Category</option>
+            <option value="price">Price</option>
+        </select>
+
+        <!-- NB BEDS -->
+        <input
+            class="filter-option"
+            *ngIf="selectedFilter === 'nbBeds'"
+            type="number"
+            [(ngModel)]="selectedOption"
+            placeholder="Enter number of beds"
+        />
+
+        <!-- CATEGORY -->
+        <select
+            class="filter-option"
+            *ngIf="selectedFilter === 'category'"
+            [(ngModel)]="selectedOption"
+        >
+            <option *ngFor="let c of categories" [value]="c">
+            {{ c }}
+            </option>
+        </select>
+
+        <!-- PRICE -->
+        <input
+            class="filter-option"
+            *ngIf="selectedFilter === 'price'"
+            type="number"
+            [(ngModel)]="selectedOption"
+            placeholder="Enter max price"
+        />
+
+        <button (click)="applyFilter()">
+            Filter
+        </button>
+    </div>
+<!-- <pre>{{ filteredRooms | json }}</pre> -->
+  <!-- ROOMS -->
+  <div class="rooms-container">
+    <div class="room-card" *ngFor="let room of paginatedRooms">
+      <h3>Room {{ room.id }}</h3>
+      <p>Category: {{ room.category }}</p>
+      <p>Beds: {{ room.nb_beds }}</p>
+      <p>Price: {{ room.price }}</p>
+      <!-- <hr> -->
+    </div>
+  </div>
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">
+      Prev
+    </button>
+
+    <span>
+      Page {{ currentPage }} / {{ totalPages }}
+    </span>
+
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      Next
+    </button>
+  </div>
+
+</div>

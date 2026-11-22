@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Course 5 - Deadlock trials/Course 5 - Deadlock trials.vcxproj" />
+</Solution>

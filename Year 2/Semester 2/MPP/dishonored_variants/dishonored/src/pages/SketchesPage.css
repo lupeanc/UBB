@@ -1,0 +1,20 @@
+.main-div-sketches-page {
+    place-items: center;
+}
+
+.sketches-page-container {
+    width: 1300px;
+    /* max-width: 100%; */
+}
+
+.title-sketches {
+    margin-top:50px
+}
+
+.sketches-container {
+    margin: 50px;
+    display: inline-flex;
+    /* grid-template-columns: auto auto auto auto auto; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}

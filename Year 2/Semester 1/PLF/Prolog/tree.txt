@@ -1,0 +1,30 @@
+% (integer, tree, tree) -(i, i, o) deterministic
+% inserts an element into a BST
+insert(E, nil, arb(E, nil, nil)).
+insert(E, arb(Root, Left, Right), arb(Root, LeftNew, Right)) :-
+  E =< Root,
+  !,
+  insert(E, Left, LeftNew).
+insert(E, arb(Root, Left, Right), arb(Root, Left, RightNew)) :-
+	insert(E, Right, RightNew).
+
+% (tree) -(i) deterministic
+% displays the nodes of the tree in order
+inorder(nil).
+inorder(arb(Root, Left, Right)) :-
+  inorder(Left),
+  write(Root), nl,
+  inorder(Right).
+
+% (tree, list) -(i, o) deterministic
+% creates a BST with the items in a list
+createTree([], nil).
+createTree([H | T], Tree) :-
+  createTree(T, Tree1),
+  insert(H, Tree1, Tree).
+
+% (list) -(i) deterministic
+% displays list items in ascending order(using tree sorting)
+sorting(L) :-
+  createTree(L, Tree),
+  inorder(Tree).

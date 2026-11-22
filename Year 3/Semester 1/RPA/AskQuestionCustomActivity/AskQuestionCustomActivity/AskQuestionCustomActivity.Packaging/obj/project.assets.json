@@ -1,0 +1,199 @@
+{
+  "version": 4,
+  "targets": {
+    "net6.0": {
+      "System.Activities.ViewModels/1.20260609.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Activities.ViewModels.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Activities.ViewModels.dll": {}
+        },
+        "resource": {
+          "lib/net6.0/de/System.Activities.ViewModels.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0/es-MX/System.Activities.ViewModels.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0/es/System.Activities.ViewModels.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0/fr/System.Activities.ViewModels.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0/ja/System.Activities.ViewModels.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0/ko/System.Activities.ViewModels.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0/pt-BR/System.Activities.ViewModels.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0/pt/System.Activities.ViewModels.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0/ro/System.Activities.ViewModels.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net6.0/ru/System.Activities.ViewModels.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0/tr/System.Activities.ViewModels.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0/zh-CN/System.Activities.ViewModels.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0/zh-TW/System.Activities.ViewModels.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "AskQuestionCustomActivity.Activities/1.0.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Activities.ViewModels": "1.20260609.1"
+        },
+        "compile": {
+          "bin/placeholder/AskQuestionCustomActivity.Activities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AskQuestionCustomActivity.Activities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.Activities.ViewModels/1.20260609.1": {
+      "sha512": "C7pn5XEtpWHTjMlSPe6Xq2Lmw8yVT1zNJmRaIViUKjbJTaH96NDoS2EjdDyat8SSfmPZ9tJSsKhc7eN+mRAhLg==",
+      "type": "package",
+      "path": "system.activities.viewmodels/1.20260609.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "lib/net6.0-windows7.0/de/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/es/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/fr/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/ja/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/ko/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/pt/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/ro/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/ru/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/tr/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0-windows7.0/zh-TW/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/System.Activities.ViewModels.dll",
+        "lib/net6.0/de/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/es-MX/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/es/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/fr/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/ja/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/ko/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/pt-BR/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/pt/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/ro/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/ru/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/tr/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/zh-CN/System.Activities.ViewModels.resources.dll",
+        "lib/net6.0/zh-TW/System.Activities.ViewModels.resources.dll",
+        "system.activities.viewmodels.1.20260609.1.nupkg.sha512",
+        "system.activities.viewmodels.nuspec"
+      ]
+    },
+    "AskQuestionCustomActivity.Activities/1.0.2": {
+      "type": "project",
+      "path": "../AskQuestionCustomActivity/AskQuestionCustomActivity.csproj",
+      "msbuildProject": "../AskQuestionCustomActivity/AskQuestionCustomActivity.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "AskQuestionCustomActivity.Activities >= 1.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Clayton\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity.Packaging\\AskQuestionCustomActivity.Packaging.csproj",
+      "projectName": "AskQuestionCustomActivity",
+      "projectPath": "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity.Packaging\\AskQuestionCustomActivity.Packaging.csproj",
+      "packagesPath": "C:\\Users\\Clayton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity.Packaging\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Clayton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Clayton\\Documents\\UiPathCustomActivities": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.uipath.com/official/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity.csproj": {
+              "projectPath": "C:\\Users\\Clayton\\Uni\\Year 3\\Semester 1\\RPA\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity\\AskQuestionCustomActivity.csproj",
+              "privateAssets": "all"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.400"
+    },
+    "frameworks": {
+      "net6.0": {
+        "framework": "net6.0",
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

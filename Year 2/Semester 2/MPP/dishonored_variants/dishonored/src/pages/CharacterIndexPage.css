@@ -1,0 +1,27 @@
+.main-div-character-index {
+    margin-top:20px;
+}
+
+.characters-container{
+    width: 1126px;
+    max-width: 100%;
+}
+
+
+.edit-div {
+    text-align: right;
+}
+
+.edit-button-character-index-admin {
+    margin: 0 10px 0 0;
+    background-color: rgb(27, 27, 32);
+    color:white;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.edit-button-character-index-admin:hover {
+    background-color: rgb(34, 36, 53)
+}

@@ -1,0 +1,10 @@
+# ninja log v6
+558	685	7684936012589840	OOP_PracticeT2Car.exe	b46adcc64324e88e
+7	324	7684968476577998	build.ninja	33dd3d33477a2e8c
+45	912	7684928804885452	CMakeFiles/OOP_PracticeT2Car.dir/Car.cpp.obj	cc2e1a00ed71c96e
+53	794	7684928804975415	CMakeFiles/OOP_PracticeT2Car.dir/Engine.cpp.obj	d11d22d337f0ff03
+22	557	7684936007229175	CMakeFiles/OOP_PracticeT2Car.dir/Console.cpp.obj	621e6c3f28841ad6
+6	569	7684932986218352	CMakeFiles/OOP_PracticeT2Car.dir/main.cpp.obj	7ae4190521e0d8bf
+13	622	7684932986288348	CMakeFiles/OOP_PracticeT2Car.dir/Service.cpp.obj	631236c355c7cad4
+62	920	7684928805055427	CMakeFiles/OOP_PracticeT2Car.dir/Turbo.cpp.obj	c1356253682dcb3a
+49	938	7684928804935411	CMakeFiles/OOP_PracticeT2Car.dir/Electric.cpp.obj	5e7e871b63db5b05

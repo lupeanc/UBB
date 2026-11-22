@@ -1,0 +1,97 @@
+.main-div-user-edit {
+    width:1026px;
+}
+
+.user-info-container {
+    display: flex;
+}
+
+.pfp-container {
+    /* margin-left:100px; */
+    padding-right: 20px;
+}
+
+.pfp {
+    width:200px;
+    height:200px;
+    border: 3px solid #222225;
+    /* margin-left:50px; */
+}
+
+.form-field-user-edit {
+    margin-bottom: 10px;
+    font-size: 16px;
+    width:750px;
+    border: none;
+    /* height:50px; */
+    background-color: transparent;
+    padding:20px;
+    border-bottom: 2px solid #2a2a2c;
+
+}
+
+.form-field-user-edit-large {
+    font-size: 16px;
+    width:750px;
+    border: none;
+    /* height:100px; */
+    background-color: transparent;
+    padding:20px;
+    border-bottom: 2px solid #2a2a2c;
+}
+
+.user-edit-description {
+    font-size: 16px;
+    width:750px;
+    background-color: transparent;
+    padding:20px;
+    border-bottom: 2px solid #2a2a2c;    
+    display: block;
+    overflow: hidden;
+    min-height: 90px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.user-edit-description:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #6b6375; 
+}
+
+.user-edit-description[contentEditable]:empty::before {
+  content: "Description";
+  color: gray;
+}
+
+.account-info-div {
+    margin-top:20px;
+    text-align: left;
+    display: block;
+    width: 1200px;
+}
+
+.account-info-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 20px 20px 0;
+}
+
+.account-info-input-label {
+    font-size: 16px;
+    /* padding: 10px; */
+    margin-top:10px;
+}
+
+.form-field-user-edit-account-info{
+    font-size: 16px;
+    width:81%;
+    background-color: transparent;
+    border:none;
+    padding:20px;
+    border-bottom: 2px solid #2a2a2c;    
+    display: block;
+    overflow: hidden;
+    text-align: left;
+
+}
